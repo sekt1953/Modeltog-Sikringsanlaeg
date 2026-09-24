@@ -7,7 +7,7 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
 * Sporbesat
   * Detektor kredsløb
     * Transistor version
-      * KiCAD
+      * KiCad
       * FreeCAD
       * ESPHome
       * Home Assistant
