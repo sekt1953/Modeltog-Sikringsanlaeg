@@ -1,4 +1,4 @@
-# Modeltog-Sikringsanlaeg
+# Modeltogs Sikringsanlaeg
 
 Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
 
