@@ -20,6 +20,8 @@
 
 #### KiCad Schmatic & PCB
 
+[esp32-can-bus-shield-v1-0](https://store.mrdiy.ca/p/esp32-can-bus-shield-v1-0/)
+
 * files
 * Beskrivelse / forklaring
 * [Matriale List](./TransmitterBus/CanBus/Matriale.md)
