@@ -3127,7 +3127,7 @@
 			(uuid "7be3f2dd-d7de-4bb1-a391-f4f4a7b29c9f")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "TP3")
 					(unit 1)
@@ -3218,7 +3218,7 @@
 			(uuid "256c5233-8cc3-4baf-a1de-c9b6a073a06d")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "D3")
 					(unit 1)
@@ -3342,7 +3342,7 @@
 			(uuid "578c8d46-fc5f-43ea-9b52-c2ce9ad05086")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "U1")
 					(unit 1)
@@ -3450,7 +3450,7 @@
 			(uuid "88e968c6-8cd8-4ccd-a067-ccd26d2eb6cf")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "Q1")
 					(unit 1)
@@ -3528,7 +3528,7 @@
 			(uuid "3f9559af-1567-4f14-a32a-b029bc80fd14")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "#FLG02")
 					(unit 1)
@@ -3606,7 +3606,7 @@
 			(uuid "1062b822-e6af-40de-9ed8-bf78cfc12c35")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "TP1")
 					(unit 1)
@@ -3710,7 +3710,7 @@
 			(uuid "4178b590-0f99-4e39-a9b1-ef03220e77e8")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "D2")
 					(unit 1)
@@ -3789,7 +3789,7 @@
 			(uuid "fa5364d0-300e-4696-9483-7c3e01a1e841")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "#FLG01")
 					(unit 1)
@@ -4024,7 +4024,7 @@
 			(uuid "8d6a976c-ee85-40e9-88e7-c9dc549fcf55")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "C1")
 					(unit 1)
@@ -4102,7 +4102,7 @@
 			(uuid "1875c01d-ba3a-4603-a403-5f8ea9f9094f")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "TP2")
 					(unit 1)
@@ -4180,7 +4180,7 @@
 			(uuid "aa1ea6a6-32ee-4a2a-9ecc-087a33e3ce96")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "#PWR03")
 					(unit 1)
@@ -4257,7 +4257,7 @@
 			(uuid "95875272-27e4-48b9-a577-3449f5beddd0")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "#PWR02")
 					(unit 1)
@@ -4360,7 +4360,7 @@
 			(uuid "e462115d-fbd8-4114-9b5d-1f8a245e3d62")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "D1")
 					(unit 1)
@@ -4626,7 +4626,7 @@
 			(uuid "cb82d75c-7dca-4c5b-b86d-230c5719d242")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "R1")
 					(unit 1)
@@ -4703,7 +4703,7 @@
 			(uuid "d4347685-6c91-417a-bd52-f8105bb9346c")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "#PWR01")
 					(unit 1)
@@ -4784,7 +4784,7 @@
 			(uuid "f50736b6-17f2-43d5-b756-294e66ecd813")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "J1")
 					(unit 1)
@@ -4865,7 +4865,7 @@
 			(uuid "7532130e-48a6-4f00-9b58-afc64260cb63")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "J2")
 					(unit 1)
@@ -5131,7 +5131,7 @@
 			(uuid "61f1979f-f3fa-4f6c-92e2-cdc47633edf6")
 		)
 		(instances
-			(project "Sporbesat-Transistorversion"
+			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "R2")
 					(unit 1)

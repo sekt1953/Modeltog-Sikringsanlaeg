@@ -256,7 +256,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Sporbesat-Transistorversion.kicad_pro",
+    "filename": "Sporbesat-Detektor.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -562,8 +562,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Sporbesat-Transistorversion.kicad_sch",
-        "name": "Sporbesat-Transistorversion",
+        "filename": "Sporbesat-Detektor.kicad_sch",
+        "name": "Sporbesat-Detektor",
         "uuid": "5b52e99c-59e0-433a-ab38-1ee1876dbd93"
       }
     ],
