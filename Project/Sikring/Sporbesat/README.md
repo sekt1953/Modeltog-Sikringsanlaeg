@@ -3,10 +3,10 @@
 ## Detektor
 
 * KiCad (Schmatic & PCB)
-  * [Sporbesat-Transistorversion.kicad_pro](./Detektor/Transistor-version/Sporbesat-Transistorversion/Sporbesat-Transistorversion.kicad_pro)
-  * [Sporbesat-Transistorversion.kicad_sch](./Detektor/Transistor-version/Sporbesat-Transistorversion/Sporbesat-Transistorversion.kicad_sch)
-  * [Sporbesat-Transistorversion.kicad_pcb](./Detektor/Transistor-version/Sporbesat-Transistorversion/Sporbesat-Transistorversion.kicad_pcb)
-  * [Sporbesat-Transistorversion.kicad_prl](./Detektor/Transistor-version/Sporbesat-Transistorversion/Sporbesat-Transistorversion.kicad_prl)
+  * [Sporbesat-Detektor.kicad_pro](./Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_pro)
+  * [Sporbesat-Detektor.kicad_sch](./Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_sch)
+  * [Sporbesat-Detektor.kicad_pcb](./Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_pcb)
+  * [Sporbesat-Detektor.kicad_prl](./Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_prl)
 * Beskrivelse / forklaring
 * Matriale List
 
