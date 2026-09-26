@@ -1,21 +1,48 @@
 # Datasheet
 
-## Dioder
+## CanBus
 
-* [S5AC-13 Dioder 50 V 5A Overflademontering SMC](./S5AC-13/ds16007.pdf)
+### ESPHome
 
-## Kabling
+* [CAN Bus](https://esphome.io/components/canbus/)
+* [ESP32 CAN](https://esphome.io/components/canbus/esp32_can/)
+* [MCP2515](https://esphome.io/components/canbus/mcp2515/)
 
-### [Kabling med STP for CanBus](../Datasheet/Kabeling/BrugSTPkabeltilCanBus.md)
+### [Kabling](./Project/Datasheet/README.md#kabling)
 
-* [Hvis jeg stp kabel til canbus hvor skal skærmen forbindes ?](../Datasheet/Kabeling/BrugSTPkabeltilCanBus.md#hvis-jeg-stp-kabel-til-canbus-hvor-skal-skærmen-forbindes-)
-* [Instalationen skal bruges til modelbane med DCC styring](../Datasheet/Kabeling/BrugSTPkabeltilCanBus.md#instalationen-skal-bruges-til-modelbane-med-dcc-styring)
-* [Skriv eksempler på ben nummer](../Datasheet/Kabeling/BrugSTPkabeltilCanBus.md#skriv-eksempler-på-ben-nummer)
-  * [Eksempel 1: Märklin CAN-bus standard (Mest brugt til modelbaner)](../Datasheet/Kabeling/BrugSTPkabeltilCanBus.md#eksempel-1-märklin-can-bus-standard-mest-brugt-til-modelbaner)
-  * [Eksempel 2: International Industri-standard (CiA 303-1)](../Datasheet/Kabeling/BrugSTPkabeltilCanBus.md#eksempel-2-international-industri-standard-cia-303-1)
-  * [T568B Farve-identifikation (Når du kigger på stikket)](../Datasheet/Kabeling/BrugSTPkabeltilCanBus.md#t568b-farve-identifikation-når-du-kigger-på-stikket)
-* [Jeg har fået dette forslag for modbus](../Datasheet/Kabeling/BrugSTPkabeltilCanBus.md#jeg-har-fået-dette-forslag-for-modbus)
-  * [Hvorfor er dette layout godt til din modelbane?](../Datasheet/Kabeling/BrugSTPkabeltilCanBus.md#hvorfor-er-dette-layout-godt-til-din-modelbane)
-  * [Og hvad så med STP-skærmen?](../Datasheet/Kabeling/BrugSTPkabeltilCanBus.md#og-hvad-så-med-stp-skærmen)
+* [Kabling med STP for CanBus](./Project/Datasheet/Kabeling/BrugSTPkabeltilCanBus.md)
+* [3D printet Box for CanBus moduler](./Project/Datasheet/Kabeling/3D-printetBox-for-CanBus_moduler.md)
 
-### [3D printet Box for CanBus moduler](../Datasheet/Kabeling/3D-printetBox-for-CanBus_moduler.md)
+## KiCad
+
+### Track impedans
+
+* [Track impedans calculater](./Project/Datasheet/TrackImpedansCalculater.md)  
+* [How to design 90 ohm differential traces in KiCad - Impedance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=233s)
+* [How to design 90 ohm differential traces in KiCad - Ground plane clearance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=717s)
+* [Sierra Circuits - Impedance](https://impedance.app.protoexpress.com/)
+* [pcbway multi-layer-laminated-structure](https://www.pcbway.com/multi-layer-laminated-structure.html)
+
+### Custom Symbol and Footprints
+
+* [Custom Symbol](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R "
+DIY Hideout")
+* [Custom Footprints](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R&t=219 "
+DIY Hideout 3:39")
+
+## Parts:
+
+### Semiconductor
+
+* [NUP2105 - Dual Line CAN Bus Protector](./Project/Datasheet/Semiconductor/NUP2105L-D.PDF)
+* [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Project/Datasheet/Semiconductor/ds16007.pdf)
+* [SN65HVD230 - 3.3-V CAN Bus Transceivers](./Project/Datasheet/Semiconductor/sn65hvd230.pdf)
+
+### Modules
+
+* [ESP32 DEVKIT V1 - DOIT 30 GPIOs](./Project/Datasheet/Modules/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
+* [Mini560Pro - Step Down DC-DC](./Project/Datasheet/Modules/Mini560Pro.pdf)
+
+### Stik
+
+* [PC Test Point - Miniature](./Project/Datasheet/Stik/5000-5004.PDF)

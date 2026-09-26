@@ -4,35 +4,16 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
 
 ## Datasheet
 
-* CanBus
-  * ESPHome
-    * [CAN Bus](https://esphome.io/components/canbus/)
-    * [ESP32 CAN](https://esphome.io/components/canbus/esp32_can/)
-    * [MCP2515](https://esphome.io/components/canbus/mcp2515/)
+* [CanBus](./Project/Datasheet/README.md#canbus)
+  * [ESPHome](./Project/Datasheet/README.md#esphome)
   * [Kabling](./Project/Datasheet/README.md#kabling)
-    * [Kabling med STP for CanBus](./Project/Datasheet/Kabeling/BrugSTPkabeltilCanBus.md)
-    * [3D printet Box for CanBus moduler](./Project/Datasheet/Kabeling/3D-printetBox-for-CanBus_moduler.md)
-* KiCad
-  * [Track impedans calculater](./Project/Datasheet/TrackImpedansCalculater.md)
-    * [How to design 90 ohm differential traces in KiCad - Impedance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=233s)
-    * [How to design 90 ohm differential traces in KiCad - Ground plane clearance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=717s)
-    * [Sierra Circuits - Impedance](https://impedance.app.protoexpress.com/)
-    * [pcbway multi-layer-laminated-structure](https://www.pcbway.com/multi-layer-laminated-structure.html)
-  * Custom Symbol and Footprints
-    * [Custom Symbol](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R "
-DIY Hideout")
-    * [Custom Footprints](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R&t=219 "
-DIY Hideout 3:39")
-* Parts:
-  * Semiconductor
-    * [NUP2105 - Dual Line CAN Bus Protector](./Project/Datasheet/Semiconductor/NUP2105L-D.PDF)
-    * [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Project/Datasheet/Semiconductor/ds16007.pdf)
-    * [SN65HVD230 - 3.3-V CAN Bus Transceivers](./Project/Datasheet/Semiconductor/sn65hvd230.pdf)
-  * Modules
-    * [ESP32 DEVKIT V1 - DOIT 30 GPIOs](./Project/Datasheet/Modules/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
-    * [Mini560Pro - Step Down DC-DC](./Project/Datasheet/Modules/Mini560Pro.pdf)
-  * Stik
-    * [PC Test Point - Miniature](./Project/Datasheet/Stik/5000-5004.PDF)
+* [KiCad](./Project/Datasheet/README.md#kicad)
+  * [Track impedans](./Project/Datasheet/README.md#track-impedans)
+  * [Custom Symbol and Footprints](./Project/Datasheet/README.md#custom-symbol-and-footprints)
+* [Parts:](./Project/Datasheet/README.md#parts)
+  * [Semiconductor](./Project/Datasheet/README.md#semiconductor)
+  * [Modules](./Project/Datasheet/README.md#modules)
+  * [Stik](./Project/Datasheet/README.md#stik)
 
 ## Libraries
 
