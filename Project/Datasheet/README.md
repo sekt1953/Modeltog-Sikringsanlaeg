@@ -41,6 +41,8 @@ DIY Hideout 3:39")
 
 * [ESP32 DEVKIT V1 - DOIT 30 GPIOs](./Modules/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
 * [Mini560Pro - Step Down DC-DC](./Modules/Mini560Pro/Mini560Pro.pdf)
+  * [Mini560Pro.FCStd](./Modules/Mini560Pro/Mini560Pro.FCStd)
+  * [Mini560Pro-BodyPad003.step](./Modules/Mini560Pro/Mini560Pro-BodyPad003.step)
 
 ### Stik
 
