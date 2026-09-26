@@ -12,20 +12,22 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
   * [Kabling](./Project/Datasheet/README.md#kabling)
     * [Kabling med STP for CanBus](./Project/Datasheet/Kabeling/BrugSTPkabeltilCanBus.md)
     * [3D printet Box for CanBus moduler](./Project/Datasheet/Kabeling/3D-printetBox-for-CanBus_moduler.md)
-  * KiCad
-    * [Track impedans calculater](./Project/Datasheet/TrackImpedansCalculater.md)
-      * [How to design 90 ohm differential traces in KiCad - Impedance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=233s)
-      * [How to design 90 ohm differential traces in KiCad - Ground plane clearance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=717s)
-      * [Sierra Circuits - Impedance](https://impedance.app.protoexpress.com/)
-      * [pcbway multi-layer-laminated-structure](https://www.pcbway.com/multi-layer-laminated-structure.html)
-    * Custom Symbol and Footprints
-      * [Custom Symbol](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R "
+* KiCad
+  * [Track impedans calculater](./Project/Datasheet/TrackImpedansCalculater.md)
+    * [How to design 90 ohm differential traces in KiCad - Impedance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=233s)
+    * [How to design 90 ohm differential traces in KiCad - Ground plane clearance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=717s)
+    * [Sierra Circuits - Impedance](https://impedance.app.protoexpress.com/)
+    * [pcbway multi-layer-laminated-structure](https://www.pcbway.com/multi-layer-laminated-structure.html)
+  * Custom Symbol and Footprints
+    * [Custom Symbol](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R "
 DIY Hideout")
-      * [Custom Footprints](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R&t=219 "
+    * [Custom Footprints](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R&t=219 "
 DIY Hideout 3:39")
+* Parts:
   * Semiconductor
     * [NUP2105 - Dual Line CAN Bus Protector](./Project/Datasheet/Semiconductor/NUP2105L-D.PDF)
     * [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Project/Datasheet/Semiconductor/ds16007.pdf)
+    * [SN65HVD230 - 3.3-V CAN Bus Transceivers](./Project/Datasheet/Semiconductor/sn65hvd230.pdf)
   * Modules
     * [Mini560Pro - Step Down DC-DC](./Project/Datasheet/Modules/Mini560Pro.pdf)
   * Stik
