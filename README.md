@@ -29,9 +29,12 @@ DIY Hideout 3:39")
     * [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Project/Datasheet/Semiconductor/ds16007.pdf)
     * [SN65HVD230 - 3.3-V CAN Bus Transceivers](./Project/Datasheet/Semiconductor/sn65hvd230.pdf)
   * Modules
+    * [ESP32 DEVKIT V1 - DOIT 30 GPIOs](./Project/Datasheet/Modules/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
     * [Mini560Pro - Step Down DC-DC](./Project/Datasheet/Modules/Mini560Pro.pdf)
   * Stik
     * [PC Test Point - Miniature](./Project/Datasheet/Stik/5000-5004.PDF)
+
+## Libraries
 
 ## Projekter
 
