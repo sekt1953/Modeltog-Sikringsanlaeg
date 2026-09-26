@@ -18,7 +18,11 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
       * [How to design 90 ohm differential traces in KiCad - Ground plane clearance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=717s)
       * [Sierra Circuits - Impedance](https://impedance.app.protoexpress.com/)
       * [pcbway multi-layer-laminated-structure](https://www.pcbway.com/multi-layer-laminated-structure.html)
-
+  * Semiconductor
+    * [NUP2105 - Dual Line CAN Bus Protector](./Project/Datasheet/Semiconductor/NUP2105L-D.PDF)
+    * [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Project/Datasheet/Semiconductor/ds16007.pdf)
+  * Stik
+    * [PC Test Point - Miniature](./Project/Datasheet/Stik/5000-5004.PDF)
 
 ## Projekter
 
