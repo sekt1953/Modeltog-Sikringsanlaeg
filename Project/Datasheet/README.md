@@ -17,7 +17,7 @@
 
 ### Track impedans
 
-* [Track impedans calculater](./Project/Datasheet/TrackImpedansCalculater.md)  
+* [Track impedans calculater](./TrackImpedansCalculater.md)  
 * [How to design 90 ohm differential traces in KiCad - Impedance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=233s)
 * [How to design 90 ohm differential traces in KiCad - Ground plane clearance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=717s)
 * [Sierra Circuits - Impedance](https://impedance.app.protoexpress.com/)
