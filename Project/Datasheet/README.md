@@ -17,10 +17,9 @@
 
 ### Track impedans
 
-* [Track impedans calculater](./TrackImpedansCalculater.md)  
+* [Sierra Circuits - Impedance](https://impedance.app.protoexpress.com/)
 * [How to design 90 ohm differential traces in KiCad - Impedance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=233s)
 * [How to design 90 ohm differential traces in KiCad - Ground plane clearance](https://www.youtube.com/watch?v=ABJs4LKFSbA&t=717s)
-* [Sierra Circuits - Impedance](https://impedance.app.protoexpress.com/)
 * [pcbway multi-layer-laminated-structure](https://www.pcbway.com/multi-layer-laminated-structure.html)
 
 ### Custom Symbol and Footprints
@@ -30,19 +29,19 @@ DIY Hideout")
 * [Custom Footprints](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R&t=219 "
 DIY Hideout 3:39")
 
-## Parts:
+## Parts
 
 ### Semiconductor
 
-* [NUP2105 - Dual Line CAN Bus Protector](./Project/Datasheet/Semiconductor/NUP2105L-D.PDF)
-* [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Project/Datasheet/Semiconductor/ds16007.pdf)
-* [SN65HVD230 - 3.3-V CAN Bus Transceivers](./Project/Datasheet/Semiconductor/sn65hvd230.pdf)
+* [NUP2105 - Dual Line CAN Bus Protector](./Semiconductor/NUP2105L-D.PDF)
+* [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Semiconductor/ds16007.pdf)
+* [SN65HVD230 - 3.3-V CAN Bus Transceivers](./Semiconductor/sn65hvd230.pdf)
 
 ### Modules
 
-* [ESP32 DEVKIT V1 - DOIT 30 GPIOs](./Project/Datasheet/Modules/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
-* [Mini560Pro - Step Down DC-DC](./Project/Datasheet/Modules/Mini560Pro.pdf)
+* [ESP32 DEVKIT V1 - DOIT 30 GPIOs](./Modules/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
+* [Mini560Pro - Step Down DC-DC](./Modules/Mini560Pro.pdf)
 
 ### Stik
 
-* [PC Test Point - Miniature](./Project/Datasheet/Stik/5000-5004.PDF)
+* [PC Test Point - Miniature](./Stik/5000-5004.PDF)
