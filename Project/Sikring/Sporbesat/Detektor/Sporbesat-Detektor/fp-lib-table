@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "sekt") (type "KiCad") (uri "/home/sekt/GitHub/KiCad-10/Lib/footprints/sekt.pretty") (options "") (descr ""))
+)

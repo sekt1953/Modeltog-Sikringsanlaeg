@@ -24,6 +24,8 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
   * Semiconductor
     * [NUP2105 - Dual Line CAN Bus Protector](./Project/Datasheet/Semiconductor/NUP2105L-D.PDF)
     * [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Project/Datasheet/Semiconductor/ds16007.pdf)
+  * Modules
+    * [Mini560Pro - Step Down DC-DC](./Project/Datasheet/Modules/Mini560Pro.pdf)
   * Stik
     * [PC Test Point - Miniature](./Project/Datasheet/Stik/5000-5004.PDF)
 
