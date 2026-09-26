@@ -8,7 +8,7 @@
 * [ESP32 CAN](https://esphome.io/components/canbus/esp32_can/)
 * [MCP2515](https://esphome.io/components/canbus/mcp2515/)
 
-### [Kabling](./Project/Datasheet/README.md#kabling)
+### [Kabling](./README.md#kabling)
 
 * [Kabling med STP for CanBus](./Project/Datasheet/Kabeling/BrugSTPkabeltilCanBus.md)
 * [3D printet Box for CanBus moduler](./Project/Datasheet/Kabeling/3D-printetBox-for-CanBus_moduler.md)
