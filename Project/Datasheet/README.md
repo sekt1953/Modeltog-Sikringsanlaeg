@@ -40,16 +40,21 @@
 
 ### Semiconductor
 
-* [NUP2105 - Dual Line CAN Bus Protector](./Semiconductor/NUP2105L-D.PDF)
-* [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Semiconductor/ds16007.pdf)
-* [SN65HVD230 - 3.3-V CAN Bus Transceivers](./Semiconductor/sn65hvd230.pdf)
+* Diode
+  * [PC847 - High Density Mounting Type Photocoupler](./Semiconductor/PC847.pdf)
+  * [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Semiconductor/ds16007.pdf)
+* CAN BUS
+  * [NUP2105 - Dual Line CAN Bus Protector](./Semiconductor/NUP2105L-D.PDF)
+  * [SN65HVD230 - 3.3-V CAN Bus Transceivers](./Semiconductor/sn65hvd230.pdf)
 
 ### Modules
 
-* [ESP32 DEVKIT V1 - DOIT 30 GPIOs](./Modules/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
-* [Mini560Pro - Step Down DC-DC](./Modules/Mini560Pro/Mini560Pro.pdf)
-  * [Mini560Pro.FCStd](./Modules/Mini560Pro/Mini560Pro.FCStd)
-  * [Mini560Pro-BodyPad003.step](./Modules/Mini560Pro/Mini560Pro-BodyPad003.step)
+* MCU
+  * [ESP32 DEVKIT V1 - DOIT 30 GPIOs](./Modules/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
+* DC-DC
+  * [Mini560Pro - Step Down DC-DC](./Modules/Mini560Pro/Mini560Pro.pdf)
+    * [Mini560Pro.FCStd](./Modules/Mini560Pro/Mini560Pro.FCStd)
+    * [Mini560Pro-BodyPad003.step](./Modules/Mini560Pro/Mini560Pro-BodyPad003.step)
 
 ### Stik
 
