@@ -50,7 +50,8 @@
 ### Modules
 
 * MCU
-  * [ESP32 DEVKIT V1 - DOIT 30 GPIOs](./Modules/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
+  * [ESP32 DEVKIT V1 - DOIT 30 GPIOs](./Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
+  * [ESP32-DOIT-DEVKIT-V1-Board](./Modules/MCU/61DjSU4I3LL._AC_SY450_.jpg)
 * DC-DC
   * [Mini560Pro - Step Down DC-DC](./Modules/Mini560Pro/Mini560Pro.pdf)
     * [Mini560Pro.FCStd](./Modules/Mini560Pro/Mini560Pro.FCStd)
