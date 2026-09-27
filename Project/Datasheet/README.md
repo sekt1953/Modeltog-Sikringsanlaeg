@@ -13,6 +13,11 @@
 * [Kabling med STP for CanBus](./Kabeling/BrugSTPkabeltilCanBus.md)
 * [3D printet Box for CanBus moduler](./Project/Datasheet/Kabeling/3D-printetBox-for-CanBus_moduler.md)
 
+### Some PCB
+
+* [ESP32 CAN Bus Shield (v1.0)](https://store.mrdiy.ca/p/esp32-can-bus-shield-v1-0/)
+  * [Schematic](./Modules/CanBus/ESP32_CAN_shield_schematic-1024x725.png)
+
 ## KiCad
 
 ### Track impedans
@@ -43,8 +48,6 @@ DIY Hideout 3:39")
 * [Mini560Pro - Step Down DC-DC](./Modules/Mini560Pro/Mini560Pro.pdf)
   * [Mini560Pro.FCStd](./Modules/Mini560Pro/Mini560Pro.FCStd)
   * [Mini560Pro-BodyPad003.step](./Modules/Mini560Pro/Mini560Pro-BodyPad003.step)
-* [ESP32 CAN Bus Shield (v1.0)](https://store.mrdiy.ca/p/esp32-can-bus-shield-v1-0/)
-  * [Schematic](./Modules/CanBus/ESP32_CAN_shield_schematic-1024x725.png)
 
 ### Stik
 
