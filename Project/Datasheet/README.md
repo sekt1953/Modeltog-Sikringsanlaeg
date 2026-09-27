@@ -54,6 +54,7 @@
 * DC-DC
   * [Mini560Pro - Step Down DC-DC](./Modules/Mini560Pro/Mini560Pro.pdf)
     * [Mini560Pro.FCStd](./Modules/Mini560Pro/Mini560Pro.FCStd)
+    * [Mini560Pro.png](./Modules/Mini560Pro/Mini560Pro.png)
     * [Mini560Pro-BodyPad003.step](./Modules/Mini560Pro/Mini560Pro-BodyPad003.step)
 
 ### Stik
