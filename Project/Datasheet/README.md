@@ -66,3 +66,6 @@
 * [Skrueterminal 5,08mm](./Stik/SkrueTerminal/Skrueterminal_508.png)
   * [Skrueterminal_508.FCStd](./Stik/SkrueTerminal/Skrueterminal_508.FCStd)
   * [Skrueterminal_508.step](./Stik/SkrueTerminal/Skrueterminal_508.step)
+* [KF2510_5_90.png](./Stik/Molex/KF2510_5_90.png)
+  * [KF2510_5_90.FCStd](./Stik/Molex/KF2510_5_90.FCStd)
+  * [KF2510_5_90.step](./Stik/Molex/KF2510_5_90.step)
