@@ -55,6 +55,6 @@
 
 * [PC Test Point - Miniature](./Stik/5000-5004.PDF)
 * [RJ45_RJ064-LCP](./Stik/RJ45_RJ064-LCP/RJ45_RJ064-LCP_Pinout.png)
-* [Skrueterminal 5,08mm](./Stik/SkrueTerminal./Stik/SkrueTerminal/Skrueterminal_508.png)
+* [Skrueterminal 5,08mm](./Stik/SkrueTerminal/Skrueterminal_508.png)
   * [Skrueterminal_508.FCStd](./Stik/SkrueTerminal/Skrueterminal_508.FCStd)
   * [Skrueterminal_508.step](./Stik/SkrueTerminal/Skrueterminal_508.step)
