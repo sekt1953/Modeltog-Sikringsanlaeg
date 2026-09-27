@@ -47,4 +47,4 @@ DIY Hideout 3:39")
 ### Stik
 
 * [PC Test Point - Miniature](./Stik/5000-5004.PDF)
-* [RJ45_RJ064-LCP](./Stik/RJ45_RJ064-LCP/S6359d72279ae4c8391baf25e6725ddcam.avif)
+* [RJ45_RJ064-LCP](./Stik/RJ45_RJ064-LCP/RJ45_RJ064-LCP_Pinout.png)
