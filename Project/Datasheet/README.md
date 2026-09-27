@@ -53,3 +53,6 @@ DIY Hideout 3:39")
 
 * [PC Test Point - Miniature](./Stik/5000-5004.PDF)
 * [RJ45_RJ064-LCP](./Stik/RJ45_RJ064-LCP/RJ45_RJ064-LCP_Pinout.png)
+* [Skrueterminal 5,08mm](./Stik/SkrueTerminal/Skærmbillede%20fra%202026-09-27%2018-30-30.png)
+  * [Skrueterminal_508.FCStd](./Stik/SkrueTerminal/Skrueterminal_508.FCStd)
+  * [Skrueterminal_508.step](./Stik/SkrueTerminal/Skrueterminal_508.step)
