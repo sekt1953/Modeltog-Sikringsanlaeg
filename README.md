@@ -20,6 +20,10 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
 * KiCad Libraries:
   * [Modules Symboler](./Project/libraries/SEKT_Modules.kicad_sym)
   * [Modules Footprint](./Project/libraries/SEKT_Modules.pretty/)
+* FreeCAD 3D Step files:
+  * [Semiconductor]()
+  * [Modules]()
+  * [Stik]()
 
 ## Projekter
 
