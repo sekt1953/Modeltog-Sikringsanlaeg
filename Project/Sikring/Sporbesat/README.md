@@ -2,6 +2,8 @@
 
 ## Detektor
 
+![Sporbesat-Detektor.png](./Detektor/Images/Sporbesat-Detektor.png)
+
 * KiCad (Schmatic & PCB)
   * [Sporbesat-Detektor.kicad_pro](./Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_pro)
   * [Sporbesat-Detektor.kicad_sch](./Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_sch)
