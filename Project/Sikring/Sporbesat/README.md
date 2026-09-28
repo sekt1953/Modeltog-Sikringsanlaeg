@@ -6,11 +6,13 @@
 
 * Detektor kredsløb
   * [Beskrivelse af Sporbesat Detektor Diagram](./Detektor/Beskrivelse.md)
-  * KiCad (Schmatic & PCB)
+  * KiCad (Schmatic & PCB) filer:
     * [Sporbesat-Detektor.kicad_pro](./Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_pro)
     * [Sporbesat-Detektor.kicad_sch](./Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_sch)
     * [Sporbesat-Detektor.kicad_pcb](./Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_pcb)
     * [Sporbesat-Detektor.kicad_prl](./Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_prl)
+  * FreeCAD 3D modeller af komponenter:
+    * [Datasheet Parts](../../Datasheet/README.md#parts)
 
 ## Transmitter
 
