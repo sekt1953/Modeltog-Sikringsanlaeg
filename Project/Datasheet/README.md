@@ -62,6 +62,8 @@
 ### Stik
 
 * [PC Test Point - Miniature](./Stik/5000-5004.PDF)
+  * [PC_Test_Point-Minature.FCStd](./Stik/TestPoint/PC_Test_Point-Minature.FCStd)
+  * [PC_Test_Point-Minature.step](./Stik/TestPoint/PC_Test_Point-Minature.step)
 * [RJ45_RJ064-LCP](./Stik/RJ45_RJ064-LCP/RJ45_RJ064-LCP_Pinout.png)
 * [Skrueterminal 5,08mm](./Stik/SkrueTerminal/Skrueterminal_508.png)
   * [Skrueterminal_508.FCStd](./Stik/SkrueTerminal/Skrueterminal_508.FCStd)
