@@ -16,6 +16,6 @@
 
 |Navn|symbol|footprint|3D|Step|
 |:---:|:---:|:---:|:---:|:---:|
-|PC_Test_Point-Minature.|||![PC_Test_Point](../Datasheet/Stik/TestPoint/PC_Test_Point-Minature.png)|[Step](../Datasheet/Stik/TestPoint/PC_Test_Point-Minature.step)|
+|[PC_Test_Point-Minature](../Datasheet/Stik/TestPoint/5000-5004.PDF)|||![PC_Test_Point](../Datasheet/Stik/TestPoint/PC_Test_Point-Minature.png)|[Step](../Datasheet/Stik/TestPoint/PC_Test_Point-Minature.step)|
 |Skrueterminal 5,08mm|||![](../Datasheet/Stik/SkrueTerminal/Skrueterminal_508.png)|[Step](../Datasheet/Stik/SkrueTerminal/Skrueterminal_508.step)|
 |Molex KF2510_5_90 2,54mm|||![](../Datasheet/Stik/Molex/KF2510_5_90.png)|[Step](../Datasheet/Stik/Molex/KF2510_5_90.step)|
