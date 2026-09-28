@@ -13,7 +13,8 @@
   * Derefter går der ca. 20 µSec. med afbrudt forbindelse mellem Emiter og Collector, og derved slukker NPN transistoren i Optokobleren signalet (Off).
   * Denne pulsering vil fortsætte så længe der er vogne på skinnederne, det er ikke helt det vi ønsker, vil gerne have et stabilt signal på udgangen (TP3), der for infører vi en kondensator:
   * C1 skal holde TP2 (Høj) i de ca. 20 µSec. DCC signalet er (Lav) tilstand, men ikke i for lang tid, da vi gerne skal kunne frasorterer støjpulser.
-* MCUen skal programeres til kun at reagerer på signaler længere end 50 mSec. for at skifte til at vise at afsnittet er besat, på samme måde skal den ikke skifte til at vise afsnittet frit før der manglet signal i mere end 1-2 Sec.
+  * TP3: her forbindes sensor til CANBUS Transmitter.
+* CANBUS Transmitter skal programeres til kun at reagerer på signaler længere end 50 mSec. for at skifte til at vise at afsnittet er besat, på samme måde skal den ikke skifte til at vise afsnittet frit før der manglet signal i mere end 1-2 Sec.
 * ***NB!***
   * jeg har ikke helt lagt mig fast på værdierne af R1, R2 & C1, det kommer and på test der vil blive udført på køredage.
 
