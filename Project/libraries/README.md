@@ -9,8 +9,8 @@
 
 |Navn|Kicad symbol|KiCad footprint|FreeCAD 3D|
 |:---:|:---:|:---:|:---:|
-|Mini560Pro||![](./Images/Skærmbillede%20fra%202026-09-28%2018-11-01.png)|![](../Datasheet/Modules/Mini560Pro/Mini560Pro_3D.png)|
-|ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO|||![](../Datasheet/Modules/MCU/Skærmbillede%20fra%202026-09-28%2015-47-49.png)
+|Mini560Pro||![FootPrint](./Images/Skærmbillede%20fra%202026-09-28%2018-11-01.png)|![](../Datasheet/Modules/Mini560Pro/Mini560Pro_3D.png)|
+|ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO|||![](../Datasheet/Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png)
 
 ## Stik
 
