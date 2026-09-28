@@ -61,7 +61,8 @@
 
 ### Stik
 
-* [PC Test Point - Miniature](./Stik/5000-5004.PDF)
+* [PC_Test_Point-Minature.png](./Stik/TestPoint/PC_Test_Point-Minature.png)
+  * [PC Test Point - Datasheet](./Stik/5000-5004.PDF)
   * [PC_Test_Point-Minature.FCStd](./Stik/TestPoint/PC_Test_Point-Minature.FCStd)
   * [PC_Test_Point-Minature.step](./Stik/TestPoint/PC_Test_Point-Minature.step)
 * [RJ45_RJ064-LCP](./Stik/RJ45_RJ064-LCP/RJ45_RJ064-LCP_Pinout.png)
