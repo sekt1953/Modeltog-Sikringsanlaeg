@@ -29,7 +29,7 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
 
 * [Sporbesat](./Project/Sikring/Sporbesat/README.md)
   * Detektor kredsløb
-    * [Beskrivelse af Sporbesat Detektor Diagram](./Project/Sikring/Sporbesat/README.md)
+    * [Beskrivelse af Sporbesat Detektor Diagram](./Project/Sikring/Sporbesat/Detektor/Beskrivelse.md)
     * KiCad Filer:
       * [Sporbesat-Detektor.kicad_sch](./Project/Sikring/Sporbesat/Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_sch)
   * Transmitterbus
