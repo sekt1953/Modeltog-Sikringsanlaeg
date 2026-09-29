@@ -17,7 +17,7 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
 
 ## [Libraries](./Project/libraries/README.md)
 
-* KiCad Libraries:
+* [KiCad Libraries:](./Project/libraries/KiCad/)
   * [Modules Symboler](./Project/libraries/SEKT_Modules.kicad_sym)
   * [Modules Footprint](./Project/libraries/SEKT_Modules.pretty/)
 * [FreeCAD 3D Step files:](./Project/libraries/README.md)
