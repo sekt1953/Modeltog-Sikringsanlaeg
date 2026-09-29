@@ -18,5 +18,5 @@
 |Navn|symbol|footprint|3D|Step|
 |:---:|:---:|:---:|:---:|:---:|
 |[PC_Test_Point-Minature](../Datasheet/Stik/TestPoint/5000-5004.PDF)|![2021-58-37.png](./Images/Skærmbillede%20fra%202026-09-29%2021-58-37.png)||![PC_Test_Point](../Datasheet/Stik/TestPoint/PC_Test_Point-Minature.png)|[Step](../Datasheet/Stik/TestPoint/PC_Test_Point-Minature.step)|
-|Skrueterminal 5,08mm|||![](../Datasheet/Stik/SkrueTerminal/Skrueterminal_508.png)|[Step](../Datasheet/Stik/SkrueTerminal/Skrueterminal_508.step)|
-|Molex KF2510_5_90 2,54mm|||![](../Datasheet/Stik/Molex/KF2510_5_90.png)|[Step](../Datasheet/Stik/Molex/KF2510_5_90.step)|
+|Skrueterminal 5,08mm|![2022-02-16.png](./Images/Skærmbillede%20fra%202026-09-29%2022-02-16.png) ||![Skrueterminal_508.png](../Datasheet/Stik/SkrueTerminal/Skrueterminal_508.png)|[Step](../Datasheet/Stik/SkrueTerminal/Skrueterminal_508.step)|
+|Molex KF2510_5_90 2,54mm|||![KF2510_5_90.png](../Datasheet/Stik/Molex/KF2510_5_90.png)|[Step](../Datasheet/Stik/Molex/KF2510_5_90.step)|
