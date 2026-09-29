@@ -50,8 +50,8 @@
 				)
 			)
 		)
-		(property "Description" "Mini560 PRO Step-Down Power Supply Module"
-			(at 0 0 0)
+		(property "Description" "Mini560 PRO Step-Down 3V3 Power Supply Module"
+			(at 7.366 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)

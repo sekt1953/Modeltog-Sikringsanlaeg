@@ -9,8 +9,8 @@
 * **D1 & D2:** To 5A Dioder i antiparallel, herigennem leveres hovedparten af strømmen til skinne afsnittet.
 * **Q1** Emitter/Basis og R1 bruges til at måle om der vogne på skinnederne:
   * **R1** skal begrænse strømmen i Basis som på ingen måde må over stige 5mA.
-  * Er der belastning på skinnederne Leder Q1 Strøm fra Emiter til Collector, i ca 20 µSec. det er den tid DCC signalet er Høj, og videre til Optokobleren, som så for NPN Transistoren i optokobleren til at gå Lav (On).
-  * Derefter går der ca. 20 µSec. med afbrudt forbindelse mellem Emiter og Collector, og derved slukker NPN transistoren i Optokobleren signalet (Off).
+  * Er der belastning på skinnederne Leder Q1 Strøm fra Emiter til Collector, i ca 50-100 µSec. det er den tid DCC signalet er Høj, og videre til Optokobleren, som så for NPN Transistoren i optokobleren til at gå Lav (On).
+  * Derefter går der ca. 50-100 µSec. med afbrudt forbindelse mellem Emiter og Collector, og derved slukker NPN transistoren i Optokobleren signalet (Off).
   * Denne pulsering vil fortsætte så længe der er vogne på skinnederne, det er ikke helt det vi ønsker, vil gerne have et stabilt signal på udgangen (TP3), der for infører vi en kondensator:
   * **C1** skal holde TP2 (Høj) i de ca. 20 µSec. DCC signalet er (Lav) tilstand, men ikke i for lang tid, da vi gerne skal kunne frasorterer støjpulser.
   * **TP3:** her forbindes sensor til CANBUS Transmitter.
@@ -21,3 +21,11 @@
 ## Hvordan anbringes sensoren på anlæget
 
 Sensoren på diagrammet er en af fire på samme print, sensor printet anbringes så tæt på skinneafsnittet som muligt, sammen med et transmisions print som sender data til den centrale enhed via *CANBUS Transmitter* er er en meget støjemun dataforbindelse, det som bruges i moderne biler og industrien.
+
+## DCC
+
+* Basic signal uden belastning
+  * ![](./Images/DCC_Signal_Basic.bmp)
+  * Propen er i x10 så det giver et spændingsving på ca. +-20V
+
+
