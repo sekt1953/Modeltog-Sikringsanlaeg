@@ -2,7 +2,7 @@
 
 Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
 
-## Datasheet
+## [Datasheet](./Project/Datasheet/README.md#datasheet)
 
 * [CanBus](./Project/Datasheet/README.md#canbus)
   * [ESPHome](./Project/Datasheet/README.md#esphome)
