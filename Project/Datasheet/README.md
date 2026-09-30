@@ -13,11 +13,6 @@
 * [Kabling med STP for CanBus](./Kabeling/BrugSTPkabeltilCanBus.md)
 * [3D printet Box for CanBus moduler](./Kabeling/3D-printetBox-for-CanBus_moduler.md)
 
-### Some PCB
-
-* [ESP32 CAN Bus Shield (v1.0)](https://store.mrdiy.ca/p/esp32-can-bus-shield-v1-0/)
-  * [Schematic](./Modules/CanBus/ESP32_CAN_shield_schematic-1024x725.png)
-
 ## KiCad
 
 ### Track impedans
@@ -52,6 +47,9 @@
 
 * CANBUS
   * [CAN til TTL transceiver-modul med SN65HVD230](https://let-elektronik.dk/can-transceiver-modul-sn65hvd230)
+  * [ESP32 CAN Bus Shield (v1.0)](https://store.mrdiy.ca/p/esp32-can-bus-shield-v1-0/)
+    * [Schematic](./Modules/CanBus/ESP32_CAN_shield_schematic-1024x725.png)
+
 * MCU
   * [ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png](./Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png)
     * [ESP32 DEVKIT V1 - DOIT 30 GPIOs - Pinout](./Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
