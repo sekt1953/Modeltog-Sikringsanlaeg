@@ -12,7 +12,7 @@
 |[Mini560Pro](../Datasheet/Modules/Mini560Pro/Mini560Pro.pdf)|![Mini560Pro_3D_Symbol.png](../Datasheet/Modules/Mini560Pro/Mini560Pro_3D_Symbol.png)|![FootPrint](./Images/Skærmbillede%20fra%202026-09-28%2018-11-01.png)|![](../Datasheet/Modules/Mini560Pro/Mini560Pro_3D.png)|[step](../Datasheet/Modules/Mini560Pro/Mini560Pro-BodyPad003.step)|FCStd|
 |[ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO](../Datasheet/Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)|![](./Images/ESP32_DEVKIT_V1_30pins.png)||![ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png](../Datasheet/Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png)|[Step](../Datasheet/Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.step)
 |[ESP-32_38_Pin](../Datasheet/Modules/MCU/ESP-32_38_Pin_diagram_480x480.webp)|![ESP32_DEVKIT_38PINS.png](./Images/ESP32_DEVKIT_38PINS.png)||![ESP32_38Pin.png](../Datasheet/Modules/MCU/ESP32_38Pin.png)|[Step](../Datasheet/Modules/MCU/ESP32_38Pin.step)|
-|[CAN til TTL transceiver-modul med SN65HVD230](https://let-elektronik.dk/can-transceiver-modul-sn65hvd230)||||||
+|[CAN til TTL transceiver-modul med SN65HVD230](https://let-elektronik.dk/can-transceiver-modul-sn65hvd230)|![modul SN65HVD230.png](./Images/CANtilTTLtransceiver-modulmedSN65HVD230.png)|||||
 
 
 ## Stik
