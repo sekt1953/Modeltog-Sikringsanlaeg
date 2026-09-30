@@ -29,6 +29,7 @@
   * [Footprints](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R&t=219 "DIY Hideout")
   * [Linking Symbol with Footprint](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R&t=411 "DIY Hideout")
   * [Preview Symbol & Footprint](https://youtu.be/xpBpxipfXFA?list=PLhEL_BCoP-PsyjJb1Pl8QnrqaBn_YuJ7R&t=438 "DIY Hideout")
+* [KiCad Tutorial: How to Create a Custom Footprint](https://youtu.be/sDvQ3Wh98AI "AISLER")
 * [FreeCAD Export to KiCAD](https://youtu.be/JjDKCBUYoPU "mathcodeprint")
 
 ## Parts
