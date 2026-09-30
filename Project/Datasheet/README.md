@@ -6,7 +6,11 @@
 
 * [CAN Bus](https://esphome.io/components/canbus/)
 * [ESP32 CAN](https://esphome.io/components/canbus/esp32_can/)
-* [MCP2515](https://esphome.io/components/canbus/mcp2515/)
+  * [3V3 CAN Transiver SN65HVD230](https://esphome.io/components/canbus/esp32_can/#wiring-options)
+  * [Overview of 3.3V Controller Area Network (CAN)
+Transceivers](https://www.ti.com/lit/an/slla337a/slla337a.pdf)
+  * [ESPHome and TI TCAN33x/TCAN34x family](./Semiconductor/ESPHome_TCAN340.md) ***bør nok bruges i stedet for SN65HDV230***
+* [MCP2515](https://esphome.io/components/canbus/mcp2515/) ***Kommer nok ikk i brug***
 
 ### Kabling
 
