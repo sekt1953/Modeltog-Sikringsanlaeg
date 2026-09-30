@@ -11,6 +11,7 @@
 ### Kabling
 
 * [Kabling med STP for CanBus](./Kabeling/BrugSTPkabeltilCanBus.md)
+  * [CAN-bus-jord (CAN GND)](./Kabeling/CAN-bus-jord_CAN_GND.md)
 * [3D printet Box for CanBus moduler](./Kabeling/3D-printetBox-for-CanBus_moduler.md)
 
 ## KiCad
