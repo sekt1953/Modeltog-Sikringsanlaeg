@@ -40,8 +40,9 @@
 
 ### Semiconductor
 
-* Diode
+* Optocobler
   * [PC847 - High Density Mounting Type Photocoupler](./Semiconductor/PC847.pdf)
+* Diode
   * [S5AC - 5.0A SURFACE MOUNT GLASS PASSIVATED RECTIFIER](./Semiconductor/ds16007.pdf)
 * CAN BUS
   * [NUP2105 - Dual Line CAN Bus Protector](./Semiconductor/NUP2105L-D.PDF)
