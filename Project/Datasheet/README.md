@@ -50,6 +50,8 @@
 
 ### Modules
 
+* CANBUS
+  * [CAN til TTL transceiver-modul med SN65HVD230](https://let-elektronik.dk/can-transceiver-modul-sn65hvd230)
 * MCU
   * [ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png](./Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png)
     * [ESP32 DEVKIT V1 - DOIT 30 GPIOs - Pinout](./Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)
