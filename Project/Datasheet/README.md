@@ -46,7 +46,7 @@
 ### Modules
 
 * CANBUS
-  * [CAN til TTL transceiver-modul med SN65HVD230](https://let-elektronik.dk/can-transceiver-modul-sn65hvd230)
+  * [CAN til TTL transceiver-modul med SN65HVD230](https://let-elektronik.dk/can-transceiver-modul-sn65hvd230) ***indkøbt til brug i test opsætning af CANBUS.***
   * [ESP32 CAN Bus Shield (v1.0)](https://store.mrdiy.ca/p/esp32-can-bus-shield-v1-0/)
     * [Schematic](./Modules/CanBus/ESP32_CAN_shield_schematic-1024x725.png)
 
