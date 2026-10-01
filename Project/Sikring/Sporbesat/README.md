@@ -1,8 +1,8 @@
 # Sikringsanlæg - Sporbesat
 
-## Detektor
+## 4 ports sporbesat detektor kredsløb
 
-![Sporbesat-Detektor.png](./Detektor/Images/Sporbesat-Detektor.png)
+![Sporbesat-Detektor.png](./Detektor/Images/test.svg)
 
 * Detektor kredsløb
   * [Beskrivelse af Sporbesat Detektor Diagram](./Detektor/Beskrivelse.md)
