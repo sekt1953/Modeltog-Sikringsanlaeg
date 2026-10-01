@@ -1,56 +1,92 @@
-# CAN til TTL transceiver-modul med SN65HVD230
+# CAN-transceiver-modul med SN65HVD230 (VP230)
 
-Kilde: [let-elektronik.dk](https://let-elektronik.dk/can-transceiver-modul-sn65hvd230)
+Kort modulnote til brug i eget projekt.
+Fuld beskrivelse, billeder og køb: [let-elektronik.dk/can-transceiver-modul-sn65hvd230](https://let-elektronik.dk/can-transceiver-modul-sn65hvd230)
 
-## Beskrivelse
+## Hvad modulet gør
 
-* Dette CAN til TTL transceiver-modul er det fysiske bindeled mellem en mikrocontrollers indbyggede CAN-controller og en rigtig CAN-bus. Det omsætter de logiske CAN_TX / CAN_RX-signaler til de differentielle CAN-H / CAN-L-niveauer, der kører på bussen – og den anden vej rundt.
-* Modulet er bygget op omkring transceiveren SN65HVD230 (chippen er mærket VP230, som er mærkningen for SN65HVD230 i SOIC-8; de øvrige linjer 83M og AFC3 er dato- og lotkoder). SN65HVD230 er en af de mest brugte 3,3 V CAN-transceivere. På modulet sidder desuden en XC6206 3,3 V spændingsregulator, så modulet kan forsynes med både 3,3 V og 5 V, samt en indbygget 120 Ω termineringsmodstand.
-* Modulet er ideelt til MCU'er, der allerede har en CAN-controller indbygget – fx ESP32 (TWAI), STM32 (bxCAN/FDCAN i klassisk CAN-tilstand) og lignende. Har din mikrocontroller ikke en CAN-controller (fx Arduino Uno eller Raspberry Pi), så skal du i stedet bruge et modul med både controller og transceiver, fx et MCP2515-modul.
+Modulet er **kun en transceiver** — det fysiske lag mellem en MCU's CAN-controller og
+bussen. Det oversætter CAN_TX/CAN_RX til de differentielle CAN-H/CAN-L-niveauer.
+Du skal derfor bruge en MCU med CAN-controller indbygget (ESP32 = TWAI, STM32 = bxCAN/FDCAN).
+Arduino Uno og Raspberry Pi har ingen CAN-controller — brug et MCP2515-modul i stedet.
 
-## Egenskaber
+Ombord: SN65HVD230 (mærket **VP230**, SOIC-8), XC6206 3,3 V LDO, 120 Ω terminering (R3).
 
-* Kompatibel med ISO 11898-2 (high-speed CAN)
-* Hastigheder op til 1 Mbit/s
-* Forsyning 3,3-5 V via indbygget 3,3 V regulator (XC6206)
-* Indbygget 120 Ω terminering mellem CAN-H og CAN-L (R3)
-* Høj indgangsimpedans – op til 120 noder på samme bus
-* ±16 kV ESD-beskyttelse (HBM) på busbenene
-* Busbenene tåler fejlspændinger fra -4 V til +16 V, common mode-område -2 V til +7 V
-* Termisk nedlukning og open-circuit fail-safe
-* En node uden strøm forstyrrer ikke bussen, og chippen er beskyttet mod glitches ved tilslutning under drift (hot-plug)
+## Tilslutning
 
-# Spændinger – sådan bruger du modulet
+| Modul | Forbindes til | Bemærkning |
+|:---|:---|:---|
+| VCC | 3,3 V eller 5 V | LDO ombord, så begge virker |
+| GND | GND | |
+| TX | MCU CAN_TX | **3,3 V logik** — se advarsel nedenfor |
+| RX | MCU CAN_RX | afgiver ca. 3,3 V højt niveau |
+| H / L / stel | skrueterminal til bussen | træk altid stel med rundt i anlægget |
 
-* **Forsyning (VCC): 3,3-5 V.** Selve SN65HVD230 kører på 3,3 V, men modulets indbyggede XC6206-regulator sørger for det, så VCC kan tilsluttes enten 3,3 V eller 5 V. Ved 3,3 V forsyning får chippen lidt under 3,3 V pga. regulatorens spændingsfald – det er helt normalt, da chippen fungerer ned til 3,0 V.
-* **Logikniveau (TX/RX): 3,3 V.** Uanset forsyningsspænding arbejder TX og RX på 3,3 V-niveau, fordi de går direkte til transceiver-chippen.
-* **3,3 V mikrocontroller (ESP32, STM32, Teensy 4 m.fl.):** Forbind direkte. VCC til 3,3 V (eller 5 V), GND til GND, TX til MCU'ens CAN_TX og RX til CAN_RX. Ingen niveauomsætning nødvendig.
-* **5 V mikrocontroller med indbygget CAN:** VCC kan tages direkte fra 5 V. RX-udgangen giver ca. 3,3 V som højt niveau, hvilket de fleste 5 V MCU'er læser som logisk 1 – men tjek din MCU's datablad. TX-signalet fra en 5 V MCU må ikke gå direkte ind i modulet; brug en spændingsdeler (fx 1 kΩ / 2 kΩ) eller en niveauomsætter, så TX max er 3,3 V.
-* **Blandet bus (3,3 V og 5 V noder):** På bus-siden overholder SN65HVD230 ISO 11898-2 og kommunikerer uden problemer med noder, der bruger 5 V transceivere som TJA1050, MCP2551 eller PCA82C250 – det er den differentielle spænding mellem CAN-H og CAN-L, der tæller, ikke forsyningsspændingen.
-* **Køretøjer og 12/24 V anlæg:** CAN-bussen i fx en bil kører på de samme differentielle niveauer, så modulet kan kobles på bussen. Forsyningen skal dog tages fra 3,3 V eller 5 V – aldrig direkte fra 12 V. Busbenene tåler op til +16 V ved fejl, så de er ikke beskyttet mod kortslutning til 24 V.
+## Terminering — det der oftest går galt
 
-## Terminering – 120 Ω
+En CAN-bus skal have 120 Ω i **hver ende**, og kun der. Måler du mellem H og L med
+strømmen slukket, skal du se ca. **60 Ω** på en korrekt termineret bus.
 
-* På MCU-siden forbindes **VCC** (3,3-5 V), **GND, TX** (CAN_TX) og **RX** (CAN_RX). På bus-siden sidder en **3-polet skrueterminal** til **H** (CAN-H), **L** (CAN-L) og **stel**. Forbind stel mellem noderne, så de har fælles reference.
+* Modul som **endepunkt**: lad R3 sidde.
+* Modul **midt på bussen**: lød R3 af. Tre moduler med R3 i giver ca. 40 Ω, og så
+  begynder bussen at give fejl — typisk sporadiske error frames, ikke total stilhed,
+  hvilket gør det svært at finde.
+* To moduler direkte sammen = en korrekt termineret test-bus.
+
+## 3,3 V vs. 5 V — en faldgrube
+
+TX og RX kører på 3,3 V uanset hvad VCC er, fordi de går direkte på transceiveren.
+
+* 3,3 V MCU (ESP32, STM32, Teensy 4): forbind direkte, ingen niveauomsætning.
+* 5 V MCU: VCC må gerne være 5 V, og RX læses normalt fint som logisk 1 — men
+  **TX fra en 5 V MCU må ikke gå direkte ind i modulet.** Brug spændingsdeler
+  (fx 1 kΩ/2 kΩ) eller en niveauomsætter, så modulets TX-ben max ser 3,3 V.
+* Blandet bus er intet problem: på bus-siden er niveauerne ISO 11898-2, så modulet
+  taler uden videre med 5 V transceivere som TJA1050, MCP2551 og PCA82C250.
+* 12/24 V anlæg: bussen kan kobles på, men forsyningen skal komme fra 3,3/5 V —
+  aldrig fra 12 V. Busbenene tåler +16 V ved fejl, ikke kortslutning til 24 V.
+
+## Tjekliste når bussen ikke kører
+
+1. Måler du ca. 60 Ω mellem H og L (strøm slukket)? Ellers er termineringen forkert.
+2. Er H og L byttet om et sted i anlægget?
+3. Er stel trukket med mellem noderne?
+4. Kører alle noder samme bitrate?
+5. Er der en 5 V node hvis TX går direkte ind i et 3,3 V modul?
+6. Sidder TX/RX byttet om mellem MCU og modul?
+
+## ESP32 (ESP-IDF, TWAI) — minimalt eksempel
+
+Tilpas GPIO-numre og bitrate til dit eget anlæg.
+
+```c
+twai_general_config_t g = TWAI_GENERAL_CONFIG_DEFAULT(GPIO_NUM_21,  // -> modulets TX
+                                                      GPIO_NUM_22,  // <- modulets RX
+                                                      TWAI_MODE_NORMAL);
+twai_timing_config_t  t = TWAI_TIMING_CONFIG_500KBITS();
+twai_filter_config_t  f = TWAI_FILTER_CONFIG_ACCEPT_ALL();
+
+twai_driver_install(&g, &t, &f);
+twai_start();
+```
 
 ## Specifikationer
 
 |||
 |:---|:---|
-|Transceiver-chip|SN65HVD230 (mærket VP230), SOIC-8|
-|Spændingsregulator|XC6206, 3,3 V LDO|
-|Type|CAN-transceiver (CAN-bus ↔ CAN_TX/RX logikniveau)|
+|Transceiver|SN65HVD230 (mærket VP230), SOIC-8|
+|Regulator|XC6206, 3,3 V LDO|
 |Standard|ISO 11898-2 (high-speed CAN)|
-|Hastighed|Op til 1 Mbit/s|
+|Hastighed|op til 1 Mbit/s|
 |Forsyning|3,3-5 V|
 |Logikniveau TX/RX|3,3 V|
 |Terminering|120 Ω indbygget (R3, kan fjernes)|
-|Antal noder|Op til 120 på samme bus|
-|ESD-beskyttelse|±16 kV HBM på busbenene|
-|Busfejlspænding|-4 V til +16 V|
-|Til brug med|MCU med indbygget CAN-controller (ESP32, STM32 m.fl.)|
+|Antal noder|op til 120|
+|ESD|±16 kV HBM på busbenene|
+|Busfejlspænding|-4 V til +16 V (common mode -2 V til +7 V)|
 |Bus-tilslutning|3-polet skrueterminal: H, L, stel|
-|MCU-tilslutning|VCC, GND, TX, RX|
 |Boardmål|40,7 × 13,76 mm|
 
-Bemærk: Dette modul indeholder kun en CAN-transceiver – ikke en CAN-controller.
+---
+Modulnoten er skrevet af [Let-Elektronik](https://let-elektronik.dk/can-transceiver-modul-sn65hvd230)
+og må frit bruges og tilpasses i dette projekt.
