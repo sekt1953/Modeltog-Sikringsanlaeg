@@ -5,3 +5,5 @@
 * MCU
   * ESP32-wroom-32D
   
+![](../Images/Skærmbillede%20fra%202026-10-02%2020-14-29.png)
+

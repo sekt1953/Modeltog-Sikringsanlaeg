@@ -22,6 +22,8 @@
 
 ### CanBus
 
+![](./TransmitterBus/Images/Skærmbillede%20fra%202026-10-02%2020-14-29.png)
+
 #### KiCad Schmatic & PCB
 
 [esp32-can-bus-shield-v1-0](https://store.mrdiy.ca/p/esp32-can-bus-shield-v1-0/)
