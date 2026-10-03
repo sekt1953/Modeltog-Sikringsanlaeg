@@ -1,6 +1,6 @@
 # Beskrivelse af functionen af Sporbesat detektor
 
-![Sporbesat-Detektor.png](./Images/Sporbesat-Detektor.png)
+![Sporbesat-Detektor.png](./Images/Sporbesat-Detektor1.png)
 
 ## Test Board
 
