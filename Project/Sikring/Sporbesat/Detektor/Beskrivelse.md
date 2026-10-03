@@ -4,7 +4,7 @@
 
 ## Test Board
 
-![Stripboard_49x18_bb.png](../../../Fritzing/Stripboard_49x18_bb1.png)
+![Stripboard_49x18_bb.png](../../../Fritzing/Stripboard_49x18_bb.png)
 ![](../../../Fritzing/Stripboard_49x18_schem.png) 
 
 ## Diagram beskrivelse
