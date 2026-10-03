@@ -4,10 +4,19 @@
 
 ## Test Board
 
-![Stripboard_49x18_bb.png](../../../Fritzing/Stripboard_49x18_bb.png)
-![](../../../Fritzing/Stripboard_49x18_schem.png) 
+* Fritzing
+  * ![Stripboard_49x18_schem.png](../../../Fritzing/Stripboard_49x18_schem.png)
+  * ![Stripboard_49x18_bb.png](../../../Fritzing/Stripboard_49x18_bb.png)
+  * [Stripboard_49x18.fzz](../../../Fritzing/Stripboard_49x18.fzz)
 
-## Diagram beskrivelse
+* Ingen Kondensator
+  * ![C_ingen.bmp](./Images/C_ingen.bmp)
+* C = 100nF
+  * ![C_100nF.bmp](./Images/C_100nF.bmp)
+* C = 200nF
+  * ![C_200nF.bmp](./Images/C_200nF.bmp)
+
+## Diagram beskrivelse (rettelse kommer)
 
 * **J1:** Skrueterminal hvor DCC Power tilsluttes
 * **J2:** Skrueterminal hvor Skinne tilsluttes DCC via sensor
