@@ -1220,7 +1220,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Isolator:4N35"
+		(symbol "Isolator:PC847"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1240,7 +1240,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "4N35"
+			(property "Value" "PC847"
 				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1251,7 +1251,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
+			(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 				(at -5.08 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1264,7 +1264,7 @@
 					(justify left)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/81181/4n35.pdf"
+			(property "Datasheet" "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1276,7 +1276,7 @@
 					(justify left)
 				)
 			)
-			(property "Description" "Optocoupler, Phototransistor Output, with Base Connection, Vce 70V, CTR 100%, Viso 5000V, DIP6"
+			(property "Description" "DC Quad Optocoupler, Vce 35V, CTR 50-300%, DIP16"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1287,7 +1287,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "NPN DC Optocoupler Base Connected"
+			(property "ki_keywords" "NPN DC Quad Optocoupler"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1309,7 +1309,7 @@
 					)
 				)
 			)
-			(symbol "4N35_0_1"
+			(symbol "PC847_0_1"
 				(rectangle
 					(start -5.08 3.81)
 					(end 5.08 -3.81)
@@ -1323,7 +1323,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 -2.54) (xy -3.175 -2.54) (xy -3.175 2.54) (xy -5.08 2.54)
+						(xy -5.08 2.54) (xy -2.54 2.54) (xy -2.54 -1.27) (xy -2.54 0.635)
 					)
 					(stroke
 						(width 0)
@@ -1335,7 +1335,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 -0.635) (xy -2.54 -0.635)
+						(xy -3.175 -0.635) (xy -1.905 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -1347,7 +1347,19 @@
 				)
 				(polyline
 					(pts
-						(xy -3.175 -0.635) (xy -3.81 0.635) (xy -2.54 0.635) (xy -3.175 -0.635)
+						(xy -2.54 -0.635) (xy -2.54 -2.54) (xy -5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -0.635) (xy -3.175 0.635) (xy -1.905 0.635) (xy -2.54 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -1359,7 +1371,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.635 0.508) (xy 0.635 0.508) (xy 0.254 0.381) (xy 0.254 0.635) (xy 0.635 0.508)
+						(xy -0.508 0.508) (xy 0.762 0.508) (xy 0.381 0.381) (xy 0.381 0.635) (xy 0.762 0.508)
 					)
 					(stroke
 						(width 0)
@@ -1371,7 +1383,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.635 -0.508) (xy 0.635 -0.508) (xy 0.254 -0.635) (xy 0.254 -0.381) (xy 0.635 -0.508)
+						(xy -0.508 -0.508) (xy 0.762 -0.508) (xy 0.381 -0.635) (xy 0.381 -0.381) (xy 0.762 -0.508)
 					)
 					(stroke
 						(width 0)
@@ -1383,10 +1395,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.667 -0.254) (xy 2.667 -2.286)
+						(xy 2.54 1.905) (xy 2.54 -1.905)
 					)
 					(stroke
-						(width 0.3556)
+						(width 0.508)
 						(type default)
 					)
 					(fill
@@ -1395,19 +1407,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.667 -1.143) (xy 3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.667 -1.397) (xy 3.81 -2.54)
+						(xy 2.54 0.635) (xy 4.445 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1419,7 +1419,19 @@
 				)
 				(polyline
 					(pts
-						(xy 3.683 -2.413) (xy 3.429 -1.905) (xy 3.175 -2.159) (xy 3.683 -2.413)
+						(xy 3.048 -1.651) (xy 3.556 -1.143) (xy 4.064 -2.159) (xy 3.048 -1.651)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 2.54) (xy 5.08 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1431,31 +1443,19 @@
 				)
 				(polyline
 					(pts
-						(xy 3.81 0) (xy 5.08 0)
+						(xy 4.445 -2.54) (xy 2.54 -0.635)
 					)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy 3.81 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 1.905 2.54) (xy 1.905 -1.27) (xy 2.54 -1.27)
+						(xy 4.445 -2.54) (xy 5.08 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -1466,7 +1466,7 @@
 					)
 				)
 			)
-			(symbol "4N35_1_1"
+			(symbol "PC847_1_1"
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -1503,25 +1503,6 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -5.08 0 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at 7.62 -2.54 180)
 					(length 2.54)
@@ -1532,25 +1513,7 @@
 							)
 						)
 					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1568,7 +1531,229 @@
 							)
 						)
 					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PC847_2_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PC847_3_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PC847_4_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3087,7 +3272,7 @@
 		(uuid "4c8b0c69-09f8-4769-8b28-7ce7118235b0")
 	)
 	(junction
-		(at 143.51 55.88)
+		(at 143.51 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5a58138c-e54c-464f-956a-b6cc03177981")
@@ -3276,7 +3461,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 69.85) (xy 147.32 66.04)
+			(xy 147.32 67.31) (xy 147.32 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3326,7 +3511,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 44.45) (xy 143.51 45.72)
+			(xy 143.51 41.91) (xy 143.51 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3336,7 +3521,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 53.34) (xy 143.51 55.88)
+			(xy 143.51 50.8) (xy 143.51 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3356,7 +3541,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 66.04) (xy 149.86 66.04)
+			(xy 147.32 63.5) (xy 149.86 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3386,7 +3571,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 36.83) (xy 143.51 35.56)
+			(xy 143.51 34.29) (xy 143.51 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3476,7 +3661,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 55.88) (xy 149.86 55.88)
+			(xy 143.51 53.34) (xy 149.86 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3496,7 +3681,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 55.88) (xy 143.51 55.88)
+			(xy 139.7 53.34) (xy 143.51 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3637,7 +3822,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 147.32 69.85 0)
+		(at 147.32 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3648,7 +3833,7 @@
 		(fields_autoplaced yes)
 		(uuid "1778bfab-860f-4a00-83cc-7345cf4e6c9f")
 		(property "Reference" "#PWR05"
-			(at 147.32 76.2 0)
+			(at 147.32 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3659,7 +3844,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 147.32 73.66 0)
+			(at 147.32 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3669,7 +3854,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at 147.32 69.85 0)
+			(at 147.32 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3680,7 +3865,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 69.85 0)
+			(at 147.32 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3691,7 +3876,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 147.32 69.85 0)
+			(at 147.32 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4172,7 +4357,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 143.51 49.53 90)
+		(at 143.51 46.99 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4182,7 +4367,7 @@
 		(dnp no)
 		(uuid "34f205fc-3c3f-4bdd-be46-fa448e87c946")
 		(property "Reference" "D5"
-			(at 146.558 46.736 90)
+			(at 146.558 44.196 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4192,7 +4377,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 153.67 46.736 0)
+			(at 153.67 44.196 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4203,7 +4388,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 143.51 49.53 0)
+			(at 143.51 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4214,7 +4399,7 @@
 			)
 		)
 		(property "Datasheet" "https://el-supply.dk/upload_dir/pics/Shoppix/94508052.pdf"
-			(at 143.51 49.53 0)
+			(at 143.51 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4225,7 +4410,7 @@
 			)
 		)
 		(property "Description" "RØD SMD LED 0805 2.0x1.2mm 38mcd 20mA 2.0V 140°"
-			(at 143.51 49.53 0)
+			(at 143.51 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4236,7 +4421,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 143.51 49.53 0)
+			(at 143.51 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4256,6 +4441,131 @@
 			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:PC847")
+		(at 132.08 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "390f58bb-50df-485a-97f7-4e0808dd691a")
+		(property "Reference" "U1"
+			(at 132.08 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PC847"
+			(at 132.08 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+			(at 127 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf"
+			(at 132.08 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "DC Quad Optocoupler, Vce 35V, CTR 50-300%, DIP16"
+			(at 132.08 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "81897fd0-8265-4c81-a261-d107f0db0ad5")
+		)
+		(pin "2"
+			(uuid "d64946c9-a500-4a32-94da-b1a42607b21d")
+		)
+		(pin "6"
+			(uuid "cdf0fd5a-f108-48d1-9ca4-607f56c3e7d1")
+		)
+		(pin "14"
+			(uuid "1ee58454-489d-4b97-9aff-31e1a26c4a26")
+		)
+		(pin "7"
+			(uuid "df1b7135-166c-4338-8f31-9eccb5d139ac")
+		)
+		(pin "9"
+			(uuid "a46f9506-e9f2-49e3-9f79-b9643ee62cdc")
+		)
+		(pin "12"
+			(uuid "4dda5443-f926-40de-9505-a362265a6016")
+		)
+		(pin "8"
+			(uuid "ae29ef18-6db0-41e2-849a-6dbebb892171")
+		)
+		(pin "11"
+			(uuid "01e24930-9445-4361-9f36-365b198b97ba")
+		)
+		(pin "10"
+			(uuid "606bfab9-82fb-4e27-b107-6d357916af31")
+		)
+		(pin "13"
+			(uuid "476d6165-97ab-40e3-b322-f63ff9e31f50")
+		)
+		(pin "4"
+			(uuid "8ec1b9a4-b805-462e-9c48-6ae6743f2dd3")
+		)
+		(pin "3"
+			(uuid "97828ce8-a285-4edf-946f-7f4f67c3844f")
+		)
+		(pin "16"
+			(uuid "ad6422c8-4bdf-47d2-bd70-4e0ec1b70c59")
+		)
+		(pin "5"
+			(uuid "1ccc968e-a967-4fdd-a050-adbd1539648d")
+		)
+		(pin "15"
+			(uuid "735f024b-8355-4ab3-96d5-776c42c8a999")
+		)
+		(instances
+			(project "Sporbesat-Detektor"
+				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -4626,7 +4936,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x05_Socket")
-		(at 154.94 60.96 0)
+		(at 154.94 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4636,7 +4946,7 @@
 		(dnp no)
 		(uuid "80e09617-8f03-494b-b9d6-e120cfe8d42e")
 		(property "Reference" "J3"
-			(at 155.702 54.356 0)
+			(at 155.702 51.816 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4647,7 +4957,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Socket"
-			(at 156.21 62.2299 0)
+			(at 156.21 59.6899 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4659,7 +4969,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 60.96 0)
+			(at 154.94 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4670,7 +4980,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 60.96 0)
+			(at 154.94 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4681,7 +4991,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 154.94 60.96 0)
+			(at 154.94 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5003,7 +5313,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "?F"
+		(property "Value" "200nF"
 			(at 102.87 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5218,101 +5528,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Isolator:4N35")
-		(at 132.08 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4481fe9-ee3c-40b1-b1fd-27542fbcc706")
-		(property "Reference" "U1"
-			(at 132.08 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4N35"
-			(at 132.08 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
-			(at 127 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/81181/4n35.pdf"
-			(at 132.08 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "Optocoupler, Phototransistor Output, with Base Connection, Vce 70V, CTR 100%, Viso 5000V, DIP6"
-			(at 132.08 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "7f930c31-7000-4f36-bdce-bef930ca03ab")
-		)
-		(pin "4"
-			(uuid "ecaa91ec-46b8-42f7-8cf6-f3218b2e81fb")
-		)
-		(pin "2"
-			(uuid "b8600963-4c13-48fe-9692-0b3cee08b22d")
-		)
-		(pin "1"
-			(uuid "818ad507-65ec-4de8-9048-94ad37f1254e")
-		)
-		(pin "5"
-			(uuid "20273150-be13-49b4-a4cc-bb5623064f66")
-		)
-		(pin "6"
-			(uuid "95f423b3-3b41-4bd5-8cf7-250db37a02a0")
-		)
-		(instances
-			(project "Sporbesat-Detektor"
-				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDD")
 		(at 140.97 60.96 0)
 		(unit 1)
@@ -5392,7 +5607,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
-		(at 143.51 40.64 180)
+		(at 143.51 38.1 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5402,7 +5617,7 @@
 		(dnp no)
 		(uuid "c4efeed7-5457-4a72-9988-0033d6c01349")
 		(property "Reference" "R5"
-			(at 140.97 41.148 90)
+			(at 140.97 38.608 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5412,7 +5627,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 143.51 40.894 90)
+			(at 143.51 38.354 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5422,7 +5637,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 145.288 40.64 90)
+			(at 145.288 38.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5433,7 +5648,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5444,7 +5659,7 @@
 			)
 		)
 		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5455,7 +5670,7 @@
 			)
 		)
 		(property "LCSC" "C17398"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5466,7 +5681,7 @@
 			)
 		)
 		(property "Stock" "170330"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5477,7 +5692,7 @@
 			)
 		)
 		(property "Price" "0.005USD"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5488,7 +5703,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5499,7 +5714,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5510,7 +5725,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5521,7 +5736,7 @@
 			)
 		)
 		(property "Class" "Preferred Component"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5532,7 +5747,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5543,7 +5758,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5554,7 +5769,7 @@
 			)
 		)
 		(property "Part" "0805W8F1801T5E"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5565,7 +5780,7 @@
 			)
 		)
 		(property "Resistance" "1.8kΩ"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5576,7 +5791,7 @@
 			)
 		)
 		(property "Power(Watts)" "125mW"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5587,7 +5802,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5598,7 +5813,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "150V"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5609,7 +5824,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5620,7 +5835,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5631,7 +5846,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 143.51 40.64 0)
+			(at 143.51 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5658,7 +5873,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 143.51 35.56 0)
+		(at 143.51 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5669,7 +5884,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb04a8c6-a32b-4e8d-a90e-c990027d8402")
 		(property "Reference" "#PWR04"
-			(at 143.51 39.37 0)
+			(at 143.51 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5680,7 +5895,7 @@
 			)
 		)
 		(property "Value" "DVCC"
-			(at 143.51 30.48 0)
+			(at 143.51 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5690,7 +5905,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 35.56 0)
+			(at 143.51 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5701,7 +5916,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 35.56 0)
+			(at 143.51 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5712,7 +5927,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 143.51 35.56 0)
+			(at 143.51 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
