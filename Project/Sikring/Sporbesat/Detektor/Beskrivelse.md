@@ -9,12 +9,18 @@
   * ![Stripboard_49x18_bb.png](../../../Fritzing/Stripboard_49x18_bb.png)
   * [Stripboard_49x18.fzz](../../../Fritzing/Stripboard_49x18.fzz)
 
-* Ingen Kondensator
-  * ![C_ingen.bmp](./Images/C_ingen.bmp)
-* C = 100nF
-  * ![C_100nF.bmp](./Images/C_100nF.bmp)
-* C = 200nF
-  * ![C_200nF.bmp](./Images/C_200nF.bmp)
+* Proper
+  * Prope 1: Over C1
+    * 2V per/div ~ 8V
+  * Prope 2: Q1 Emiyyer
+    * 10V per/div ~ +-15V
+* Kondensator værdier
+  * Ingen Kondensator
+    * ![C_ingen.bmp](./Images/C_ingen.bmp)
+  * C = 100nF
+    * ![C_100nF.bmp](./Images/C_100nF.bmp)
+  * C = 200nF
+    * ![C_200nF.bmp](./Images/C_200nF.bmp)
 
 ## Diagram beskrivelse (rettelse kommer)
 
