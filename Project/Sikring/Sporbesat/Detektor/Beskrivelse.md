@@ -49,16 +49,3 @@ Sensoren på diagrammet er en af fire på samme print, sensor printet anbringes 
   * så vi ser her et signal som ca. svinger mellem +20V til -20V
 * Vi ser 50µSec. per division 
   * Så vi ser et signal såm svinger melllem 100µSec til 200µSec per periode.
-
-### ingen tog på skinne
-
-* ![tog på skinne](./Images/dso_01_01_00_06_40.bmp)
-
-### tog på skinne
-
-* ![tog på skinne](./Images/dso_01_01_00_07_07.bmp)
-
-### C1 Monteret Tog på skinne: Ikke helt hvad jeg ventede
-
-  * ![](./Images/dso_01_01_00_19_35.bmp)
-  * Kondensatoren C1 mondteret
