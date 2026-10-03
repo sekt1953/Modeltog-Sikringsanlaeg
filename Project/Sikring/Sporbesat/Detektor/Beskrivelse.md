@@ -1,6 +1,11 @@
 # Beskrivelse af functionen af Sporbesat detektor
 
- ![Sporbesat-Detektor.png](./Images/Sporbesat-Detektor.png)
+![Sporbesat-Detektor.png](./Images/Sporbesat-Detektor.png)
+
+## Test Board
+
+![Stripboard_49x18_bb.png](../../../Fritzing/Stripboard_49x18_bb.png)
+![](../../../Fritzing/Stripboard_49x18_schem.png) 
 
 ## Diagram beskrivelse
 
