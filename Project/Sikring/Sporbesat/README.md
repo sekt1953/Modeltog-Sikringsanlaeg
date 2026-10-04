@@ -22,15 +22,3 @@
 ![2020-14-29.png](./TransmitterBus/Images/Skærmbillede%20fra%202026-10-02%2020-14-29.png)
 
 #### [ESP32 CAN](https://esphome.io/components/canbus/esp32_can/)
-
-
-
-#### KiCad Schmatic & PCB
-
-[esp32-can-bus-shield-v1-0](https://store.mrdiy.ca/p/esp32-can-bus-shield-v1-0/)
-
-* files
-* Beskrivelse / forklaring
-* [Matriale List](./TransmitterBus/CanBus/Matriale.md)
-* ESPHome (Firmware)
-  * files
