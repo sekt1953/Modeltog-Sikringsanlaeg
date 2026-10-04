@@ -1037,6 +1037,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4148"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100V 0.15A standard switching diode, DO-35"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?35*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "1N4148_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Isolator:PC847"
 			(pin_names
 				(offset 1.016)
@@ -2879,125 +3066,21 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
-			(power global)
-			(pin_numbers
-				(hide yes)
+	)
+	(text "DCC Power Out\n"
+		(exclude_from_sim no)
+		(at 71.374 40.64 0)
+		(effects
+			(font
+				(size 0.8 0.8)
 			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
+			(justify left)
 		)
+		(uuid "23d1c9d1-6148-4b62-b17f-df75ac36b74c")
 	)
 	(text "Til MCU\n"
 		(exclude_from_sim no)
-		(at 189.484 49.784 0)
+		(at 211.074 58.674 0)
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -3008,7 +3091,18 @@
 	)
 	(text "DCC Track X\n"
 		(exclude_from_sim no)
-		(at 70.612 48.514 0)
+		(at 70.612 101.854 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left)
+		)
+		(uuid "7e9f92b9-e84b-4a34-951f-7d6c7a4e858e")
+	)
+	(text "DCC Track X\n"
+		(exclude_from_sim no)
+		(at 70.612 54.864 0)
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -3017,9 +3111,20 @@
 		)
 		(uuid "8768170c-18da-4789-95b9-70fe2be57bb7")
 	)
+	(text "DCC Track X\n"
+		(exclude_from_sim no)
+		(at 70.612 123.444 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left)
+		)
+		(uuid "87724869-cfcd-4cf3-86ed-0d96174c2ea3")
+	)
 	(text "DCC Power in"
 		(exclude_from_sim no)
-		(at 70.358 40.894 0)
+		(at 71.628 33.528 0)
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -3028,123 +3133,306 @@
 		)
 		(uuid "8a8f9c70-7acf-450c-89f7-21260b3c85ef")
 	)
+	(text "DCC Track X\n"
+		(exclude_from_sim no)
+		(at 70.612 78.994 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left)
+		)
+		(uuid "9dcbe6d7-a5a6-46dc-a24e-ade41dd3b624")
+	)
 	(junction
-		(at 100.33 46.99)
+		(at 100.33 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01374c9e-9eed-4e95-a7f6-99e661f75316")
+	)
+	(junction
+		(at 146.05 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06859610-e07a-4b25-bfcc-1bc581811b84")
+	)
+	(junction
+		(at 92.71 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "130c4edd-d0de-4e33-bbb2-2a0465591f56")
+	)
+	(junction
+		(at 190.5 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a58d5a9-3256-4183-8c0f-a3c70ecf2b8c")
+	)
+	(junction
+		(at 146.05 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d0e7730-7bd7-46da-b96c-0dfdfa58cb9f")
+	)
+	(junction
+		(at 105.41 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27928bad-a241-4162-adcf-35e457c932c3")
 	)
 	(junction
-		(at 182.88 44.45)
+		(at 105.41 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "36498535-84db-4f04-a516-a734144275f2")
+		(uuid "2ac118f5-5258-457e-97c9-910df3b961db")
 	)
 	(junction
-		(at 128.27 39.37)
+		(at 120.65 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4929b16a-d399-484e-a144-bb71da5be469")
+		(uuid "2b1216b4-6447-4486-b50c-75e5026a6ec5")
 	)
 	(junction
-		(at 87.63 39.37)
+		(at 95.25 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4c8b0c69-09f8-4769-8b28-7ce7118235b0")
+		(uuid "3330baa2-290e-45cf-87cc-5f17b113a32f")
 	)
 	(junction
-		(at 87.63 49.53)
+		(at 105.41 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5e258700-f7f7-45ef-9a3d-e2ec42ad818b")
+		(uuid "3b3993f0-88c6-42dd-a4d6-26b1ba4d4548")
 	)
 	(junction
-		(at 91.44 49.53)
+		(at 92.71 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "66d19b90-85a8-4e86-a6e8-4e2839942024")
+		(uuid "3d7bae20-c9a4-4a47-b5a9-765ed9ed3c27")
 	)
 	(junction
-		(at 91.44 52.07)
+		(at 92.71 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "746145ef-ca61-476c-ac39-066c84b8e0f9")
+		(uuid "60c40263-952d-447f-ba1c-7bb8d5b20e36")
 	)
 	(junction
-		(at 182.88 54.61)
+		(at 100.33 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7a17d0ab-c258-493c-bd49-0e7daa44024d")
-	)
-	(junction
-		(at 91.44 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8a9661d0-f7e5-42dd-acf8-7c15f1dc8c43")
-	)
-	(junction
-		(at 132.08 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9135631a-9d1e-431e-856a-83f2c53e9dc5")
-	)
-	(junction
-		(at 100.33 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c75f6aec-dae5-4b6e-acb8-2586d25685cf")
-	)
-	(junction
-		(at 171.45 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d1708337-99b2-4d5e-af9f-d29a86d3b138")
-	)
-	(junction
-		(at 105.41 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dd915596-8184-4036-bcb9-b75239b949fe")
+		(uuid "61011ea1-8275-4946-9773-3b127d9bd2fb")
 	)
 	(junction
 		(at 95.25 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
+		(uuid "653bedd4-5e05-40fd-ac16-ddd086e6d94b")
+	)
+	(junction
+		(at 95.25 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65f508b3-92ec-4e20-95dc-82175a4fcdf1")
+	)
+	(junction
+		(at 146.05 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6965a031-923c-405a-8c23-1cf1e80e2c7f")
+	)
+	(junction
+		(at 105.41 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73547ac8-0b2c-4c07-89e0-4a11cf25a790")
+	)
+	(junction
+		(at 146.05 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75393e95-3f4f-4475-853d-61b77b94c2ac")
+	)
+	(junction
+		(at 146.05 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "797923dc-b2e0-44ab-9b54-69874c7ed3c3")
+	)
+	(junction
+		(at 105.41 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d788496-94b2-4f78-9f63-c8c8f3b51217")
+	)
+	(junction
+		(at 100.33 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e5c5916-a395-454f-b17d-304f55c34ce9")
+	)
+	(junction
+		(at 120.65 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "81fa78b8-be17-4976-ba9d-54a8faaf9b60")
+	)
+	(junction
+		(at 190.5 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0e2f7c2-cab6-4331-a77c-1aeb6a684206")
+	)
+	(junction
+		(at 146.05 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2e6ed71-b26f-4122-9a39-71a60a3cd363")
+	)
+	(junction
+		(at 120.65 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8770ca3-992d-4d8e-96bd-8b43ed0b71f7")
+	)
+	(junction
+		(at 146.05 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abdfc571-00d8-4b49-a022-6a0373b3b4e0")
+	)
+	(junction
+		(at 105.41 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2d964a2-33f3-4236-92bd-383477443514")
+	)
+	(junction
+		(at 105.41 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c75f6aec-dae5-4b6e-acb8-2586d25685cf")
+	)
+	(junction
+		(at 95.25 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9077c86-3600-47f3-b81d-a5f7f7fbc0e1")
+	)
+	(junction
+		(at 146.05 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd36a995-71fa-4f79-a170-b7eb0a0d8cb2")
+	)
+	(junction
+		(at 190.5 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfc29b91-f052-448b-8025-4d7d19f1ebc4")
+	)
+	(junction
+		(at 92.71 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d32e31d6-b1c9-4de8-a3e3-2e555f805b3b")
+	)
+	(junction
+		(at 92.71 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dac9fd34-9562-4fc6-a55d-793b8feb00bd")
+	)
+	(junction
+		(at 105.41 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc87874b-1470-4a2d-a475-a939f9f886fb")
+	)
+	(junction
+		(at 100.33 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e24d9780-301c-453c-bdd7-b5a64bc68fcd")
+	)
+	(junction
+		(at 100.33 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
 		(uuid "e265a83c-2e47-4151-bcfd-6f4371c4d92a")
 	)
 	(junction
-		(at 95.25 46.99)
+		(at 95.25 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e35e6aee-ef76-4c12-994d-a05c5f9567c0")
+	)
+	(junction
+		(at 100.33 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e65107e2-5343-4ec2-9ec5-8c554b4e928f")
 	)
 	(junction
-		(at 115.57 46.99)
+		(at 120.65 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e76a5474-24fa-4632-afb7-8529c2e673ba")
 	)
 	(junction
-		(at 128.27 49.53)
+		(at 100.33 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ec4a01b4-62f7-442d-8dd0-dd4460db6fd1")
+		(uuid "e9879c54-4f1c-4d91-bf4b-73802bae01d0")
 	)
 	(junction
-		(at 132.08 49.53)
+		(at 100.33 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f1358ac6-8213-42c3-8077-36e90cc5c367")
-	)
-	(junction
-		(at 105.41 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f238a504-7945-42d0-83d7-34eeac3f3b9a")
+		(uuid "fac7ffba-20f3-4fe5-a360-03dc5c7ede5a")
 	)
 	(wire
 		(pts
-			(xy 86.36 46.99) (xy 95.25 46.99)
+			(xy 95.25 114.3) (xy 100.33 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0101b5e7-e35e-4c15-8d1e-8a14abae85f0")
+	)
+	(wire
+		(pts
+			(xy 120.65 77.47) (xy 127 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "023ec80c-96b4-48a1-bdd9-010045445109")
+	)
+	(wire
+		(pts
+			(xy 100.33 100.33) (xy 105.41 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0251e1c2-34ab-4974-a21f-5edb04ec0eb6")
+	)
+	(wire
+		(pts
+			(xy 132.08 92.71) (xy 135.89 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0578edc9-860e-4ac6-b892-2b9c7d515bb7")
+	)
+	(wire
+		(pts
+			(xy 86.36 53.34) (xy 100.33 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3154,17 +3442,77 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 38.1) (xy 91.44 39.37)
+			(xy 119.38 121.92) (xy 120.65 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14fcf0c0-f53d-4f24-8b4a-35024f6d617e")
+		(uuid "09671061-21e8-4b1d-ba50-24b29f40447a")
 	)
 	(wire
 		(pts
-			(xy 115.57 46.99) (xy 121.92 46.99)
+			(xy 185.42 102.87) (xy 190.5 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b880fa9-c7cb-4e8e-a838-7462f79bf6ac")
+	)
+	(wire
+		(pts
+			(xy 100.33 77.47) (xy 105.41 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "114bb317-3397-459f-9558-d1919b933838")
+	)
+	(wire
+		(pts
+			(xy 146.05 91.44) (xy 146.05 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11b7ccb5-3d51-4a59-86bc-bdc9434dedf3")
+	)
+	(wire
+		(pts
+			(xy 157.48 114.3) (xy 161.29 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "124ee5d3-366b-4688-8a1a-e4dec64c07e3")
+	)
+	(wire
+		(pts
+			(xy 146.05 101.6) (xy 146.05 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17387189-15a5-46a8-a63b-676847c059fc")
+	)
+	(wire
+		(pts
+			(xy 146.05 69.85) (xy 146.05 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a4e0563-817f-41b9-a5cf-cfe34ea9f050")
+	)
+	(wire
+		(pts
+			(xy 120.65 53.34) (xy 127 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3174,27 +3522,47 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 36.83) (xy 87.63 39.37)
+			(xy 95.25 45.72) (xy 100.33 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1e22ca89-9fd4-41ba-add7-7b60c2ab8a19")
+		(uuid "1e9a2519-2b76-45e4-8928-3248d5c98182")
 	)
 	(wire
 		(pts
-			(xy 171.45 44.45) (xy 182.88 44.45)
+			(xy 132.08 114.3) (xy 135.89 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "29d7bdbc-2dbc-4afb-92f4-8229c42b2468")
+		(uuid "22f2a582-6114-4498-ba29-3a3be7b23aeb")
 	)
 	(wire
 		(pts
-			(xy 127 39.37) (xy 128.27 39.37)
+			(xy 146.05 124.46) (xy 170.18 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23adbe81-25fa-4cca-b99a-d21011feb274")
+	)
+	(wire
+		(pts
+			(xy 92.71 102.87) (xy 146.05 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c42a124-d56a-4a5a-9b3c-993e89125473")
+	)
+	(wire
+		(pts
+			(xy 132.08 45.72) (xy 135.89 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3204,17 +3572,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 38.1) (xy 132.08 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fc64dd2-c70b-4e28-8bac-af69dd852453")
-	)
-	(wire
-		(pts
-			(xy 87.63 39.37) (xy 91.44 39.37)
+			(xy 87.63 31.75) (xy 95.25 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3224,7 +3582,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 46.99) (xy 105.41 46.99)
+			(xy 105.41 53.34) (xy 111.76 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3234,37 +3592,117 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 52.07) (xy 199.39 52.07)
+			(xy 170.18 114.3) (xy 170.18 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4522f93d-11d0-4102-bec6-050857f92b0c")
+		(uuid "38300e4e-ce2e-4772-8375-6e550a025206")
 	)
 	(wire
 		(pts
-			(xy 182.88 54.61) (xy 199.39 54.61)
+			(xy 95.25 39.37) (xy 95.25 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46ab0569-7f51-4dd4-bf7f-83f7ece67c04")
+		(uuid "39df5e80-d3f2-4836-8c1c-0d464b8ef561")
 	)
 	(wire
 		(pts
-			(xy 182.88 46.99) (xy 199.39 46.99)
+			(xy 193.04 53.34) (xy 204.47 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4b5d3470-31b6-4c73-b8f9-635f959d76f2")
+		(uuid "3d1a7119-e905-457a-b4f9-4bef95be4059")
 	)
 	(wire
 		(pts
-			(xy 95.25 39.37) (xy 100.33 39.37)
+			(xy 146.05 44.45) (xy 146.05 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e443ddb-6a38-48b8-b780-e7636e45d34a")
+	)
+	(wire
+		(pts
+			(xy 170.18 92.71) (xy 170.18 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fe7a4f1-ccd5-4e19-bcc7-7a06a1029a0d")
+	)
+	(wire
+		(pts
+			(xy 95.25 69.85) (xy 100.33 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "421c67c6-b8b5-4def-803e-5ca57a920fed")
+	)
+	(wire
+		(pts
+			(xy 170.18 114.3) (xy 168.91 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "494da1d6-85b4-4710-91ff-df582ef1ff2d")
+	)
+	(wire
+		(pts
+			(xy 185.42 119.38) (xy 198.12 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "499ca366-6e16-4008-8ee5-f669ad7cd358")
+	)
+	(wire
+		(pts
+			(xy 146.05 45.72) (xy 146.05 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a091a71-0fa6-4d0a-a936-42292a70424c")
+	)
+	(wire
+		(pts
+			(xy 105.41 77.47) (xy 111.76 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a9a3bdf-5544-4ab1-9180-f4f98ec7bb98")
+	)
+	(wire
+		(pts
+			(xy 86.36 124.46) (xy 92.71 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ec793e5-62a9-4d3a-a36a-72cad19d14f8")
+	)
+	(wire
+		(pts
+			(xy 100.33 45.72) (xy 105.41 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3274,27 +3712,97 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 44.45) (xy 199.39 44.45)
+			(xy 86.36 100.33) (xy 100.33 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56db0b63-e924-4c3e-8917-6743a266eb2f")
+		(uuid "50e36969-b08a-46b7-8f8c-48be6ba93eaf")
 	)
 	(wire
 		(pts
-			(xy 128.27 39.37) (xy 132.08 39.37)
+			(xy 105.41 69.85) (xy 121.92 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59feb8ab-dcf5-4837-a198-51cc3f647feb")
+		(uuid "540f6099-825c-4178-b07a-ee8ef7c18fc6")
 	)
 	(wire
 		(pts
-			(xy 91.44 49.53) (xy 128.27 49.53)
+			(xy 92.71 124.46) (xy 92.71 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5470fe08-0d61-45e1-aed4-dfc2d1b4763c")
+	)
+	(wire
+		(pts
+			(xy 120.65 120.65) (xy 120.65 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ea6c6f-04e2-459e-a42e-4df7571c0946")
+	)
+	(wire
+		(pts
+			(xy 170.18 69.85) (xy 168.91 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54f45a2d-2e6f-44da-9fa6-086c3be3d953")
+	)
+	(wire
+		(pts
+			(xy 120.65 121.92) (xy 127 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56216716-e6cb-425f-84fd-6b91066cd71e")
+	)
+	(wire
+		(pts
+			(xy 198.12 119.38) (xy 198.12 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5887d14d-0c98-420c-89a1-c50ed6d7129d")
+	)
+	(wire
+		(pts
+			(xy 92.71 124.46) (xy 146.05 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "593c8cb2-bcf1-4c16-a058-7dc427fe5c88")
+	)
+	(wire
+		(pts
+			(xy 143.51 114.3) (xy 146.05 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b9cc2be-2407-4d9e-8dc1-3bd4065bdd91")
+	)
+	(wire
+		(pts
+			(xy 92.71 55.88) (xy 146.05 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3304,27 +3812,37 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 46.99) (xy 106.68 46.99)
+			(xy 143.51 69.85) (xy 146.05 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c5e0eba-021f-4fbc-80bb-f4fedb51d040")
+		(uuid "60417ee7-2ecb-41db-857d-193c102c4e58")
 	)
 	(wire
 		(pts
-			(xy 128.27 48.26) (xy 128.27 49.53)
+			(xy 157.48 45.72) (xy 161.29 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5f852a4f-2c07-4b9f-a107-9035a3046a54")
+		(uuid "6112c7b1-b250-4cdc-b9bc-0abc460132d4")
 	)
 	(wire
 		(pts
-			(xy 115.57 45.72) (xy 115.57 46.99)
+			(xy 157.48 69.85) (xy 161.29 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61be54cd-e2ce-43c6-b70f-2d74c7730a55")
+	)
+	(wire
+		(pts
+			(xy 120.65 52.07) (xy 120.65 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3334,17 +3852,17 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 52.07) (xy 91.44 52.07)
+			(xy 185.42 97.79) (xy 195.58 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "68892a95-b8ad-4cb3-9b6e-e1a759690f1b")
+		(uuid "6a37ffe3-4fc1-455d-aff8-80305ae82529")
 	)
 	(wire
 		(pts
-			(xy 180.34 62.23) (xy 180.34 54.61)
+			(xy 203.2 68.58) (xy 203.2 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3354,7 +3872,27 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 46.99) (xy 115.57 46.99)
+			(xy 87.63 39.37) (xy 95.25 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b98aee5-23ed-4162-b37f-d4f48a2bdf64")
+	)
+	(wire
+		(pts
+			(xy 146.05 69.85) (xy 149.86 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d91d7b9-8d9b-4421-9997-03c9799538be")
+	)
+	(wire
+		(pts
+			(xy 119.38 53.34) (xy 120.65 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3364,37 +3902,97 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 39.37) (xy 87.63 39.37)
+			(xy 190.5 102.87) (xy 190.5 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "725b5ae0-0937-4280-bb48-589ef5c81dbe")
+		(uuid "71cbe99f-e2df-48d7-842e-f03f6e8a3cc7")
 	)
 	(wire
 		(pts
-			(xy 182.88 49.53) (xy 199.39 49.53)
+			(xy 105.41 121.92) (xy 111.76 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7cea574b-7afc-4c12-a948-5df97547601f")
+		(uuid "745c616f-1ae4-405f-acd2-e43fa4cd3792")
 	)
 	(wire
 		(pts
-			(xy 132.08 39.37) (xy 132.08 41.91)
+			(xy 92.71 80.01) (xy 146.05 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ebc7a02-734a-411c-954e-543133ed0e9d")
+		(uuid "786daba4-7961-41e5-836b-e31de36a7b55")
 	)
 	(wire
 		(pts
-			(xy 168.91 49.53) (xy 167.64 49.53)
+			(xy 170.18 69.85) (xy 170.18 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79a5b236-479a-48df-861b-10a3a63a5bdc")
+	)
+	(wire
+		(pts
+			(xy 95.25 92.71) (xy 95.25 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a3b23bc-e189-4fa6-b22a-f1b37d15b34e")
+	)
+	(wire
+		(pts
+			(xy 146.05 78.74) (xy 146.05 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dbbd5b5-e99c-4ba2-802c-541cb37cbc89")
+	)
+	(wire
+		(pts
+			(xy 132.08 69.85) (xy 135.89 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "800998f3-a1e6-4a62-aafc-c89586d3d905")
+	)
+	(wire
+		(pts
+			(xy 86.36 77.47) (xy 100.33 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "841bc5f0-6388-4b1b-a5c8-b396893b0737")
+	)
+	(wire
+		(pts
+			(xy 119.38 100.33) (xy 120.65 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84d9f936-f72e-4fa7-a5e1-a0a99c72d1ae")
+	)
+	(wire
+		(pts
+			(xy 185.42 55.88) (xy 190.5 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3404,47 +4002,77 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 49.53) (xy 87.63 49.53)
+			(xy 92.71 80.01) (xy 92.71 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8b4154e3-16cf-43e0-a5a6-a135c86d48c2")
+		(uuid "86c3798d-3f81-46fc-bcf6-6412a9716d81")
 	)
 	(wire
 		(pts
-			(xy 91.44 39.37) (xy 95.25 39.37)
+			(xy 170.18 92.71) (xy 168.91 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8e49f1b0-9833-436e-b9c9-c6f315e6b7af")
+		(uuid "8b223d12-f499-45d0-adeb-b0f6acc3c55b")
 	)
 	(wire
 		(pts
-			(xy 171.45 43.18) (xy 171.45 44.45)
+			(xy 193.04 74.93) (xy 193.04 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8edd0ade-56d8-46fd-a76b-8c7ad766561b")
+		(uuid "8d90cb36-e035-419e-939b-91ab226bff04")
 	)
 	(wire
 		(pts
-			(xy 140.97 39.37) (xy 142.24 39.37)
+			(xy 157.48 92.71) (xy 161.29 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "91280ffc-c708-4a51-b52d-e20da87e7883")
+		(uuid "927e0afd-951f-4b1e-8e5b-c5e70f466e1c")
 	)
 	(wire
 		(pts
-			(xy 152.4 39.37) (xy 149.86 39.37)
+			(xy 120.65 76.2) (xy 120.65 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "975de39d-e97b-40ef-8b3a-d26d99d34492")
+	)
+	(wire
+		(pts
+			(xy 86.36 102.87) (xy 92.71 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97b00d4f-5831-4330-8fdb-d7b0d8a1abdb")
+	)
+	(wire
+		(pts
+			(xy 95.25 92.71) (xy 95.25 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97c109c0-f564-405c-8f63-81b7925a7312")
+	)
+	(wire
+		(pts
+			(xy 170.18 45.72) (xy 168.91 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3454,7 +4082,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 54.61) (xy 182.88 54.61)
+			(xy 203.2 60.96) (xy 204.47 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3464,47 +4092,187 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 39.37) (xy 133.35 39.37)
+			(xy 146.05 55.88) (xy 170.18 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bade2fa8-1ed4-490b-a449-5522edb6c4a0")
+		(uuid "9abde321-5277-447e-8a3b-d95fc9321860")
 	)
 	(wire
 		(pts
-			(xy 167.64 44.45) (xy 171.45 44.45)
+			(xy 95.25 27.94) (xy 95.25 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bcfae457-abe6-43e2-9dfe-6e46deefdc4b")
+		(uuid "9c6612ce-c2ef-402d-8562-1097e523807f")
 	)
 	(wire
 		(pts
-			(xy 168.91 49.53) (xy 168.91 52.07)
+			(xy 146.05 80.01) (xy 170.18 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be38fd37-797a-4ccf-aac5-f1ffa200c96d")
+		(uuid "a0317024-749f-4df2-a92f-7ec493c52a33")
 	)
 	(wire
 		(pts
-			(xy 91.44 49.53) (xy 91.44 52.07)
+			(xy 86.36 121.92) (xy 100.33 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c3d88ca1-42e9-4d1b-be6c-2f8ebbd4e3f4")
+		(uuid "a330a4d6-02ef-4514-9b40-510eaad0a8d6")
 	)
 	(wire
 		(pts
-			(xy 95.25 46.99) (xy 100.33 46.99)
+			(xy 105.41 114.3) (xy 121.92 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3f8d2b1-bf10-4efe-86ce-334fdf0a1128")
+	)
+	(wire
+		(pts
+			(xy 86.36 80.01) (xy 92.71 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a734baa5-ba07-4fc7-9abb-020082a27892")
+	)
+	(wire
+		(pts
+			(xy 146.05 45.72) (xy 149.86 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aed57873-10ca-47e6-98a9-e7ee14699339")
+	)
+	(wire
+		(pts
+			(xy 198.12 58.42) (xy 204.47 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b05b7650-7280-4bee-a18e-5c2a7e599c55")
+	)
+	(wire
+		(pts
+			(xy 100.33 92.71) (xy 105.41 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14d18a2-27d0-49d3-8d95-d0a1b0386e3d")
+	)
+	(wire
+		(pts
+			(xy 146.05 92.71) (xy 146.05 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b63b7ffd-158a-47f7-b66f-dcef454b5925")
+	)
+	(wire
+		(pts
+			(xy 190.5 124.46) (xy 185.42 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6608fcf-7dd4-42a1-b386-13f20d0d057e")
+	)
+	(wire
+		(pts
+			(xy 146.05 114.3) (xy 149.86 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7b1738b-b83b-440b-a22c-54cf3fb4d9d2")
+	)
+	(wire
+		(pts
+			(xy 190.5 55.88) (xy 190.5 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8f5fcdc-98d0-4710-bd31-822731bad140")
+	)
+	(wire
+		(pts
+			(xy 92.71 41.91) (xy 92.71 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba7931bf-5840-4d61-b5b8-d9e2952dafa1")
+	)
+	(wire
+		(pts
+			(xy 120.65 99.06) (xy 120.65 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb527cf7-4f36-43f5-b1de-dab877f05a77")
+	)
+	(wire
+		(pts
+			(xy 185.42 74.93) (xy 193.04 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc839936-6159-4626-bc1f-d1988f53f83c")
+	)
+	(wire
+		(pts
+			(xy 146.05 114.3) (xy 146.05 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcbab411-4907-4819-898c-e68c4c7d2dce")
+	)
+	(wire
+		(pts
+			(xy 100.33 114.3) (xy 105.41 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c13d3f8f-a3c5-481f-a74a-2211decf64a6")
+	)
+	(wire
+		(pts
+			(xy 100.33 53.34) (xy 105.41 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3514,7 +4282,57 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 39.37) (xy 152.4 44.45)
+			(xy 119.38 77.47) (xy 120.65 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4fc28ae-2438-4816-bf67-b7c08cf10841")
+	)
+	(wire
+		(pts
+			(xy 195.58 97.79) (xy 195.58 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6b7c6df-87eb-427a-a1ab-d0792136858d")
+	)
+	(wire
+		(pts
+			(xy 143.51 92.71) (xy 146.05 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c73a6484-e854-4c5f-8910-3e6e8a0f3d96")
+	)
+	(wire
+		(pts
+			(xy 100.33 121.92) (xy 105.41 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c81d34ab-5eed-4e4f-a151-3936f5f5ed08")
+	)
+	(wire
+		(pts
+			(xy 120.65 100.33) (xy 127 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8ed46b0-c5d9-42f1-a367-1246c07753b9")
+	)
+	(wire
+		(pts
+			(xy 170.18 45.72) (xy 170.18 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3524,7 +4342,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 49.53) (xy 91.44 49.53)
+			(xy 86.36 55.88) (xy 92.71 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3534,37 +4352,147 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 49.53) (xy 87.63 52.07)
+			(xy 190.5 80.01) (xy 190.5 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0ac3162-b314-4a3f-b935-e36620474ac9")
+		(uuid "d0c69c9f-4a92-433c-a780-bd22c7a70bc8")
 	)
 	(wire
 		(pts
-			(xy 128.27 49.53) (xy 152.4 49.53)
+			(xy 100.33 69.85) (xy 105.41 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e927547f-6d62-4d03-8efa-86c76592913e")
+		(uuid "d0f91913-fea7-4fbc-a892-d2f866d2b45f")
 	)
 	(wire
 		(pts
-			(xy 105.41 39.37) (xy 116.84 39.37)
+			(xy 143.51 45.72) (xy 146.05 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e9a52654-1237-4bbe-b0a5-859a72b06c04")
+		(uuid "d2427b5c-fd40-4008-94f7-66038dc41d4e")
 	)
 	(wire
 		(pts
-			(xy 86.36 41.91) (xy 91.44 41.91)
+			(xy 185.42 80.01) (xy 190.5 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3550202-db88-432e-8b6d-d309eefb1dab")
+	)
+	(wire
+		(pts
+			(xy 92.71 102.87) (xy 92.71 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d60f15ea-5dd6-41ca-9279-4d449f4b7dff")
+	)
+	(wire
+		(pts
+			(xy 105.41 92.71) (xy 121.92 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d677b8c7-d823-4be8-b112-12a71f3a8041")
+	)
+	(wire
+		(pts
+			(xy 105.41 100.33) (xy 111.76 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d69119f9-12af-4b29-b7c8-1feb760c3939")
+	)
+	(wire
+		(pts
+			(xy 92.71 55.88) (xy 92.71 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dad82bde-5db7-4a27-af0e-a86385ceca14")
+	)
+	(wire
+		(pts
+			(xy 146.05 54.61) (xy 146.05 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "defeab86-0f6e-4af3-a8bd-d517060cfe9c")
+	)
+	(wire
+		(pts
+			(xy 195.58 55.88) (xy 204.47 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0cb7af6-f7f3-4713-9717-f7978fe38195")
+	)
+	(wire
+		(pts
+			(xy 146.05 113.03) (xy 146.05 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2683d42-3a2e-4e00-942f-ca403adab9ae")
+	)
+	(wire
+		(pts
+			(xy 87.63 41.91) (xy 92.71 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e27a2681-12a3-49c7-8e45-27dc1786f3ee")
+	)
+	(wire
+		(pts
+			(xy 185.42 50.8) (xy 204.47 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e36c8ea3-235a-4792-b92a-6715282684b8")
+	)
+	(wire
+		(pts
+			(xy 95.25 69.85) (xy 95.25 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5942c5a-16fd-483a-a1c5-ca5f2b95b186")
+	)
+	(wire
+		(pts
+			(xy 87.63 34.29) (xy 92.71 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3574,7 +4502,17 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 41.91) (xy 91.44 49.53)
+			(xy 146.05 68.58) (xy 146.05 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1d32cc0-7bd2-4719-a56d-e232ad6a4009")
+	)
+	(wire
+		(pts
+			(xy 92.71 34.29) (xy 92.71 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3584,7 +4522,17 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 39.37) (xy 105.41 39.37)
+			(xy 146.05 102.87) (xy 170.18 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4b9d5a1-7ca1-4405-b944-590811d5a80e")
+	)
+	(wire
+		(pts
+			(xy 105.41 45.72) (xy 121.92 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3594,49 +4542,69 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 39.37) (xy 128.27 40.64)
+			(xy 146.05 123.19) (xy 146.05 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ff6b12b9-f508-4ab9-8203-4e8ebb24acd4")
+		(uuid "f8ba77d2-7775-452d-8e0b-3fff8927a023")
 	)
-	(hierarchical_label "Spor4"
-		(shape output)
-		(at 199.39 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
+	(wire
+		(pts
+			(xy 95.25 92.71) (xy 100.33 92.71)
 		)
-		(uuid "21b311c5-e23d-4f25-9314-8697b224712a")
-	)
-	(hierarchical_label "Spor2"
-		(shape output)
-		(at 199.39 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(uuid "63f5447c-b2f8-4494-b5da-1af683ea6617")
+		(uuid "f96f8392-2414-4594-b677-b4b373e55694")
 	)
-	(hierarchical_label "DGND"
-		(shape bidirectional)
-		(at 199.39 54.61 0)
+	(wire
+		(pts
+			(xy 146.05 92.71) (xy 149.86 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9d8ec75-bafd-4f31-8a59-70a5513f1d70")
+	)
+	(symbol
+		(lib_id "Isolator:PC847")
+		(at 177.8 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
 		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(uuid "095275bc-f471-489f-bfed-972a2de527bd")
+		(property "Reference" "U3"
+			(at 177.8 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
-			(justify left)
 		)
-		(uuid "c0137670-9613-4bbe-89e0-ef86a159e48b")
-		(property "Netclass" ""
-			(at 199.39 55.88 0)
+		(property "Value" "PC847"
+			(at 177.8 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+			(at 172.72 105.41 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3647,52 +4615,8 @@
 				(justify left)
 			)
 		)
-	)
-	(hierarchical_label "Spor1"
-		(shape output)
-		(at 199.39 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e06cb2a8-5ebb-4c10-aa4b-fed1f8712a36")
-	)
-	(hierarchical_label "Spor3"
-		(shape output)
-		(at 199.39 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f97ab1e2-de12-484e-8a7f-ba264e9464dc")
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Alt")
-		(at 171.45 43.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "09fdfa16-17c7-4ae0-9b1d-fb7eeac98e4c")
-		(property "Reference" "TP3"
-			(at 171.45 37.338 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U1A_Collector"
-			(at 160.274 33.528 0)
+		(property "Datasheet" "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf"
+			(at 177.8 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3703,30 +4627,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded"
-			(at 176.53 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point (alternative shape)"
-			(at 171.45 43.18 0)
+		(property "Description" "DC Quad Optocoupler, Vce 35V, CTR 50-300%, DIP16"
+			(at 177.8 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3737,26 +4639,65 @@
 			)
 		)
 		(pin "1"
-			(uuid "7be3f2dd-d7de-4bb1-a391-f4f4a7b29c9f")
+			(uuid "03938a18-f0b2-4e44-b036-701c016af2d5")
+		)
+		(pin "2"
+			(uuid "f5aeb023-c7ac-4d43-a6c9-52b82cdb75ee")
+		)
+		(pin "6"
+			(uuid "cdf0fd5a-f108-48d1-9ca4-607f56c3e7d1")
+		)
+		(pin "14"
+			(uuid "1ee58454-489d-4b97-9aff-31e1a26c4a26")
+		)
+		(pin "7"
+			(uuid "df1b7135-166c-4338-8f31-9eccb5d139ac")
+		)
+		(pin "9"
+			(uuid "a46f9506-e9f2-49e3-9f79-b9643ee62cdc")
+		)
+		(pin "12"
+			(uuid "4dda5443-f926-40de-9505-a362265a6016")
+		)
+		(pin "8"
+			(uuid "ae29ef18-6db0-41e2-849a-6dbebb892171")
+		)
+		(pin "11"
+			(uuid "01e24930-9445-4361-9f36-365b198b97ba")
+		)
+		(pin "10"
+			(uuid "606bfab9-82fb-4e27-b107-6d357916af31")
+		)
+		(pin "13"
+			(uuid "476d6165-97ab-40e3-b322-f63ff9e31f50")
+		)
+		(pin "4"
+			(uuid "8ec1b9a4-b805-462e-9c48-6ae6743f2dd3")
+		)
+		(pin "3"
+			(uuid "97828ce8-a285-4edf-946f-7f4f67c3844f")
+		)
+		(pin "16"
+			(uuid "f6353855-5c08-468b-ac66-6a8e7d7284fb")
+		)
+		(pin "5"
+			(uuid "1ccc968e-a967-4fdd-a050-adbd1539648d")
+		)
+		(pin "15"
+			(uuid "d04808a7-1f4b-4308-be87-5c6625ae8873")
 		)
 		(instances
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-			(project "Sporbesat-Detektor"
-				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "TP3")
+					(reference "U3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 146.05 39.37 0)
+		(lib_id "Diode:1N4148")
+		(at 139.7 69.85 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3765,9 +4706,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "15774f8b-a2b3-44ed-b788-8043a6f9788c")
-		(property "Reference" "D3"
-			(at 145.796 33.274 0)
+		(fields_autoplaced yes)
+		(uuid "1186c60d-590b-4896-8224-7707655c15da")
+		(property "Reference" "D7"
+			(at 139.7 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3776,8 +4718,8 @@
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 146.05 36.068 0)
+		(property "Value" "1N4148"
+			(at 139.7 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3786,8 +4728,8 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 146.05 39.37 0)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 139.7 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3797,8 +4739,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://el-supply.dk/upload_dir/pics/Shoppix/94508052.pdf"
-			(at 146.05 39.37 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 139.7 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3808,8 +4750,19 @@
 				)
 			)
 		)
-		(property "Description" "RØD SMD LED 0805 2.0x1.2mm 38mcd 20mA 2.0V 140°"
-			(at 146.05 39.37 0)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 139.7 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 139.7 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3820,7 +4773,98 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 146.05 39.37 0)
+			(at 139.7 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6a0fac3a-267e-4217-b606-35d1e0486632")
+		)
+		(pin "1"
+			(uuid "5080e492-e11e-4a63-83b6-2cbb5ab0db51")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 165.1 45.72 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "15774f8b-a2b3-44ed-b788-8043a6f9788c")
+		(property "Reference" "D4"
+			(at 164.846 39.624 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 165.1 42.418 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 165.1 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://el-supply.dk/upload_dir/pics/Shoppix/94508052.pdf"
+			(at 165.1 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RØD SMD LED 0805 2.0x1.2mm 38mcd 20mA 2.0V 140°"
+			(at 165.1 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 165.1 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3839,21 +4883,22 @@
 		(instances
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 			)
 			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GNDD")
-		(at 180.34 62.23 0)
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 81.28 77.47 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3861,10 +4906,20 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1778bfab-860f-4a00-83cc-7345cf4e6c9f")
-		(property "Reference" "#PWR04"
-			(at 180.34 68.58 0)
+		(uuid "162b174c-8232-4d17-a6ed-d77276400a98")
+		(property "Reference" "J5"
+			(at 79.502 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 78.74 80.0099 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3872,20 +4927,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GNDD"
-			(at 180.34 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at 180.34 62.23 0)
+		(property "Footprint" ""
+			(at 81.28 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3896,7 +4942,88 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 62.23 0)
+			(at 81.28 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 81.28 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "541d5aef-e96a-4224-a000-e8cbc9f46504")
+		)
+		(pin "1"
+			(uuid "7e63309a-9fd3-4ad6-9a09-0fad61beced4")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 203.2 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1778bfab-860f-4a00-83cc-7345cf4e6c9f")
+		(property "Reference" "#PWR05"
+			(at 203.2 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 203.2 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 203.2 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3907,7 +5034,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 180.34 62.23 0)
+			(at 203.2 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3923,21 +5050,21 @@
 		(instances
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "#PWR04")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
 			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "#PWR04")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Isolator:PC847")
-		(at 160.02 46.99 0)
+		(lib_id "Connector:TestPoint_Alt")
+		(at 120.65 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3945,9 +5072,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "202e41ec-8e26-4990-a842-f38cb9f05410")
-		(property "Reference" "U1"
-			(at 159.512 39.878 0)
+		(uuid "198df1b5-bf03-4530-9270-05f862124ca0")
+		(property "Reference" "TP7"
+			(at 118.364 116.078 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3956,31 +5083,8 @@
 				)
 			)
 		)
-		(property "Value" "PC847"
-			(at 159.766 42.164 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
-			(at 154.94 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf"
-			(at 160.02 46.99 0)
+		(property "Value" "Q1_Basic"
+			(at 123.19 118.6179 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3991,8 +5095,8 @@
 				(justify left)
 			)
 		)
-		(property "Description" "DC Quad Optocoupler, Vce 35V, CTR 50-300%, DIP16"
-			(at 160.02 46.99 0)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded"
+			(at 125.73 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4002,72 +5106,43 @@
 				)
 			)
 		)
-		(pin "5"
-			(uuid "806547eb-ad85-4d75-8644-5984693381ed")
+		(property "Datasheet" ""
+			(at 125.73 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "13"
-			(uuid "b50d52a1-6591-43d8-8458-6cbfdbbb0928")
-		)
-		(pin "11"
-			(uuid "9e08fc72-4bd5-433f-890c-b11ce30d0b42")
-		)
-		(pin "10"
-			(uuid "6c355646-7148-46c0-8096-a9ecee9e45d8")
-		)
-		(pin "4"
-			(uuid "78825f6a-ffa2-4531-a4de-e2be67d5bb96")
-		)
-		(pin "12"
-			(uuid "b8d5a0b0-e41c-4928-ac7e-f3b1e4d46412")
-		)
-		(pin "6"
-			(uuid "827e470e-55bd-4dc8-82c5-8b24899bc216")
-		)
-		(pin "8"
-			(uuid "425264bc-d22a-4058-83e2-9bf2c14c8e59")
-		)
-		(pin "7"
-			(uuid "d51e897b-79a6-4dcf-b137-7492155b5d0b")
-		)
-		(pin "16"
-			(uuid "53203741-bfd7-46db-b401-ee236379ac18")
-		)
-		(pin "9"
-			(uuid "f6b0a2ff-5134-439f-bff7-812a0c9db181")
-		)
-		(pin "15"
-			(uuid "601413d4-9add-4ebd-87d3-9a357c72a25c")
+		(property "Description" "test point (alternative shape)"
+			(at 120.65 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "5ade5259-d1f4-4538-a12d-b3153b99d5e2")
-		)
-		(pin "14"
-			(uuid "a939b691-cee7-4c32-895c-f4a0e14fe505")
-		)
-		(pin "2"
-			(uuid "b9f0e8d4-1b7e-4906-9d5c-1bd399b356fd")
-		)
-		(pin "3"
-			(uuid "578c8d46-fc5f-43ea-9b52-c2ce9ad05086")
+			(uuid "ece0d367-eb40-4a1e-bcc1-d1edb1ab5d93")
 		)
 		(instances
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-			(project "Sporbesat-Detektor"
-				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "U1")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
-		(at 128.27 44.45 180)
+		(lib_id "Device:D")
+		(at 100.33 96.52 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4075,29 +5150,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "28f72a21-130a-4ca1-a651-12a7d930ffff")
-		(property "Reference" "R3"
-			(at 126.238 44.45 90)
+		(uuid "239153f1-1d27-4d99-b300-66c17026fdf0")
+		(property "Reference" "D9"
+			(at 100.33 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
-		(property "Value" "100K"
-			(at 128.27 44.45 90)
+		(property "Value" "S5AC-13"
+			(at 99.822 90.678 90)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 130.048 44.45 90)
+		(property "Footprint" "Diode_SMD:D_MELF_Handsoldering"
+			(at 100.33 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4107,8 +5184,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
-			(at 128.27 44.45 0)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16007.pdf"
+			(at 100.33 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4118,8 +5195,8 @@
 				)
 			)
 		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
-			(at 128.27 44.45 0)
+		(property "Description" "Diode"
+			(at 100.33 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4129,8 +5206,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C17398"
-			(at 128.27 44.45 0)
+		(property "Sim.Device" "D"
+			(at 100.33 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4140,8 +5217,8 @@
 				)
 			)
 		)
-		(property "Stock" "170330"
-			(at 128.27 44.45 0)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 100.33 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4150,188 +5227,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Price" "0.005USD"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Preferred Component"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0805W8F1801T5E"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "1.8kΩ"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "125mW"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "150V"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 128.27 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "b33fe0e7-15bf-49ca-9147-86ade1c23c59")
 		)
 		(pin "1"
-			(uuid "cdacb39e-dd6a-43ad-9e0d-c5caeddfc5ef")
+			(uuid "8f26eb28-4bc6-4bb4-b0da-859d5c19717a")
+		)
+		(pin "2"
+			(uuid "5ecd6144-5f50-4b5e-a2dc-0406ef8704bf")
 		)
 		(instances
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-			(project "Sporbesat-Detektor"
-				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "R3")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -4339,7 +5245,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 81.28 39.37 0)
+		(at 81.28 121.92 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4348,9 +5254,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2992057c-095a-40e6-b7a4-4e632e1e2352")
-		(property "Reference" "J1"
-			(at 79.502 37.846 0)
+		(uuid "264a51c5-6622-4aed-93a7-08deda9a5c2a")
+		(property "Reference" "J7"
+			(at 79.502 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4361,7 +5267,90 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 78.74 41.9099 0)
+			(at 78.74 124.4599 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 81.28 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3a85a493-662d-4392-baa1-5dcf2ebb272d")
+		)
+		(pin "1"
+			(uuid "b6427f03-153f-4039-bb19-6b574ba64c14")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 82.55 31.75 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2992057c-095a-40e6-b7a4-4e632e1e2352")
+		(property "Reference" "J1"
+			(at 80.772 30.226 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 80.01 34.2899 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4373,7 +5362,7 @@
 			)
 		)
 		(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4mm"
-			(at 81.28 39.37 0)
+			(at 82.55 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4384,7 +5373,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 39.37 0)
+			(at 82.55 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4395,7 +5384,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 81.28 39.37 0)
+			(at 82.55 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4427,8 +5416,327 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 82.55 39.37 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2bd35e92-f868-4909-9b1f-b0358a6834c1")
+		(property "Reference" "J4"
+			(at 80.772 37.846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 80.01 41.9099 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4mm"
+			(at 82.55 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 82.55 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bd9bcd98-e853-4529-bb1c-0840a9ec0436")
+		)
+		(pin "1"
+			(uuid "0760c265-9b73-41d6-8c12-11293e079d04")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Capacitors:0805,470nF")
+		(at 146.05 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d1e38d2-69c1-4e6c-9ebb-69456a765778")
+		(property "Reference" "C4"
+			(at 146.812 117.094 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "200nF"
+			(at 148.59 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0805"
+			(at 144.272 119.38 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B474KBFNNNE_C13967.pdf"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V 470nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C13967"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "382598"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.017USD"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "CL21B474KBFNNNE"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rated" "100V"
+			(at 148.59 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Capacitance" "470nF"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0d05e846-68bd-4014-ab33-bef2512c2bda")
+		)
+		(pin "1"
+			(uuid "90d3e9be-6156-4413-a2cb-10f8d580aa44")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:BC857")
-		(at 121.92 41.91 270)
+		(at 127 48.26 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4439,7 +5747,7 @@
 		(dnp no)
 		(uuid "33be495c-29ba-43b1-bb7d-48f3d3194785")
 		(property "Reference" "Q1"
-			(at 121.92 33.528 90)
+			(at 127 39.878 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4449,7 +5757,7 @@
 			)
 		)
 		(property "Value" "BC857"
-			(at 121.92 35.56 90)
+			(at 127 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4459,7 +5767,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 120.015 36.83 0)
+			(at 125.095 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4472,7 +5780,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC860-D.pdf"
-			(at 121.92 41.91 0)
+			(at 127 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4484,7 +5792,7 @@
 			)
 		)
 		(property "Description" "0.1A Ic, 45V Vce, PNP Transistor, SOT-23"
-			(at 121.92 41.91 0)
+			(at 127 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4495,7 +5803,7 @@
 			)
 		)
 		(property "Sim.Device" "PNP"
-			(at 121.92 41.91 0)
+			(at 127 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4506,7 +5814,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 121.92 41.91 0)
+			(at 127 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4541,92 +5849,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 91.44 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "45df366d-e83c-4672-9695-104270813249")
-		(property "Reference" "#FLG01"
-			(at 91.44 36.195 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 91.948 29.718 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
-			(at 91.44 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 91.44 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3f9559af-1567-4f14-a32a-b029bc80fd14")
-		)
-		(instances
-			(project "Sikring_Sporbesat"
-				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-			(project "Sporbesat-Detektor"
-				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint_Alt")
-		(at 115.57 45.72 0)
+		(at 146.05 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4634,9 +5858,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "74b17f76-52de-42a7-95c7-181235587630")
-		(property "Reference" "TP1"
-			(at 113.284 41.148 0)
+		(uuid "37367458-14ab-4521-8de5-c26d395aa041")
+		(property "Reference" "TP8"
+			(at 146.05 107.188 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4645,8 +5869,8 @@
 				)
 			)
 		)
-		(property "Value" "Q1_Basic"
-			(at 118.11 43.6879 0)
+		(property "Value" "U1A_Collector"
+			(at 134.874 103.378 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4658,7 +5882,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded"
-			(at 120.65 45.72 0)
+			(at 151.13 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4669,7 +5893,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 45.72 0)
+			(at 151.13 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4680,7 +5904,885 @@
 			)
 		)
 		(property "Description" "test point (alternative shape)"
-			(at 115.57 45.72 0)
+			(at 146.05 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c8f0b4d7-2c3c-414d-92ff-9f26bb011b7e")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:PC847")
+		(at 177.8 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "390f58bb-50df-485a-97f7-4e0808dd691a")
+		(property "Reference" "U1"
+			(at 177.8 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PC847"
+			(at 177.8 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+			(at 172.72 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf"
+			(at 177.8 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "DC Quad Optocoupler, Vce 35V, CTR 50-300%, DIP16"
+			(at 177.8 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "81897fd0-8265-4c81-a261-d107f0db0ad5")
+		)
+		(pin "2"
+			(uuid "d64946c9-a500-4a32-94da-b1a42607b21d")
+		)
+		(pin "6"
+			(uuid "cdf0fd5a-f108-48d1-9ca4-607f56c3e7d1")
+		)
+		(pin "14"
+			(uuid "1ee58454-489d-4b97-9aff-31e1a26c4a26")
+		)
+		(pin "7"
+			(uuid "df1b7135-166c-4338-8f31-9eccb5d139ac")
+		)
+		(pin "9"
+			(uuid "a46f9506-e9f2-49e3-9f79-b9643ee62cdc")
+		)
+		(pin "12"
+			(uuid "4dda5443-f926-40de-9505-a362265a6016")
+		)
+		(pin "8"
+			(uuid "ae29ef18-6db0-41e2-849a-6dbebb892171")
+		)
+		(pin "11"
+			(uuid "01e24930-9445-4361-9f36-365b198b97ba")
+		)
+		(pin "10"
+			(uuid "606bfab9-82fb-4e27-b107-6d357916af31")
+		)
+		(pin "13"
+			(uuid "476d6165-97ab-40e3-b322-f63ff9e31f50")
+		)
+		(pin "4"
+			(uuid "8ec1b9a4-b805-462e-9c48-6ae6743f2dd3")
+		)
+		(pin "3"
+			(uuid "97828ce8-a285-4edf-946f-7f4f67c3844f")
+		)
+		(pin "16"
+			(uuid "ad6422c8-4bdf-47d2-bd70-4e0ec1b70c59")
+		)
+		(pin "5"
+			(uuid "1ccc968e-a967-4fdd-a050-adbd1539648d")
+		)
+		(pin "15"
+			(uuid "735f024b-8355-4ab3-96d5-776c42c8a999")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+			(project "Sporbesat-Detektor"
+				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 139.7 45.72 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41fb7ab0-c6e4-4232-8ce1-21c0e0823c0c")
+		(property "Reference" "D3"
+			(at 139.7 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 139.7 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 139.7 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 139.7 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 139.7 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 139.7 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 139.7 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6a6772b3-17d9-41a3-9bae-f31e786681c7")
+		)
+		(pin "1"
+			(uuid "ffd20fbd-1e3f-44b7-b41f-d5110c382cd7")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+			(project "Sporbesat-Detektor"
+				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC857")
+		(at 127 72.39 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "43fab2c3-ba34-4acc-b160-237e9e27479f")
+		(property "Reference" "Q2"
+			(at 127 64.008 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BC857"
+			(at 127 66.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 125.095 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC860-D.pdf"
+			(at 127 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Transistor, SOT-23"
+			(at 127 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 127 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 127 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "a7b764ae-9dce-418a-a146-4740fc8bc680")
+		)
+		(pin "1"
+			(uuid "8a835329-ce48-40a1-bd8e-905134007ef2")
+		)
+		(pin "2"
+			(uuid "7790a1c0-171c-41de-935f-1be2cadf2a33")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Alt")
+		(at 146.05 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "548e95d1-8292-42ae-9500-539f964cc059")
+		(property "Reference" "TP2"
+			(at 146.05 38.608 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "U1A_Collector"
+			(at 134.874 34.798 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded"
+			(at 151.13 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 146.05 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3c12ce12-6d65-4de8-a73b-2a79430eda05")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+			(project "Sporbesat-Detektor"
+				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 81.28 100.33 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "561d03a8-c95e-4ed8-b01f-d37573dbe90a")
+		(property "Reference" "J6"
+			(at 79.502 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 78.74 102.8699 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 81.28 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "398dc281-bad4-48ee-bbcf-e29db85260eb")
+		)
+		(pin "1"
+			(uuid "fd74331d-a9d1-4325-923d-d04e45cfe624")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 139.7 92.71 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57d1904d-67ec-4d60-952e-917b40891150")
+		(property "Reference" "D11"
+			(at 139.7 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 139.7 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 139.7 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 139.7 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 139.7 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 139.7 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 139.7 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5c217e02-051f-46cb-9c77-0ba52106efdd")
+		)
+		(pin "1"
+			(uuid "ab550ce8-3365-4e8e-9e93-9d5b1829444b")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Alt")
+		(at 146.05 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5dbda73c-5a05-49a5-9a15-e8f50c882305")
+		(property "Reference" "TP4"
+			(at 146.05 62.738 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "U1A_Collector"
+			(at 134.874 58.928 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded"
+			(at 151.13 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 146.05 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b27d2be3-64d1-40d1-89a4-ed72a57d8b42")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 105.41 118.11 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72f08a8e-d408-45dd-a637-d05730eb34bb")
+		(property "Reference" "D14"
+			(at 105.41 107.95 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "S5AC-13"
+			(at 107.95 119.3799 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MELF_Handsoldering"
+			(at 105.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 105.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 105.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c70f8a26-303b-47d5-ab1c-2c562eb947a4")
+		)
+		(pin "1"
+			(uuid "6221df94-2c43-42f4-8e95-254bcc58c107")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Alt")
+		(at 120.65 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "74b17f76-52de-42a7-95c7-181235587630")
+		(property "Reference" "TP1"
+			(at 118.364 47.498 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q1_Basic"
+			(at 123.19 50.0379 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded"
+			(at 125.73 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 120.65 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4710,7 +6812,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 100.33 43.18 90)
+		(at 105.41 49.53 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4720,7 +6822,7 @@
 		(dnp no)
 		(uuid "77242be3-5e6a-4f75-9183-ab316821fffc")
 		(property "Reference" "D2"
-			(at 100.33 33.02 90)
+			(at 105.41 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4731,7 +6833,7 @@
 			)
 		)
 		(property "Value" "S5AC-13"
-			(at 102.87 44.4499 90)
+			(at 107.95 50.7999 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4743,7 +6845,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_MELF_Handsoldering"
-			(at 100.33 43.18 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4754,7 +6856,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 43.18 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4765,7 +6867,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 100.33 43.18 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4776,7 +6878,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 100.33 43.18 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4787,7 +6889,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 100.33 43.18 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4819,8 +6921,635 @@
 		)
 	)
 	(symbol
+		(lib_id "Isolator:PC847")
+		(at 177.8 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7757ecc6-7ace-4d1a-86d1-b1c0ddb77a2a")
+		(property "Reference" "U4"
+			(at 177.8 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PC847"
+			(at 177.8 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+			(at 172.72 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf"
+			(at 177.8 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "DC Quad Optocoupler, Vce 35V, CTR 50-300%, DIP16"
+			(at 177.8 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3a1e1151-8425-452b-873b-eda0bab844a0")
+		)
+		(pin "2"
+			(uuid "9262ae51-7175-498f-a2ef-ea8fc2c8cf09")
+		)
+		(pin "6"
+			(uuid "cdf0fd5a-f108-48d1-9ca4-607f56c3e7d1")
+		)
+		(pin "14"
+			(uuid "1ee58454-489d-4b97-9aff-31e1a26c4a26")
+		)
+		(pin "7"
+			(uuid "df1b7135-166c-4338-8f31-9eccb5d139ac")
+		)
+		(pin "9"
+			(uuid "a46f9506-e9f2-49e3-9f79-b9643ee62cdc")
+		)
+		(pin "12"
+			(uuid "4dda5443-f926-40de-9505-a362265a6016")
+		)
+		(pin "8"
+			(uuid "ae29ef18-6db0-41e2-849a-6dbebb892171")
+		)
+		(pin "11"
+			(uuid "01e24930-9445-4361-9f36-365b198b97ba")
+		)
+		(pin "10"
+			(uuid "606bfab9-82fb-4e27-b107-6d357916af31")
+		)
+		(pin "13"
+			(uuid "476d6165-97ab-40e3-b322-f63ff9e31f50")
+		)
+		(pin "4"
+			(uuid "8ec1b9a4-b805-462e-9c48-6ae6743f2dd3")
+		)
+		(pin "3"
+			(uuid "97828ce8-a285-4edf-946f-7f4f67c3844f")
+		)
+		(pin "16"
+			(uuid "fdad2bcb-4cfb-4835-8781-dc86e964dab2")
+		)
+		(pin "5"
+			(uuid "1ccc968e-a967-4fdd-a050-adbd1539648d")
+		)
+		(pin "15"
+			(uuid "295bbb78-d38d-42fd-8d18-8eb208403f86")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
+		(at 115.57 121.92 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7d207de1-713c-42d5-8cf1-32046260eddf")
+		(property "Reference" "R8"
+			(at 115.57 119.888 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10Ω"
+			(at 115.57 121.92 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0805"
+			(at 115.57 123.698 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17398"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "170330"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.005USD"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0805W8F1801T5E"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "1.8kΩ"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "125mW"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "150V"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 115.57 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "eefb0da3-0e81-47f9-ae6d-daeb44b12e15")
+		)
+		(pin "1"
+			(uuid "7ca41b90-abf6-46ca-8c10-497f0735de2c")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Capacitors:0805,470nF")
+		(at 146.05 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7f5c4c74-cccd-4aff-a8ba-6f92a5df3272")
+		(property "Reference" "C3"
+			(at 146.812 95.504 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "200nF"
+			(at 148.59 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0805"
+			(at 144.272 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B474KBFNNNE_C13967.pdf"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V 470nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C13967"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "382598"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.017USD"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "CL21B474KBFNNNE"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rated" "100V"
+			(at 148.59 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Capacitance" "470nF"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 146.05 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a89796df-51c0-4397-b65f-68b4180246d8")
+		)
+		(pin "1"
+			(uuid "cc6b6692-0b8a-4271-a4de-fedf29a0f363")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x05_Socket")
-		(at 187.96 49.53 0)
+		(at 209.55 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4830,7 +7559,7 @@
 		(dnp no)
 		(uuid "80e09617-8f03-494b-b9d6-e120cfe8d42e")
 		(property "Reference" "J3"
-			(at 188.722 42.926 0)
+			(at 210.312 49.276 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4841,7 +7570,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Socket"
-			(at 189.23 50.7999 0)
+			(at 210.82 57.1499 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4853,7 +7582,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 49.53 0)
+			(at 209.55 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4864,7 +7593,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 49.53 0)
+			(at 209.55 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4875,7 +7604,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 187.96 49.53 0)
+			(at 209.55 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4909,15 +7638,15 @@
 			)
 			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
-		(at 105.41 43.18 180)
+		(lib_id "Connector:TestPoint_Alt")
+		(at 120.65 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4925,9 +7654,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "83d1cb72-eedd-4c29-b1a1-abee46ad8437")
-		(property "Reference" "R1"
-			(at 103.378 43.18 90)
+		(uuid "8a45a277-801d-4e42-b132-dec8472ae5ab")
+		(property "Reference" "TP5"
+			(at 118.364 94.488 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4936,18 +7665,8 @@
 				)
 			)
 		)
-		(property "Value" "?Ω"
-			(at 105.41 43.18 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 107.188 43.18 90)
+		(property "Value" "Q1_Basic"
+			(at 123.19 97.0279 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4955,274 +7674,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C17398"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "170330"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.005USD"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Preferred Component"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0805W8F1801T5E"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "1.8kΩ"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "125mW"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "150V"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 105.41 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d771d7ad-5330-4b2e-a2f0-b4af8bb1ee91")
-		)
-		(pin "1"
-			(uuid "15a70497-a6f4-4fb2-90a7-4bb85b829f2f")
-		)
-		(instances
-			(project "Sikring_Sporbesat"
-				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-			(project "Sporbesat-Detektor"
-				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 91.44 52.07 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9371d001-4299-4a59-a7c6-5940b268fd22")
-		(property "Reference" "#FLG02"
-			(at 91.44 53.975 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 91.948 60.452 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
-			(at 91.44 52.07 0)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded"
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5233,7 +7689,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 52.07 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5243,8 +7699,8 @@
 				)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 91.44 52.07 0)
+		(property "Description" "test point (alternative shape)"
+			(at 120.65 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5255,26 +7711,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "fa5364d0-300e-4696-9483-7c3e01a1e841")
+			(uuid "5f8190a4-dcbf-4986-9dbc-e829e93f2b8b")
 		)
 		(instances
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-			(project "Sporbesat-Detektor"
-				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "#FLG01")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0805,470nF")
-		(at 132.08 45.72 0)
+		(lib_id "Transistor_BJT:BC857")
+		(at 127 116.84 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5282,31 +7733,54 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "968ab30b-20f9-4772-92a9-02c943d1224a")
-		(property "Reference" "C1"
-			(at 132.842 43.434 0)
+		(uuid "8ac2c222-313d-470d-81d9-26581f28cfa7")
+		(property "Reference" "Q4"
+			(at 127 108.458 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "68nF"
-			(at 134.62 45.72 0)
+		(property "Value" "BC857"
+			(at 127 110.49 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.8 0.8)
 				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 125.095 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0805"
-			(at 130.302 45.72 90)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC860-D.pdf"
+			(at 127 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Transistor, SOT-23"
+			(at 127 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5316,8 +7790,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B474KBFNNNE_C13967.pdf"
-			(at 132.08 45.72 0)
+		(property "Sim.Device" "PNP"
+			(at 127 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5327,8 +7801,8 @@
 				)
 			)
 		)
-		(property "Description" "50V 470nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 132.08 45.72 0)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 127 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5338,8 +7812,57 @@
 				)
 			)
 		)
-		(property "LCSC" "C13967"
-			(at 132.08 45.72 0)
+		(pin "3"
+			(uuid "8b743fab-a325-4688-9e94-6f262ed30e17")
+		)
+		(pin "1"
+			(uuid "b761bb02-f65a-430f-8ee0-d7ee4b7eeec5")
+		)
+		(pin "2"
+			(uuid "56373d38-2353-4f5d-996d-b7f1468ef790")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
+		(at 115.57 100.33 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8bb74427-a933-4bda-a9ba-204063c26184")
+		(property "Reference" "R6"
+			(at 115.57 98.298 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10Ω"
+			(at 115.57 100.33 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0805"
+			(at 115.57 102.108 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5349,8 +7872,8 @@
 				)
 			)
 		)
-		(property "Stock" "382598"
-			(at 132.08 45.72 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
+			(at 115.57 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5360,8 +7883,41 @@
 				)
 			)
 		)
-		(property "Price" "0.017USD"
-			(at 132.08 45.72 0)
+		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17398"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "170330"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.005USD"
+			(at 115.57 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5372,7 +7928,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 132.08 45.72 0)
+			(at 115.57 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5383,7 +7939,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 132.08 45.72 0)
+			(at 115.57 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5394,7 +7950,697 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 132.08 45.72 0)
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0805W8F1801T5E"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "1.8kΩ"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "125mW"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "150V"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 115.57 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c5f9d0e7-3984-4250-82d1-7e45a10bc8f5")
+		)
+		(pin "1"
+			(uuid "528f2d3c-bd78-475f-8077-f66869bb18ca")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 190.5 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c1ddc8d-56e5-4e69-b85c-596f31f2fede")
+		(property "Reference" "#PWR07"
+			(at 190.5 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 190.5 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 190.5 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 190.5 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1a50ce67-dae1-4003-951b-e8c6f9582f33")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Alt")
+		(at 146.05 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9600861b-e135-4733-bd76-5c55a75ba360")
+		(property "Reference" "TP6"
+			(at 146.05 85.598 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "U1A_Collector"
+			(at 134.874 81.788 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded"
+			(at 151.13 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 146.05 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3e7c55d1-3b04-4e67-b4d3-051cb3e97890")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
+		(at 153.67 114.3 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "965e0080-4b6f-4231-aabb-99287242a3d6")
+		(property "Reference" "R9"
+			(at 153.162 111.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2kΩ"
+			(at 153.416 114.3 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0805"
+			(at 153.67 116.078 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17398"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "170330"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.005USD"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0805W8F1801T5E"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "1.8kΩ"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "125mW"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "150V"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 153.67 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "def6b79b-49b2-4225-822d-5817943c4ebe")
+		)
+		(pin "1"
+			(uuid "c597e01a-4079-4f63-a9d8-a31574560216")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Capacitors:0805,470nF")
+		(at 146.05 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "968ab30b-20f9-4772-92a9-02c943d1224a")
+		(property "Reference" "C1"
+			(at 146.812 48.514 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "200nF"
+			(at 148.59 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0805"
+			(at 144.272 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B474KBFNNNE_C13967.pdf"
+			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V 470nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C13967"
+			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "382598"
+			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.017USD"
+			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 146.05 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5405,7 +8651,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 132.08 45.72 0)
+			(at 146.05 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5416,7 +8662,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 132.08 45.72 0)
+			(at 146.05 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5427,7 +8673,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 132.08 45.72 0)
+			(at 146.05 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5438,7 +8684,7 @@
 			)
 		)
 		(property "Part" "CL21B474KBFNNNE"
-			(at 132.08 45.72 0)
+			(at 146.05 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5449,7 +8695,8 @@
 			)
 		)
 		(property "Voltage Rated" "100V"
-			(at 134.62 46.99 0)
+			(at 148.59 52.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5460,7 +8707,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 132.08 45.72 0)
+			(at 146.05 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5471,7 +8718,7 @@
 			)
 		)
 		(property "Capacitance" "470nF"
-			(at 132.08 45.72 0)
+			(at 146.05 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5482,7 +8729,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 132.08 45.72 0)
+			(at 146.05 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5514,8 +8761,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint_Alt")
-		(at 132.08 38.1 0)
+		(lib_id "Device:D")
+		(at 105.41 96.52 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5523,9 +8770,33 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "991c567a-f71d-43ff-bdc5-ff280d2c0bfe")
-		(property "Reference" "TP2"
-			(at 132.08 32.258 0)
+		(uuid "979ba524-140f-4fa3-a2e1-2034ea508ba6")
+		(property "Reference" "D10"
+			(at 105.41 86.36 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "S5AC-13"
+			(at 107.95 97.7899 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MELF_Handsoldering"
+			(at 105.41 96.52 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5534,8 +8805,112 @@
 				)
 			)
 		)
-		(property "Value" "Q1_Collector"
-			(at 134.62 36.0679 0)
+		(property "Datasheet" ""
+			(at 105.41 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 105.41 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 105.41 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "35358dc5-d45d-46e5-8782-dd19ac6dc3f8")
+		)
+		(pin "1"
+			(uuid "7d1ffcb0-68bf-4db0-86ea-0c0593a2be49")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC857")
+		(at 127 95.25 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a1ed71ac-f4f5-456d-8a6c-56334e2873aa")
+		(property "Reference" "Q3"
+			(at 127 86.868 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BC857"
+			(at 127 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 125.095 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC860-D.pdf"
+			(at 127 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5546,8 +8921,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded"
-			(at 137.16 38.1 0)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Transistor, SOT-23"
+			(at 127 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5557,8 +8932,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 137.16 38.1 0)
+		(property "Sim.Device" "PNP"
+			(at 127 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5568,8 +8943,114 @@
 				)
 			)
 		)
-		(property "Description" "test point (alternative shape)"
-			(at 132.08 38.1 0)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 127 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "0d539b7f-6d23-4d84-a88a-e4c3efd926ef")
+		)
+		(pin "1"
+			(uuid "2ef4a57f-d241-48f8-a50b-b8c118a5ff05")
+		)
+		(pin "2"
+			(uuid "99168fd6-018e-4f2e-a550-2da798db45d9")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 100.33 118.11 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a9e94e18-cbe4-48d6-9ca7-361c171b101b")
+		(property "Reference" "D13"
+			(at 100.33 107.95 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "S5AC-13"
+			(at 99.822 112.268 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MELF_Handsoldering"
+			(at 100.33 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16007.pdf"
+			(at 100.33 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 100.33 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 100.33 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 100.33 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5580,26 +9061,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "1875c01d-ba3a-4603-a403-5f8ea9f9094f")
+			(uuid "d0b4664c-7d88-4ef0-a3e5-e09db1fa557f")
+		)
+		(pin "2"
+			(uuid "9d0d2212-a537-4bc9-84c8-28c019893e88")
 		)
 		(instances
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-			(project "Sporbesat-Detektor"
-				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "TP2")
+					(reference "D13")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GNDD")
-		(at 168.91 52.07 0)
+		(lib_id "Diode:1N4148")
+		(at 139.7 114.3 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5608,9 +9087,29 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c2c7c8a6-aa4d-456f-855a-c96a905f9729")
-		(property "Reference" "#PWR03"
-			(at 168.91 58.42 0)
+		(uuid "b4d42bac-5494-43c4-a353-06f049277747")
+		(property "Reference" "D15"
+			(at 139.7 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 139.7 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 139.7 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5620,8 +9119,9 @@
 				)
 			)
 		)
-		(property "Value" "GNDD"
-			(at 168.91 55.88 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 139.7 114.3 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5630,8 +9130,858 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at 168.91 52.07 0)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 139.7 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 139.7 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 139.7 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "61437e9f-d642-4fd3-a9f1-89834a97ce91")
+		)
+		(pin "1"
+			(uuid "cf8044c8-f35a-4282-a455-233857e2fecd")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Capacitors:0805,470nF")
+		(at 146.05 74.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b75a8678-39be-40eb-80bb-201b5e33c8a5")
+		(property "Reference" "C2"
+			(at 146.812 72.644 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "200nF"
+			(at 148.59 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0805"
+			(at 144.272 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B474KBFNNNE_C13967.pdf"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V 470nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C13967"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "382598"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.017USD"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "CL21B474KBFNNNE"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rated" "100V"
+			(at 148.59 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Capacitance" "470nF"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 146.05 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1a33fed5-6d62-48b5-8c92-cc82ba0e516e")
+		)
+		(pin "1"
+			(uuid "00fcedeb-f0ca-4074-9d3c-e9e20d291857")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
+		(at 153.67 92.71 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "be227836-8474-4d9e-a126-1c9191d149da")
+		(property "Reference" "R7"
+			(at 153.162 90.17 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2kΩ"
+			(at 153.416 92.71 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0805"
+			(at 153.67 94.488 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17398"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "170330"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.005USD"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0805W8F1801T5E"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "1.8kΩ"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "125mW"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "150V"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 153.67 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fa775d3b-152d-40c5-ab3e-b0b5e054bbdc")
+		)
+		(pin "1"
+			(uuid "87303742-38b5-4f56-b943-c1cb5cdb89e1")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
+		(at 115.57 77.47 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c4ab7739-412e-43d6-829c-c349c9751150")
+		(property "Reference" "R3"
+			(at 115.57 75.438 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10Ω"
+			(at 115.57 77.47 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0805"
+			(at 115.57 79.248 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17398"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "170330"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.005USD"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0805W8F1801T5E"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "1.8kΩ"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "125mW"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "150V"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 115.57 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a04f1b7d-35e5-4efd-9c3f-6557bc6dd6f2")
+		)
+		(pin "1"
+			(uuid "95598c48-bdb4-44e9-af31-5a9eb4a65365")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 105.41 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c95c9ad2-ec0a-46c4-b29a-3ca6f72c3f80")
+		(property "Reference" "D6"
+			(at 105.41 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "S5AC-13"
+			(at 107.95 74.9299 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MELF_Handsoldering"
+			(at 105.41 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5642,7 +9992,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 52.07 0)
+			(at 105.41 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5652,8 +10002,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 168.91 52.07 0)
+		(property "Description" "Diode"
+			(at 105.41 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5662,20 +10012,39 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Sim.Device" "D"
+			(at 105.41 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e28610d2-6c68-4b59-be38-eec4d5de2fd2")
 		)
 		(pin "1"
-			(uuid "aa1ea6a6-32ee-4a2a-9ecc-087a33e3ce96")
+			(uuid "36cd4587-43b6-4368-9182-b681c705cf0e")
 		)
 		(instances
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-			(project "Sporbesat-Detektor"
-				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "#PWR03")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -5683,7 +10052,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 91.44 52.07 0)
+		(at 92.71 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5693,7 +10062,7 @@
 		(dnp no)
 		(uuid "cd561aab-6c4d-4ff7-8d96-98381ba3374c")
 		(property "Reference" "#PWR02"
-			(at 91.44 57.15 0)
+			(at 92.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5704,7 +10073,7 @@
 			)
 		)
 		(property "Value" "GNDDCC"
-			(at 91.694 55.88 0)
+			(at 92.964 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5714,7 +10083,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at 91.44 53.34 0)
+			(at 92.71 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5725,7 +10094,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 53.34 0)
+			(at 92.71 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5736,7 +10105,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 91.44 52.07 0)
+			(at 92.71 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5766,7 +10135,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 95.25 43.18 270)
+		(at 100.33 49.53 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5776,7 +10145,7 @@
 		(dnp no)
 		(uuid "d016e86d-a607-4927-9db7-ac9f511e8af5")
 		(property "Reference" "D1"
-			(at 95.25 33.02 90)
+			(at 100.33 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5787,7 +10156,7 @@
 			)
 		)
 		(property "Value" "S5AC-13"
-			(at 94.742 37.338 90)
+			(at 99.822 43.688 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5798,7 +10167,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_MELF_Handsoldering"
-			(at 95.25 43.18 0)
+			(at 100.33 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5809,7 +10178,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16007.pdf"
-			(at 95.25 43.18 0)
+			(at 100.33 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5820,7 +10189,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 95.25 43.18 0)
+			(at 100.33 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5831,7 +10200,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 95.25 43.18 0)
+			(at 100.33 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5842,7 +10211,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 95.25 43.18 0)
+			(at 100.33 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5875,7 +10244,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
-		(at 110.49 46.99 90)
+		(at 115.57 53.34 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5885,7 +10254,7 @@
 		(dnp no)
 		(uuid "d1969418-5322-43ce-b624-f3e9e23c0c33")
 		(property "Reference" "R2"
-			(at 110.49 44.958 90)
+			(at 115.57 51.308 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5895,7 +10264,7 @@
 			)
 		)
 		(property "Value" "10Ω"
-			(at 110.49 46.99 90)
+			(at 115.57 53.34 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5905,7 +10274,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 110.49 48.768 90)
+			(at 115.57 55.118 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5916,7 +10285,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5927,7 +10296,7 @@
 			)
 		)
 		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5938,7 +10307,7 @@
 			)
 		)
 		(property "LCSC" "C17398"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5949,7 +10318,7 @@
 			)
 		)
 		(property "Stock" "170330"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5960,7 +10329,7 @@
 			)
 		)
 		(property "Price" "0.005USD"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5971,7 +10340,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5982,7 +10351,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5993,7 +10362,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6004,7 +10373,7 @@
 			)
 		)
 		(property "Class" "Preferred Component"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6015,7 +10384,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6026,7 +10395,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6037,7 +10406,7 @@
 			)
 		)
 		(property "Part" "0805W8F1801T5E"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6048,7 +10417,7 @@
 			)
 		)
 		(property "Resistance" "1.8kΩ"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6059,7 +10428,7 @@
 			)
 		)
 		(property "Power(Watts)" "125mW"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6070,7 +10439,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6081,7 +10450,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "150V"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6092,7 +10461,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6103,7 +10472,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6114,7 +10483,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 110.49 46.99 0)
+			(at 115.57 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6139,15 +10508,15 @@
 			)
 			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:HT")
-		(at 87.63 36.83 0)
+		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
+		(at 153.67 69.85 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6155,9 +10524,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d904f236-b8db-41ce-90e1-242e9d1f795a")
-		(property "Reference" "#PWR01"
-			(at 87.63 40.64 0)
+		(uuid "d24990ab-27d7-4d28-a766-c63881d2811a")
+		(property "Reference" "R5"
+			(at 153.162 67.31 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2kΩ"
+			(at 153.416 69.85 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0805"
+			(at 153.67 71.628 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6167,8 +10556,9 @@
 				)
 			)
 		)
-		(property "Value" "VDCC"
-			(at 87.63 33.782 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
+			(at 153.67 69.85 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6177,8 +10567,254 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 87.63 36.83 0)
+		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17398"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "170330"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.005USD"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0805W8F1801T5E"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "1.8kΩ"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "125mW"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "150V"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 153.67 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1bb8e153-52c3-4a14-a9f4-63ed04980e40")
+		)
+		(pin "1"
+			(uuid "88144052-251d-4896-a081-9151d779961d")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Alt")
+		(at 120.65 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d2e4c45b-1954-4e70-985a-f3d95b1d5d80")
+		(property "Reference" "TP3"
+			(at 118.364 71.628 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q1_Basic"
+			(at 123.19 74.1679 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded"
+			(at 125.73 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6189,7 +10825,300 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 36.83 0)
+			(at 125.73 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 120.65 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b7cbf431-7a30-46ed-8d3d-99b3299cc8ee")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 165.1 69.85 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d51294a6-cdcc-451e-90bc-4cf6ebab8ca8")
+		(property "Reference" "D8"
+			(at 164.846 63.754 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 165.1 66.548 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 165.1 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://el-supply.dk/upload_dir/pics/Shoppix/94508052.pdf"
+			(at 165.1 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RØD SMD LED 0805 2.0x1.2mm 38mcd 20mA 2.0V 140°"
+			(at 165.1 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 165.1 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8bb2dc3b-48e0-4a07-80a3-78dfa2b659bf")
+		)
+		(pin "2"
+			(uuid "8836f425-090f-4a44-913f-bc4dfbec383e")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:PC847")
+		(at 177.8 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6faeda2-e6e0-4624-b530-a491949eae65")
+		(property "Reference" "U2"
+			(at 177.8 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PC847"
+			(at 177.8 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+			(at 172.72 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf"
+			(at 177.8 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "DC Quad Optocoupler, Vce 35V, CTR 50-300%, DIP16"
+			(at 177.8 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4bd3889c-3aaa-408e-bf7e-858c2e9d3d4d")
+		)
+		(pin "2"
+			(uuid "43064032-5d91-4999-828b-b821ba75da5c")
+		)
+		(pin "6"
+			(uuid "cdf0fd5a-f108-48d1-9ca4-607f56c3e7d1")
+		)
+		(pin "14"
+			(uuid "1ee58454-489d-4b97-9aff-31e1a26c4a26")
+		)
+		(pin "7"
+			(uuid "df1b7135-166c-4338-8f31-9eccb5d139ac")
+		)
+		(pin "9"
+			(uuid "a46f9506-e9f2-49e3-9f79-b9643ee62cdc")
+		)
+		(pin "12"
+			(uuid "4dda5443-f926-40de-9505-a362265a6016")
+		)
+		(pin "8"
+			(uuid "ae29ef18-6db0-41e2-849a-6dbebb892171")
+		)
+		(pin "11"
+			(uuid "01e24930-9445-4361-9f36-365b198b97ba")
+		)
+		(pin "10"
+			(uuid "606bfab9-82fb-4e27-b107-6d357916af31")
+		)
+		(pin "13"
+			(uuid "476d6165-97ab-40e3-b322-f63ff9e31f50")
+		)
+		(pin "4"
+			(uuid "8ec1b9a4-b805-462e-9c48-6ae6743f2dd3")
+		)
+		(pin "3"
+			(uuid "97828ce8-a285-4edf-946f-7f4f67c3844f")
+		)
+		(pin "16"
+			(uuid "4754455d-94ac-4948-8ace-fcf119fca78b")
+		)
+		(pin "5"
+			(uuid "1ccc968e-a967-4fdd-a050-adbd1539648d")
+		)
+		(pin "15"
+			(uuid "cedd5ba6-421c-4ccc-a810-d2102affafee")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:HT")
+		(at 95.25 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d904f236-b8db-41ce-90e1-242e9d1f795a")
+		(property "Reference" "#PWR01"
+			(at 95.25 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDCC"
+			(at 95.25 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6200,7 +11129,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"HT\""
-			(at 87.63 36.83 0)
+			(at 95.25 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6229,8 +11158,111 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 100.33 73.66 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e79306ca-a075-46e8-bc32-f83ce3a1dbd9")
+		(property "Reference" "D5"
+			(at 100.33 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "S5AC-13"
+			(at 99.822 67.818 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MELF_Handsoldering"
+			(at 100.33 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16007.pdf"
+			(at 100.33 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 100.33 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 100.33 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 100.33 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7af27400-4615-4bb8-9491-d357f5305625")
+		)
+		(pin "2"
+			(uuid "8e34a9dd-3129-4093-ab3f-211678f29ca0")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 81.28 46.99 0)
+		(at 81.28 53.34 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6241,7 +11273,7 @@
 		(dnp no)
 		(uuid "ee846688-b38c-436c-9e1d-2ddb5eb60965")
 		(property "Reference" "J2"
-			(at 79.502 45.72 0)
+			(at 79.502 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6252,7 +11284,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 78.74 49.5299 0)
+			(at 78.74 55.8799 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6264,7 +11296,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 46.99 0)
+			(at 81.28 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6275,7 +11307,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 46.99 0)
+			(at 81.28 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6286,7 +11318,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 81.28 46.99 0)
+			(at 81.28 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6318,8 +11350,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 165.1 92.71 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f539a58f-f8ef-4b7a-b684-a890f61a48fc")
+		(property "Reference" "D12"
+			(at 164.846 86.614 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 165.1 89.408 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 165.1 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://el-supply.dk/upload_dir/pics/Shoppix/94508052.pdf"
+			(at 165.1 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RØD SMD LED 0805 2.0x1.2mm 38mcd 20mA 2.0V 140°"
+			(at 165.1 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 165.1 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5bd6386e-d42a-429f-b926-3de89809bc18")
+		)
+		(pin "2"
+			(uuid "93a18714-bf89-4d19-af9c-d299415c1faf")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,1.8kΩ")
-		(at 137.16 39.37 90)
+		(at 153.67 45.72 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6329,7 +11452,7 @@
 		(dnp no)
 		(uuid "fa935bcb-e16f-43ba-a674-71c775d9d739")
 		(property "Reference" "R4"
-			(at 137.16 37.338 90)
+			(at 153.162 43.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6339,7 +11462,7 @@
 			)
 		)
 		(property "Value" "2.2kΩ"
-			(at 137.16 39.37 90)
+			(at 153.416 45.72 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6349,7 +11472,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 137.16 41.148 90)
+			(at 153.67 47.498 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6360,7 +11483,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6371,7 +11494,7 @@
 			)
 		)
 		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 1.8kΩ 0805 Chip Resistor - Surface Mount ROHS"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6382,7 +11505,7 @@
 			)
 		)
 		(property "LCSC" "C17398"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6393,7 +11516,7 @@
 			)
 		)
 		(property "Stock" "170330"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6404,7 +11527,7 @@
 			)
 		)
 		(property "Price" "0.005USD"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6415,7 +11538,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6426,7 +11549,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6437,7 +11560,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6448,7 +11571,7 @@
 			)
 		)
 		(property "Class" "Preferred Component"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6459,7 +11582,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6470,7 +11593,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6481,7 +11604,7 @@
 			)
 		)
 		(property "Part" "0805W8F1801T5E"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6492,7 +11615,7 @@
 			)
 		)
 		(property "Resistance" "1.8kΩ"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6503,7 +11626,7 @@
 			)
 		)
 		(property "Power(Watts)" "125mW"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6514,7 +11637,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6525,7 +11648,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "150V"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6536,7 +11659,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6547,7 +11670,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6558,7 +11681,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 137.16 39.37 0)
+			(at 153.67 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6583,7 +11706,98 @@
 			)
 			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "R2")
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 165.1 114.3 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fafc6f21-d932-4016-92af-75edce4097b6")
+		(property "Reference" "D16"
+			(at 164.846 108.204 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 165.1 110.998 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 165.1 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://el-supply.dk/upload_dir/pics/Shoppix/94508052.pdf"
+			(at 165.1 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RØD SMD LED 0805 2.0x1.2mm 38mcd 20mA 2.0V 140°"
+			(at 165.1 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 165.1 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "742f558d-6e07-439c-951c-dab58ae613e3")
+		)
+		(pin "2"
+			(uuid "af96cb4f-8846-448c-bc8b-ff0533d995b4")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "D16")
 					(unit 1)
 				)
 			)
