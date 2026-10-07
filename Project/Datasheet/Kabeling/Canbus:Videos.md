@@ -18,15 +18,3 @@
   
 * [wikipedia CAN_bus](https://en.wikipedia.org/wiki/CAN_bus)
 
-## AI
-
-* [BrugSTPkabeltilCanBus](./BrugSTPkabeltilCanBus.md)
-* [CAN-bus-jord_CAN_GND](./CAN-bus-jord_CAN_GND.md)
-* [3D-printetBox-for-CanBus_moduler](./3D-printetBox-for-CanBus_moduler.md)
-
-## ESPHome
-
-* [CAN Bus](https://esphome.io/components/canbus/)
-* [ESP32 CAN](https://esphome.io/components/canbus/esp32_can/)
-  * [Multiple CAN Controllers](https://esphome.io/components/canbus/esp32_can/#multiple-can-controllers)
-* [MCP2515](https://esphome.io/components/canbus/mcp2515/)
