@@ -1,5 +1,7 @@
 # Beskrivelse af functionen af Sporbesat detektor
 
+## KiCad Sporbesat DesignBlock
+
 ![Sporbesat-Detektor.png](./Images/20261008/Skærmbillede%20fra%202026-10-08%2022-35-19.png)
 
 ## Test Board

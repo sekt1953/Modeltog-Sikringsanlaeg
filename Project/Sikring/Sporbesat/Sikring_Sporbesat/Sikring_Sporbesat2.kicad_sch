@@ -3423,16 +3423,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 151.13) (xy 82.55 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5470fe08-0d61-45e1-aed4-dfc2d1b4763c")
-	)
-	(wire
-		(pts
 			(xy 144.78 67.31) (xy 149.86 67.31)
 		)
 		(stroke
@@ -6080,89 +6070,6 @@
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDPWR")
-		(at 82.55 156.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cd561aab-6c4d-4ff7-8d96-98381ba3374c")
-		(property "Reference" "#PWR02"
-			(at 82.55 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDDCC"
-			(at 82.804 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at 82.55 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 82.55 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "95875272-27e4-48b9-a577-3449f5beddd0")
-		)
-		(instances
-			(project "Sikring_Sporbesat"
-				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-			(project "Sporbesat-Detektor"
-				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
