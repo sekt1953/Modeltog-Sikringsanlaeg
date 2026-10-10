@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "650d86ff-39c7-49fc-ac9d-f7aebddf15b6")
+	(uuid "9a01665b-d3e7-4bb6-ae9b-05f1537b37cc")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:TestPoint_Alt"
@@ -4944,7 +4944,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47nF"
+		(property "Value" "22nF"
 			(at 151.638 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)

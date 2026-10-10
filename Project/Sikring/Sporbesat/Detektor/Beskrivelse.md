@@ -2,9 +2,9 @@
 
 ## KiCad Sporbesat DesignBlock
 
-![Sporbesat-Detektor.png](./Images/20261008/Skærmbillede%20fra%202026-10-08%2022-35-19.png)
+![Sporbesat-Detektor.png](../Images/Skærmbillede%20fra%202026-10-10%2014-49-14.png)
 
-## Test Board
+## Fritzing Test Board
 
 * Fritzing
   * ![Stripboard_49x18_schem.png](../../../Fritzing/Stripboard_49x18_schem.png)
