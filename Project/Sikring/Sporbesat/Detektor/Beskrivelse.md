@@ -13,6 +13,18 @@
 
 ## Diagram beskrivelse (rettelse kommer)
 
+### Testpunkt 3
+
+* C2: 1.0nF
+  * ![dso_01.0nF.bm](./Images/20261010/dso_01.0nF.bmp)
+* C2: 2.2nF
+  * ![dso_02.2nF.bmp](./Images/20261010/dso_02.2nF.bmp)
+* C2: 4.7nF
+  * ![dso_04.7nF.bmp](./Images/20261010/dso_04.7nF.bmp)
+* C2: 10.0nF
+  * ![dso_10.0nF.bmp](./Images/20261010/dso_10.0nF.bmp)
+
+
 ## Hvordan anbringes sensoren på anlæget
 
 Sensoren på diagrammet er en af fire på samme print, sensor printet anbringes så tæt på skinneafsnittet som muligt, sammen med et transmisions print som sender data til den centrale enhed via *CANBUS Transmitter* er er en meget støjemun dataforbindelse, det som bruges i moderne biler og industrien.
