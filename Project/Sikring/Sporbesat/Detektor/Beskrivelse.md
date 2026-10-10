@@ -13,7 +13,7 @@
 
 ## Diagram beskrivelse (rettelse kommer)
 
-### Testpunkt 3
+### Testpunkt 3 med forskellige C2 værdier
 
 * C2: 1.0nF
   * ![dso_01.0nF.bm](./Images/20261010/dso_01.0nF.bmp)
@@ -23,7 +23,6 @@
   * ![dso_04.7nF.bmp](./Images/20261010/dso_04.7nF.bmp)
 * C2: 10.0nF
   * ![dso_10.0nF.bmp](./Images/20261010/dso_10.0nF.bmp)
-
 
 ## Hvordan anbringes sensoren på anlæget
 
