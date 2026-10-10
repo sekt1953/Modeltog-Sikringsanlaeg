@@ -11,7 +11,7 @@
   * ![Stripboard_49x18_bb.png](../../../Fritzing/Stripboard_49x18_bb.png)
   * [Stripboard_49x18.fzz](../../../Fritzing/Stripboard_49x18.fzz)
 
-## Diagram beskrivelse (rettelse kommer)
+## Diagram beskrivelse
 
 ### Testpunkt 3 med forskellige C2 værdier
 
