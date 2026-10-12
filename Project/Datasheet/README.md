@@ -66,11 +66,10 @@ Transceivers](https://www.ti.com/lit/an/slla337a/slla337a.pdf)
       * [ESP32_38Pin FCStd](./Modules/MCU/ESP32_38Pin.FCStd)
       * [ESP32_38Pin step](./Modules/MCU/ESP32_38Pin.step)
 * DC-DC
-  * [Mini560Pro - Step Down DC-DC](./Modules/Mini560Pro/Mini560Pro.pdf)
-    * [Mini560Pro.FCStd](./Modules/Mini560Pro/Mini560Pro.FCStd)
-    * [Mini560Pro.png](./Modules/Mini560Pro/Mini560Pro.png)
-    * [Mini560Pro-BodyPad003.step](./Modules/Mini560Pro/Mini560Pro-BodyPad003.step)
-      * [Mini560Pro_3D.png](./Modules/Mini560Pro/Mini560Pro_3D.png)
+  * ![Mini560Pro - Step Down DC-DC](./Modules/Mini560Pro/20261012/Opgave_2026-2_5/Mini560Pro_Pcb.png)
+  * ![Mini560Pro_3D.png](./Modules/Mini560Pro/20261012/Opgave_2026-2_5/Skærmbillede%20fra%202026-10-12%2016-40-42.png)
+    * [Mini560Pro.FCStd](./Modules/Mini560Pro/20261012/Opgave_2026-2_5.FCStd)
+    * [Mini560Pro-BodyPad003.step](./Modules/Mini560Pro/20261012/Opgave_2026-2_5-Body.step)
 
 ### Stik
 
