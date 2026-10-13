@@ -2,8 +2,9 @@
 
 ## Semiconductor
 
-|Navn|symbol|footprint|3D|FreeCAD|
-|:---:|:---:|:---:|:---:|:---:|
+|Navn & Datasheet|Kicad symbol|KiCad footprint|FreeCAD 3D|FreeCAD Step|FreeCAD FCStd|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|[S5BC-13-F](../Datasheet/Semiconductor/S5AC_ser.pdf)|||![2010-36-19.png](../Datasheet/Semiconductor/S5BC/Skærmbillede%20fra%202026-10-13%2010-36-19.png)|[Step](../Datasheet/Semiconductor/S5BC/S5BC-13-F-Body.step)|[FCStd](../Datasheet/Semiconductor/S5BC/S5BC-13-F.FCStd)|
 
 ## Modules
 
@@ -13,7 +14,6 @@
 |[ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO](../Datasheet/Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)|![](./Images/ESP32_DEVKIT_V1_30pins.png)||![ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png](../Datasheet/Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png)|[Step](../Datasheet/Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.step)
 |[ESP-32_38_Pin](../Datasheet/Modules/MCU/ESP-32_38_Pin_diagram_480x480.webp)|![ESP32_DEVKIT_38PINS.png](./Images/ESP32_DEVKIT_38PINS.png)||![ESP32_38Pin.png](../Datasheet/Modules/MCU/ESP32_38Pin.png)|[Step](../Datasheet/Modules/MCU/ESP32_38Pin.step)|
 |[CAN til TTL transceiver-modul med SN65HVD230](https://let-elektronik.dk/can-transceiver-modul-sn65hvd230)|![modul SN65HVD230.png](./Images/CANtilTTLtransceiver-modulmedSN65HVD230.png)|||||
-
 
 ## Stik
 
