@@ -7,7 +7,7 @@
 
 ## Modules
 
-|Navn & Datasheet|Kicad symbol|KiCad footprint|FreeCAD 3D|FreeCAD Step|FreeCAD FCStd|
+|Navn & Datasheet|Kicad symbol|KiCad footprint|[FreeCAD 3D](https://github.com/sekt1953/Datastuen41-FreeCAD/blob/main/2026-2_Opgaver/Opgave_2026-2_5.md)|FreeCAD Step|FreeCAD FCStd|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |[Mini560Pro](../Datasheet/Modules/Mini560Pro/20261012/Opgave_2026-2_5/Mini560Pro_Dim.png)|![Mini560Pro_3D_Symbol.png](../Datasheet/Modules/Mini560Pro/Mini560Pro_3D_Symbol.png)|![FootPrint](./Images/Skærmbillede%20fra%202026-09-28%2018-11-01.png)|![](../Datasheet/Modules/Mini560Pro/20261012/Opgave_2026-2_5/Skærmbillede%20fra%202026-10-12%2019-59-54.png)|[step](../Datasheet/Modules/Mini560Pro/20261012/Opgave_2026-2_5.step)|FCStd|
 |[ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO](../Datasheet/Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.webp)|![](./Images/ESP32_DEVKIT_V1_30pins.png)||![ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png](../Datasheet/Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.png)|[Step](../Datasheet/Modules/MCU/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIO.step)
