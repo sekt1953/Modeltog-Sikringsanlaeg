@@ -4,7 +4,7 @@
 
 |Navn & Datasheet|Kicad symbol|KiCad footprint|FreeCAD 3D|FreeCAD Step|FreeCAD FCStd|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|[S5BC-13-F](../Datasheet/Semiconductor/S5AC_ser.pdf)|||![2010-36-19.png](../Datasheet/Semiconductor/S5BC/Skærmbillede%20fra%202026-10-13%2010-36-19.png)|[Step](../Datasheet/Semiconductor/S5BC/S5BC-13-F-Body.step)|[FCStd](../Datasheet/Semiconductor/S5BC/S5BC-13-F.FCStd)|
+|[S5BC-13-F](../Datasheet/Semiconductor/S5AC_ser.pdf)|![2011-25-01.png](../Datasheet/Semiconductor/S5BC/Skærmbillede%20fra%202026-10-13%2011-25-01.png)||![2010-36-19.png](../Datasheet/Semiconductor/S5BC/Skærmbillede%20fra%202026-10-13%2010-36-19.png)|[Step](../Datasheet/Semiconductor/S5BC/S5BC-13-F-Body.step)|[FCStd](../Datasheet/Semiconductor/S5BC/S5BC-13-F.FCStd)|
 
 ## Modules
 
