@@ -62,14 +62,30 @@ Now that you’re familiar with the L298N Motor Driver, let’s see how to use i
 
 #### Input pins
 
-* The input pins control the direction the motors are spinning. Input 1 and input 2 control motor A, and input 3 and 4 control motor B.
-  * If you apply LOW to input1 and HIGH to input 2, the motor will spin forward;
-  * If you apply power the other way around: HIGH to input 1 and LOW to input 2, the motor will rotate backwards. Motor B can be controlled using the same method but applying HIGH or LOW to input 3 and input 4.
+The input pins control the direction the motors are spinning. Input 1 and input 2 control motor A, and input 3 and 4 control motor B.
 
-#### For example, for motor A, this is the logic:
+* If you apply LOW to input1 and HIGH to input 2, the motor will spin forward;
+* If you apply power the other way around: HIGH to input 1 and LOW to input 2, the motor will rotate backwards. Motor B can be controlled using the same method but applying HIGH or LOW to input 3 and input 4.
 
-|Direction|Input 1|Input 2|Enable 1|
-|:---|:---|:---|:---|
-|Forward|0|1|1|
-|Backwards|1|0|1|
-|Stop|0|0|0|
+#### For example, for motor A, this is the logic
+
+|Direction|Input 1|Input 2|Enable 1|Ur|
+|:---|:---|:---|:---|:---|
+|Forward|0|1|1|Lige minut tal|
+|Backwards|1|0|1|Ulige minut tal|
+|Stop|0|0|0||
+
+#### Enable pins
+
+The enable pins are like an ON and OFF switch for your motors. For example:
+
+* If you send a HIGH signal to the enable 1 pin, motor A is ready to be controlled and at the maximum speed;
+* If you send a LOW signal to the enable 1 pin, motor A turns off;
+* If you send a PWM signal, you can control the speed of the motor. The motor speed is proportional to the duty cycle. However, note that for small duty cycles, the motors might not spin, and make a continuous buzz sound.
+
+#### Wiring ESP32 & L298N Ur Driver
+
+|LN298N Motor Driver|Input 1|Input 2|Enable|GND|
+|:---|:---|:---|:---|:---|
+|ESP32|GPIO 27|GPIO 26|GPIO 14|GND|
+
