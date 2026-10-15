@@ -358,3 +358,95 @@ script:
 
 Har du brug for hjælp til at strukturere de enkelte 10 enheds-YAML-filer (hovedfilerne), så du er helt sikker på, hvordan du navngiver dem forskelligt ved hjælp af substitutions?
 
+## jeg vil gerne at det kun er den der har stoppet uret og master som kan starte det igen
+
+* For at sikre, at det kun er den station, der har trykket på pause (eller Masteren), som kan genstarte uret, skal vi flytte logikken ind i Home Assistant-scriptet.
+* Scriptet skal tjekke: Hvis uret er sat på pause, matcher navnet på den, der trykker nu, så navnet på den, der trykkede på pause? (Eller er det Masteren?) Hvis ja, starter uret. Hvis nej, ignoreres trykket, så andre stationer ikke kan blande sig.
+
+Her er de nødvendige opdateringer:
+
+### 1. Opdater dit Home Assistant Script
+
+Erstat dit tidligere script i din Home Assistant configuration.yaml (eller i din Script-editor i brugerfladen) med dette opdaterede script. Det indeholder nu den strikse adgangskontrol:
+
+```yaml
+script:
+  clock_toggle_global:
+    fields:
+      device_name:
+        description: "Navnet på den enhed der trykker"
+        example: "Station Nord"
+    sequence:
+      - choose:
+          # SITUATION A: Uret KØRER -> Alle må sætte det på pause
+          - conditions:
+              - condition: state
+                entity_id: switch.ur_status_start_pause
+                state: "on"
+            sequence:
+              - service: input_text.set_value
+                target:
+                  entity_id: input_text.clock_paused_by
+                data:
+                  value: "{{ device_name }}"
+              - service: switch.turn_off
+                target:
+                  entity_id: switch.ur_status_start_pause
+              - logger.log: "Uret blev sat på pause af {{ device_name }}"
+
+          # SITUATION B: Uret er PAUSET -> KUN den der pausede (eller Master Ur) må starte det!
+          - conditions:
+              - condition: state
+                entity_id: switch.ur_status_start_pause
+                state: "off"
+              - condition: template
+                value_template: "{{ device_name == states('input_text.clock_paused_by') or device_name == 'Master Ur' }}"
+            sequence:
+              - service: switch.turn_on
+                target:
+                  entity_id: switch.ur_status_start_pause
+              - service: input_text.set_value
+                target:
+                  entity_id: input_text.clock_paused_by
+                data:
+                  value: "Ingen"
+```
+
+### 2. Tilpasning i dine ESPHome-filer (Ingen kodeændring, kun vigtig info)
+
+Du behøver ikke ændre strukturen i de pakke-filer (fast_clock_master.yaml og fast_clock_slave.yaml), vi lavede før. Du skal blot sikre dig, at navnene matcher præcis i dine enheders individuelle hoved-YAML-filer.
+Når du laver dine slave-filer, skal du definere deres unikke navn i toppen via substitutions. Det er dette navn, Home Assistant låser uret med:
+Eksempel på Slave 1 (station_nord.yaml):
+
+```yaml
+esphome:
+  name: station-nord
+
+substitutions:
+  node_friendly_name: "Station Nord" # <--- Dette navn sendes til Home Assistant
+
+packages:
+  slave_clock: !include fast_clock_slave.yaml
+Vær forsigtig med at bruge denne kode.
+Eksempel på Slave 2 (remisen.yaml):
+yaml
+esphome:
+  name: remisen
+
+substitutions:
+  node_friendly_name: "Remisen" # <--- Dette navn sendes til Home Assistant
+
+packages:
+  slave_clock: !include fast_clock_slave.yaml
+```
+
+(I master-pakken har vi allerede hårdkodet, at den sender navnet "Master Ur". Da scriptet tillader "Master Ur", vil master-knappen altid kunne overstyre og starte tiden igen, uanset hvem der pausede).
+
+### Hvordan det virker nu under kørslen:
+
+1. "Station Nord" trykker på sin fysiske knap. Uret pauser. Alle skærme viser: || PAUSE: Station Nord.
+2. "Remisen" trykker på sin knap for at starte uret igen, fordi de er klar. Intet sker! Scriptet afviser trykket, da "Remisen" ikke ejer pausen.
+3. Først når "Station Nord" trykker på sin egen knap (eller du trykker på Master Ur / kontrolpulten), accepterer Home Assistant signalet, starter uret igen, og fjerner pause-teksten på alle 10 skærme.
+
+Nu er adgangsstyringen helt på plads! Skal vi også tilføje en lille visuel indikation på skærmen (f.eks. et blinkende symbol eller et udråbtegn), hvis man trykker på knappen og bliver afvist, eller er logikken klar til at blive testet af på dit anlæg?
+
