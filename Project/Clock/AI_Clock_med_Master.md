@@ -427,9 +427,11 @@ substitutions:
 
 packages:
   slave_clock: !include fast_clock_slave.yaml
-Vær forsigtig med at bruge denne kode.
+```
+
 Eksempel på Slave 2 (remisen.yaml):
-yaml
+
+```yaml
 esphome:
   name: remisen
 
@@ -449,4 +451,230 @@ packages:
 3. Først når "Station Nord" trykker på sin egen knap (eller du trykker på Master Ur / kontrolpulten), accepterer Home Assistant signalet, starter uret igen, og fjerner pause-teksten på alle 10 skærme.
 
 Nu er adgangsstyringen helt på plads! Skal vi også tilføje en lille visuel indikation på skærmen (f.eks. et blinkende symbol eller et udråbtegn), hvis man trykker på knappen og bliver afvist, eller er logikken klar til at blive testet af på dit anlæg?
+
+## vi må ikke kunne nulstille uret, men kun kunne sætte det frem til næste dag kl 03:55, da det tager tid at kører urene frem
+
+* Det giver rigtig god mening! Hvis man ved en fejl trykker på den hårde nulstillingsknap, vil det digitale ur springe øjeblikkeligt i tid, mens jeres gamle mekaniske ure vil tabe synkroniseringen fuldstændigt, fordi de fysisk skal nå at klikke hele vejen rundt.
+* For at forhindre denne fejl har jeg fjernet den hårde nulstillingsfunktion fuldstændigt – både fra den fysiske betjeningsknap (det lange tryk) og fra Home Assistant. Nu er den eneste måde at nulstille eller gøre klar til næste dags køreplan på, at bruge "Spol frem" (Fast Forward)-funktionen, som klikker de mekaniske ure sikkert og hurtigt frem minut for minut.
+
+Her er den opdaterede og sikrede fast_clock_master.yaml pakke-fil:
+
+Opdateret fast_clock_master.yaml (Uden hård nulstilling)
+
+```yaml
+# fast_clock_master.yaml
+
+# Aktiver I2C-bussen til skærmen på din ESP32 HW-394
+i2c:
+  sda: GPIO21
+  scl: GPIO22
+  scan: true
+
+# De to GPIO-ben til IN1 og IN2 på L298N H-broen
+output:
+  - platform: gpio
+    pin: GPIO16
+    id: h_bridge_in1
+  - platform: gpio
+    pin: GPIO17
+    id: h_bridge_in2
+
+# Fysisk knap på Masteren (Kan KUN starte/pause, ikke nulstille)
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO14
+      mode: INPUT_PULLUP
+    name: "Fysisk Betjeningsknap"
+    on_click:
+      - min_length: 50ms
+        max_length: 1000ms
+        then:
+          - homeassistant.service:
+              service: script.clock_toggle_global
+              data:
+                device_name: "Master Ur"
+
+# Modtag information fra Home Assistant om status
+text_sensor:
+  - platform: homeassistant
+    name: "Hvem pausede uret"
+    entity_id: input_text.clock_paused_by
+    id: paused_by_who
+
+  - platform: template
+    name: "Accelerated Time"
+    id: accelerated_time
+    icon: "mdi:clock-fast"
+    update_interval: 1s
+    lambda: |-
+      char formatted_time[30];
+      time_t raw_time = id(simulated_timestamp);
+      struct tm *time_info = gmtime(&raw_time);
+      strftime(formatted_time, sizeof(formatted_time), "%H:%M:%S", time_info);
+      return std::string(formatted_time);
+    on_value:
+      then:
+        - component.update: oled_display
+
+  - platform: template
+    name: "Accelerated Date"
+    id: accelerated_date
+    icon: "mdi:calendar-clock"
+    update_interval: 1s
+    lambda: |-
+      char formatted_date[30];
+      time_t raw_time = id(simulated_timestamp);
+      struct tm *time_info = gmtime(&raw_time);
+      strftime(formatted_date, sizeof(formatted_date), "%Y-%m-%d", time_info);
+      return std::string(formatted_date);
+
+# Kontroller til Home Assistant (Hård nulstillings-button er FJERNET herfra)
+switch:
+  - platform: template
+    name: "Ur Status (Start/Pause)"
+    id: clock_running
+    icon: "mdi:play-pause"
+    optimistic: true
+    assumed_state: false
+    initial_state: true
+    on_turn_on:
+      - component.update: oled_display
+    on_turn_off:
+      - component.update: oled_display
+
+button:
+  - platform: template
+    name: "Spol frem til næste dag 03:55"
+    id: fast_forward_button
+    icon: "mdi:fast-forward"
+    on_press:
+      then:
+        - lambda: |-
+            if (!id(is_fast_forwarding)) {
+              // Gem den nuværende hastighed, så vi kan vende tilbage til den bagefter
+              id(saved_multiplier) = id(speed_multiplier).state;
+              // Sæt uret til at køre lynhurtigt fremad (f.eks. 60 sekunder pr. real-sekund)
+              id(speed_multiplier).make_variable_set(60.0);
+              id(is_fast_forwarding) = true;
+              id(clock_running).publish_state(true); // Sørg for uret kører under spol
+            }
+
+number:
+  - platform: template
+    name: "Time Speed Multiplier"
+    id: speed_multiplier
+    optimistic: true
+    min_value: 1.0
+    max_value: 120.0
+    step: 0.5
+    initial_value: 7.0
+
+# Konfiguration af din SSD1306 128x64 OLED-skærm
+display:
+  - platform: ssd1306_i2c
+    model: "SSD1306 128x64"
+    address: 0x3C
+    id: oled_display
+    lambda: |-
+      it.line(0, 15, 127, 15);
+      
+      if (id(is_fast_forwarding)) {
+        it.print(64, 2, id(font_small), TextAlign::TOP_CENTER, ">> SPOLER FREM >>");
+      } else if (id(clock_running).state) {
+        it.print(64, 2, id(font_small), TextAlign::TOP_CENTER, "MODELBANE UR");
+      } else {
+        std::string pause_msg = "|| PAUSE: " + id(paused_by_who).state;
+        it.print(64, 2, id(font_small), TextAlign::TOP_CENTER, pause_msg.c_str());
+      }
+      
+      it.printf(64, 20, id(font_large), TextAlign::TOP_CENTER, "%s", id(accelerated_time).state.c_str());
+      it.printf(64, 52, id(font_small), TextAlign::TOP_CENTER, "%s", id(accelerated_date).state.c_str());
+
+# Skrifttyper
+font:
+  - file: "gfonts://Roboto"
+    id: font_small
+    size: 9
+  - file: "gfonts://Roboto"
+    id: font_large
+    size: 24
+
+globals:
+  - id: simulated_timestamp
+    type: int
+    initial_value: '1792026900' # Starter på 2026-10-01 03:55:00
+  - id: last_triggered_minute
+    type: int
+    initial_value: '55'
+  - id: polarity_flip
+    type: bool
+    initial_value: 'false'
+  - id: is_fast_forwarding
+    type: bool
+    initial_value: 'false'
+  - id: saved_multiplier
+    type: float
+    initial_value: '7.0'
+
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
+interval:
+  - interval: 1s
+    then:
+      - lambda: |-
+          if (id(clock_running).state) {
+            id(simulated_timestamp) += (int)id(speed_multiplier).state;
+            
+            time_t raw_time = id(simulated_timestamp);
+            struct tm *time_info = gmtime(&raw_time);
+            int current_minute = time_info->tm_min;
+            int current_hour = time_info->tm_hour;
+            
+            // Hvis vi spoler frem, og har ramt præcis 03:55 igen, så stop spoling
+            if (id(is_fast_forwarding) && current_hour == 3 && current_minute == 55) {
+              id(is_fast_forwarding) = false;
+              id(speed_multiplier).make_variable_set(id(saved_multiplier));
+            }
+            
+            if (current_minute != id(last_triggered_minute)) {
+              id(last_triggered_minute) = current_minute;
+              id(polarity_flip) = !id(polarity_flip);
+              
+              if (id(polarity_flip)) {
+                id(h_bridge_in1).turn_on();
+                delay(300);
+                id(h_bridge_in1).turn_off();
+              } else {
+                id(h_bridge_in2).turn_on();
+                delay(300);
+                id(h_bridge_in2).turn_off();
+              }
+            }
+          }
+```
+
+Det opdaterede Home Assistant Dashboard:
+
+Du bør også fjerne den gamle nulstillingsknap fra din brugerflade i Home Assistant, så det nu ser således ud:
+
+```yaml
+type: entities
+title: 🕒 Modelbane Fast Clock
+entities:
+  - entity: text_sensor.accelerated_time
+    name: Modelbane Klokken
+  - entity: text_sensor.accelerated_date
+    name: Modelbane Dato
+  - entity: switch.ur_status_start_pause
+    name: Status (Tænd/Pause)
+  - entity: number.time_speed_multiplier
+    name: Tids-hastighed (Multiplier)
+  - entity: button.spol_frem_til_naeste_dag_03_55
+    name: ⏭️ Gør klar til næste dag (03:55)
+```
+
+Nu er systemet fuldstændig sikret mod utilsigtede tidsspring. Den eneste måde at flytte tiden på er den kontrollerede spoling, hvor de fysiske ure tikker synkront med!
 
