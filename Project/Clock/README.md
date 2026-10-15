@@ -83,8 +83,9 @@ The enable pins are like an ON and OFF switch for your motors. For example:
 * If you send a LOW signal to the enable 1 pin, motor A turns off;
 * If you send a PWM signal, you can control the speed of the motor. The motor speed is proportional to the duty cycle. However, note that for small duty cycles, the motors might not spin, and make a continuous buzz sound.
 
-#### Wiring ESP32 & L298N Ur Driver
+#### Wiring ESP32, Power & L298N Ur Driver
 
 |LN298N Motor Driver|Jumper|12V|GND|5V|Input 1|Input 2|Enable|
-|:---|:---|:---|:---|:---|:---|:---|:---|
-|ESP32|Fjernet|12/24V|GND|5V|GPIO16|GPIO17|5V|Fjernet|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Power|Fjernet|12/24V|GND||||
+|ESP32|||GND|5V|GPIO16|GPIO17|5V|
