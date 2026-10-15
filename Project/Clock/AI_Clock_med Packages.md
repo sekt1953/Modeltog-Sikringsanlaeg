@@ -1465,3 +1465,251 @@ Ledningsdiagram for L298N H-broen:
 * Hvert sekund tjekker koden, om det accelererede minuttal har flyttet sig. Så snart uret slår et minut frem (uanset om det tager 1 real-sekund eller 10 real-sekunder baseret på din multiplier), sender ESP32 et præcist signal på 300 ms til H-broen, som flipper polariteten og rykker viseren på det mekaniske ur synkront med OLED-skærmen.
 * Virker en puls-varighed på 300 ms fint til dit ur, eller ved du, om spolens mekanik i dit specifikke ur kræver en lidt længere impuls (f.eks. 500 ms) for at trække viseren helt på plads?
 
+## jeg vil gerne have en knap på dashboarder der stepper de gamle ure frem til næste dag kl 03:55
+
+For at få de gamle mekaniske ure til at flytte sig frem til næste dag kl. 03:55, kan vi ikke bare ændre det digitale timestamp med det samme. Hvis vi gør det, vil de mekaniske ure miste synkroniseringen, fordi deres visere fysisk skal flyttes minut for minut via H-broen.
+Løsningen er at lave en "Spol Frem" (Fast Forward)-funktion. Når du trykker på denne nye knap på dit dashboard, vil uret automatisk:
+1. Sætte hastigheden (speed_multiplier) helt op på f.eks. 60x (eller hvad du ønsker).
+2. Køre lynhurtigt afsted, så H-broen klikker urene hurtigt frem minut for minut.
+3. Automatisk stoppe og vende tilbage til din normale hastighed (f.eks. 7x), så snart uret rammer kl. 03:55 næste dag.
+
+Her er den opdaterede fast_clock.yaml pakke-fil, hvor denne logik og en ny Home Assistant-knap er tilføjet:
+
+```yaml
+# fast_clock.yaml
+
+# Aktiver I2C-bussen til skærmen på din ESP32 HW-394
+i2c:
+  sda: GPIO21
+  scl: GPIO22
+  scan: true
+
+# De to GPIO-ben til IN1 og IN2 på L298N H-broen
+output:
+  - platform: gpio
+    pin: GPIO16
+    id: h_bridge_in1
+  - platform: gpio
+    pin: GPIO17
+    id: h_bridge_in2
+
+# Fysisk trykknap tilsluttet GPIO14
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO14
+      mode: INPUT_PULLUP
+    name: "Fysisk Betjeningsknap"
+    on_click:
+      - min_length: 50ms
+        max_length: 1000ms
+        then:
+          - switch.toggle: clock_running
+      - min_length: 3000ms
+        max_length: 10000ms
+        then:
+          - button.press: reset_clock_button
+
+# Kontroller og knapper til Home Assistant
+switch:
+  - platform: template
+    name: "Ur Status (Start/Pause)"
+    id: clock_running
+    icon: "mdi:play-pause"
+    optimistic: true
+    assumed_state: false
+    initial_state: true
+    on_turn_on:
+      - component.update: oled_display
+    on_turn_off:
+      - component.update: oled_display
+
+button:
+  - platform: template
+    name: "Nulstil Ur"
+    id: reset_clock_button
+    icon: "mdi:restart"
+    on_press:
+      then:
+        - lambda: |-
+            id(simulated_timestamp) = 1792026900; // Sætter tiden til 1. okt 2026 kl. 03:55:00
+            id(last_triggered_minute) = 55;
+            id(is_fast_forwarding) = false;
+        - logger.log: "Uret blev nulstillet til 03:55:00!"
+        - component.update: oled_display
+
+  - platform: template
+    name: "Spol frem til næste dag 03:55"
+    id: fast_forward_button
+    icon: "mdi:fast-forward"
+    on_press:
+      then:
+        - lambda: |-
+            if (!id(is_fast_forwarding)) {
+              // Gem den nuværende hastighed, så vi kan vende tilbage til den bagefter
+              id(saved_multiplier) = id(speed_multiplier).state;
+              // Sæt uret til at køre lynhurtigt fremad (f.eks. 60 sekunder pr. real-sekund)
+              id(speed_multiplier).make_variable_set(60.0);
+              id(is_fast_forwarding) = true;
+              id(clock_running).publish_state(true); // Sørg for uret kører
+              ESP_LOGI("clock", "Spoler urene lynhurtigt frem til næste dags køreplan!");
+            }
+
+number:
+  - platform: template
+    name: "Time Speed Multiplier"
+    id: speed_multiplier
+    optimistic: true
+    min_value: 1.0
+    max_value: 120.0 # Hævet maks-værdien så den kan spole hurtigt
+    step: 0.5
+    initial_value: 7.0
+
+# Konfiguration af din SSD1306 128x64 OLED-skærm
+display:
+  - platform: ssd1306_i2c
+    model: "SSD1306 128x64"
+    address: 0x3C
+    id: oled_display
+    lambda: |-
+      it.line(0, 15, 127, 15);
+      
+      if (id(is_fast_forwarding)) {
+        it.print(64, 2, id(font_small), TextAlign::TOP_CENTER, ">> SPOLER FREM >>");
+      } else if (id(clock_running).state) {
+        it.print(64, 2, id(font_small), TextAlign::TOP_CENTER, "MODELBANE UR");
+      } else {
+        it.print(64, 2, id(font_small), TextAlign::TOP_CENTER, "|| PAUSE");
+      }
+      
+      it.printf(64, 20, id(font_large), TextAlign::TOP_CENTER, "%s", id(accelerated_time).state.c_str());
+      it.printf(64, 52, id(font_small), TextAlign::TOP_CENTER, "%s", id(accelerated_date).state.c_str());
+
+# Skrifttyper
+font:
+  - file: "gfonts://Roboto"
+    id: font_small
+    size: 10
+  - file: "gfonts://Roboto"
+    id: font_large
+    size: 24
+
+globals:
+  - id: simulated_timestamp
+    type: int
+    restore_value: no
+    initial_value: '1792026900'
+  - id: last_triggered_minute
+    type: int
+    restore_value: no
+    initial_value: '55'
+  - id: polarity_flip
+    type: bool
+    restore_value: no
+    initial_value: 'false'
+  - id: is_fast_forwarding
+    type: bool
+    restore_value: no
+    initial_value: 'false'
+  - id: saved_multiplier
+    type: float
+    restore_value: no
+    initial_value: '7.0'
+
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
+interval:
+  - interval: 1s
+    then:
+      - lambda: |-
+          if (id(clock_running).state) {
+            id(simulated_timestamp) += (int)id(speed_multiplier).state;
+            
+            time_t raw_time = id(simulated_timestamp);
+            struct tm *time_info = gmtime(&raw_time);
+            int current_minute = time_info->tm_min;
+            int current_hour = time_info->tm_hour;
+            
+            // Hvis vi spoler frem, og vi har ramt præcis 03:55 igen, så stop spoling
+            if (id(is_fast_forwarding) && current_hour == 3 && current_minute == 55) {
+              id(is_fast_forwarding) = false;
+              // Gå tilbage til den gamle kørehastighed
+              id(speed_multiplier).make_variable_set(id(saved_multiplier));
+              ESP_LOGI("clock", "Målet er nået. Spoling stoppet!");
+            }
+            
+            if (current_minute != id(last_triggered_minute)) {
+              id(last_triggered_minute) = current_minute;
+              id(polarity_flip) = !id(polarity_flip);
+              
+              if (id(polarity_flip)) {
+                id(h_bridge_in1).turn_on();
+                delay(300); 
+                id(h_bridge_in1).turn_off();
+              } else {
+                id(h_bridge_in2).turn_on();
+                delay(300); 
+                id(h_bridge_in2).turn_off();
+              }
+            }
+          }
+
+text_sensor:
+  - platform: template
+    name: "Accelerated Time"
+    id: accelerated_time
+    icon: "mdi:clock-fast"
+    update_interval: 1s
+    lambda: |-
+      char formatted_time;
+      time_t raw_time = id(simulated_timestamp);
+      struct tm *time_info = gmtime(&raw_time);
+      strftime(formatted_time, sizeof(formatted_time), "%H:%M:%S", time_info);
+      return std::string(formatted_time);
+    on_value:
+      then:
+        - component.update: oled_display
+
+  - platform: template
+    name: "Accelerated Date"
+    id: accelerated_date
+    icon: "mdi:calendar-clock"
+    update_interval: 1s
+    lambda: |-
+      char formatted_date;
+      time_t raw_time = id(simulated_timestamp);
+      struct tm *time_info = gmtime(&raw_time);
+      strftime(formatted_date, sizeof(formatted_date), "%Y-%m-%d", time_info);
+      return std::string(formatted_date);
+```
+
+Opdatering til dit Home Assistant Dashboard:
+
+Når du har uploadet koden, kan du tilføje den nye knap til dit dashboard ved at opdatere dit kort med denne YAML-linje:
+
+```yaml
+type: entities
+title: 🕒 Modelbane Fast Clock
+entities:
+  - entity: text_sensor.accelerated_time
+    name: Modelbane Klokken
+  - entity: text_sensor.accelerated_date
+    name: Modelbane Dato
+  - entity: switch.ur_status_start_pause
+    name: Status (Tænd/Pause)
+  - entity: number.time_speed_multiplier
+    name: Tids-hastighed (Multiplier)
+  - entity: button.spol_frem_til_naeste_dag_03_55
+    name: ⏭️ Gør klar til næste dag (03:55)
+  - entity: button.nulstil_ur
+    name: Hård nulstilling (I dag 03:55)
+```
+
+### Hvordan det fungerer i praksis:
+
+* Når spillet er slut, trykker du på "Gør klar til næste dag (03:55)" på dit dashboard.
+* Skærmen på din ESP32 skifter straks tekst til >> SPOLER FREM >>.
+* Tiden ræser afsted i baggrunden, og du vil kunne høre dine gamle banegårdsure klikke hurtigt afsted minut for minut, så de mekaniske visere følger med.
+* Præcis når det virtuelle ur slår 03:55:00 den efterfølgende dag, bremser ESP32 automatisk op, skifter tilbage til din normale modelbane-hastighed (f.eks. 7x) og er klar til næste køreplan!
