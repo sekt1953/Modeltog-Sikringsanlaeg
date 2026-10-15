@@ -1,6 +1,6 @@
 # AI Ur til modelbanen
 
-## Kode til Ursystem
+## AI's vejledning til kode for Ursystem
 
 ![2014-42-29.png](./Images/Skærmbillede%20fra%202026-10-15%2014-42-29.png)
 
