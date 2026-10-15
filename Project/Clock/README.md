@@ -85,7 +85,6 @@ The enable pins are like an ON and OFF switch for your motors. For example:
 
 #### Wiring ESP32 & L298N Ur Driver
 
-|LN298N Motor Driver|Input 1|Input 2|Enable|GND|
-|:---|:---|:---|:---|:---|
-|ESP32|GPIO 27|GPIO 26|GPIO 14|GND|
-
+|LN298N Motor Driver|Jumper|12V|GND|5V|Input 1|Input 2|Enable|
+|:---|:---|:---|:---|:---|:---|:---|:---|
+|ESP32|Fjernet|12/24V|GND|5V|GPIO16|GPIO17|5V|Fjernet|
