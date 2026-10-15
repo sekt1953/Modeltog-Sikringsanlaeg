@@ -678,7 +678,7 @@ entities:
 
 Nu er systemet fuldstændig sikret mod utilsigtede tidsspring. Den eneste måde at flytte tiden på er den kontrollerede spoling, hvor de fysiske ure tikker synkront med!
 
-## At køre uerene frem må kun ske fra master
+## At køre urene frem må kun ske fra master
 
 * For at sikre, at kun master-enheden (eller Home Assistant dashboardet) kan starte fremspolingen, skal vi blot kigge på den måde, koden er bygget op på.
 * I den nuværende opsætning er det faktisk allerede sikret! Knappen spol_frem_til_naeste_dag_03_55 (med ID fast_forward_button) findes kun i fast_clock_master.yaml filen. De 9 slave-enheder har overhovedet ikke denne knap eller logik liggende i deres kode (fast_clock_slave.yaml).
