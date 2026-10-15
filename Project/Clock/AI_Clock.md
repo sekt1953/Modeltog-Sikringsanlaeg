@@ -204,3 +204,6 @@ text_sensor:
 * Minut B: Næste gang minuttet skifter, bliver IN2 HØJ, og IN1 bliver LAV i 400 millisekunder (strømmen vendes → uret tikker endnu 1 minut frem).
 
 Hvis du oplever, at uret misser impulser eller tikker ustabilt ved den høje hastighed, kan det skyldes pulslængden. Skal vi justere pulslængden (de 400ms), eller har du brug for hjælp til at finde ud af, hvilken spænding dit specifikke ur kræver i L298N-modulet?
+
+
+## 
