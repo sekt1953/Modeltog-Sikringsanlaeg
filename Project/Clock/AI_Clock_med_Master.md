@@ -682,13 +682,14 @@ Nu er systemet fuldstændig sikret mod utilsigtede tidsspring. Den eneste måde 
 
 * For at sikre, at kun master-enheden (eller Home Assistant dashboardet) kan starte fremspolingen, skal vi blot kigge på den måde, koden er bygget op på.
 * I den nuværende opsætning er det faktisk allerede sikret! Knappen spol_frem_til_naeste_dag_03_55 (med ID fast_forward_button) findes kun i fast_clock_master.yaml filen. De 9 slave-enheder har overhovedet ikke denne knap eller logik liggende i deres kode (fast_clock_slave.yaml).
-* Her er en hurtig gennemgang af, hvorfor dit system allerede overholder dette krav:
 
-### 1. Slaves har ingen adgang til spoling
+### Her er en hurtig gennemgang af, hvorfor dit system allerede overholder dette krav:
+
+#### 1. Slaves har ingen adgang til spoling
 
 I slave-pakken findes der kun en enkelt fysisk knap-konfiguration, som udelukkende kalder script.clock_toggle_global (Start/Pause). Slaverne har ikke teknisk mulighed for at aktivere is_fast_forwarding-variablen eller ændre på masterens speed_multiplier direkte fra deres enhed.
 
-### 2. Masteren og HA Dashboardet har kontrollen
+#### 2. Masteren og HA Dashboardet har kontrollen
 
 * Fra Master-enheden: Hvis du ønsker en fysisk knap direkte på Master-enhedens hardware (HW-394) til at starte spolingen, kan vi tilføje et dobbeltklik på masterens eksisterende knap.
 * Fra Dashboardet: Knappen vises på din centrale skærm/tablet via Home Assistant, hvor kun overordnede operatører har adgang.
