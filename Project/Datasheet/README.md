@@ -14,6 +14,9 @@ Transceivers](https://www.ti.com/lit/an/slla337a/slla337a.pdf)
 
 ### Kabling
 
+* DCC-Power Kabling
+  * [Goobay Højttalerkabel 2x1.5 mm CCA - 100m (Rød/Sort)](https://www.avxperten.dk/hoejttaler-kabler/hoejttalerkabel-cca-2x1-5-mm-100m-roed-sort.asp)
+  * [Kabel splitter - SPL-42](./Kabeling/SPL-42.png)
 * [Kabling med STP for CanBus](./Kabeling/BrugSTPkabeltilCanBus.md)
   * [CAN-bus-jord (CAN GND)](./Kabeling/CAN-bus-jord_CAN_GND.md)
 * [3D printet Box for CanBus moduler](./Kabeling/3D-printetBox-for-CanBus_moduler.md)
