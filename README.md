@@ -6,8 +6,10 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
 
 * [CanBus](./Project/Datasheet/README.md#canbus)
   * [ESPHome](./Project/Datasheet/README.md#esphome)
-  * [Kabling](./Project/Datasheet/README.md#kabling)
+  * [Kabling](./Project/Datasheet/README.md#canbus-kabling)
   * [Videos](./Project/Datasheet/Kabeling/Canbus:Videos.md)
+* [DCC](./Project/Datasheet/README.md#dcc)
+  * [Kabling](./Project/Datasheet/README.md#dcc-kabling)
 * [KiCad](./Project/Datasheet/README.md#kicad)
   * [Track impedans](./Project/Datasheet/README.md#track-impedans)
   * [Custom Symbol and Footprints](./Project/Datasheet/README.md#custom-symbol-and-footprints)
