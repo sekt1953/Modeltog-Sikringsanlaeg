@@ -20,7 +20,7 @@
 * L298N Motor Driver pinout
   * Let’s take a look at the L298N motor driver pinout and see how it works.
 
-![2019-46-55.png](./Images/Skærmbillede%20fra%202026-10-15%2019-46-55.png)
+[![2019-46-55.png](./Images/Skærmbillede%20fra%202026-10-15%2019-46-55.png)](https://let-elektronik.dk/l298n-dual-h-bro-motordriver-2-dc-motorer-eller-1-bipolaer-stepper)
 
 * The motor driver has a two-terminal block on each side for each motor. OUT1 and OUT2 at the left and OUT3 and OUT4 at the right.
   * OUT1: DC motor A + terminal
