@@ -2,7 +2,7 @@
 
 ## 4 ports sporbesat detektor kredsløb
 
-![Sporbesat-Detektor.png](./Images/Skærmbillede%20fra%202026-10-08%2022-54-26.png)
+![Sporbesat-Detektor.png](./Images/Skærmbillede%20fra%202026-10-17%2016-03-32.png)
 
 * Detektor kredsløb
   * [Beskrivelse af Sporbesat Detektor Diagram](./Detektor/Beskrivelse.md)
