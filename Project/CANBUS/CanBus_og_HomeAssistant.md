@@ -2,14 +2,14 @@
 
 ## jeg har 2 esp32, 
 
-* nr1 er forbundet til Home Assistant via ethernet og til canbus via SN65HVD230, 
-* nr2 er forbundet til Canbus via SN65HVD230 og er til slutte et antal binary sensor. 
+* nr1 er forbundet til Home Assistant via ethernet og til canbus via SN65HVD230,
+* nr2 er forbundet til Canbus via SN65HVD230 og er til slutte et antal binary sensor.
 * Hvordan opfatter Home Assistant sensorene fra nr.2 esp32 ?
 
 Home Assistant opfatter ikke sensorerne fra ESP32 nr. 2 direkte som selvstændige enheder, da nr. 2 ikke har nogen direkte netværksforbindelse (hverken Wi-Fi eller Ethernet) til dit lokale netværk.
 
 * I stedet vil Home Assistant se sensorerne som entiteter, der tilhører ESP32 nr. 1. Det er ESP32 nr. 1, der fungerer som "bro" (gateway) mellem CAN-bussen og dit netværk.
-* For at Home Assistant kan forstå, hvad der sker på ESP32 nr. 2, skal du konfigurere dem til at tale sammen via CAN-bussen i ESPHome. 
+* For at Home Assistant kan forstå, hvad der sker på ESP32 nr. 2, skal du konfigurere dem til at tale sammen via CAN-bussen i ESPHome.
 
 ### Her er præcis, hvordan det fungerer i praksis:
 
