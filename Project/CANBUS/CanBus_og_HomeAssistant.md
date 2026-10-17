@@ -6,7 +6,8 @@
 * nr2 er forbundet til Canbus via SN65HVD230 og er til slutte et antal binary sensor. 
 * Hvordan opfatter Home Assistant sensorene fra nr.2 esp32 ?
 
-* Home Assistant opfatter ikke sensorerne fra ESP32 nr. 2 direkte som selvstændige enheder, da nr. 2 ikke har nogen direkte netværksforbindelse (hverken Wi-Fi eller Ethernet) til dit lokale netværk.
+Home Assistant opfatter ikke sensorerne fra ESP32 nr. 2 direkte som selvstændige enheder, da nr. 2 ikke har nogen direkte netværksforbindelse (hverken Wi-Fi eller Ethernet) til dit lokale netværk.
+
 * I stedet vil Home Assistant se sensorerne som entiteter, der tilhører ESP32 nr. 1. Det er ESP32 nr. 1, der fungerer som "bro" (gateway) mellem CAN-bussen og dit netværk.
 * For at Home Assistant kan forstå, hvad der sker på ESP32 nr. 2, skal du konfigurere dem til at tale sammen via CAN-bussen i ESPHome. 
 
@@ -112,3 +113,117 @@ Når du klikker på den, vil den indeholde entiteterne binary_sensor.can_sensor_
 * Hvis du vil have koden til at passe 100% til dit setup, må du gerne oplyse:
   * Hvilket Ethernet-board/chip bruger du på ESP32 nr. 1? (f.eks. WT32-ETH01, Olimex, PoE osv.)
   * Hvor mange binary sensorer har du i alt på ESP32 nr. 2?
+
+##  Jeg har en 3. esp32 med en del output, forbundet kun til CANBUsen, har du løsning på det ?
+
+* Det har jeg helt bestemt! Princippet for din ESP32 nr. 3 (Output-enheden) er præcis det samme som med sensorerne, bare i omvendt rækkefølge.
+* Da ESP32 nr. 3 kun sidder på CAN-bussen, kan Home Assistant ikke kontrollere den direkte. I stedet skal ESP32 nr. 1 (Gatewayen) modtage kommandoer fra Home Assistant (f.eks. "Tænd lyset") og sende en besked ud på CAN-bussen. ESP32 nr. 3 lytter efter denne besked og tænder eller slukker for sit fysiske output.
+
+I Home Assistant vil disse outputs (switches/relæer) optræde som entiteter under din ESP32 nr. 1 (Gateway).
+Her er den komplette løsning og kode til, hvordan du sætter det op i ESPHome:
+
+### 1. KODEN TIL ESP32 NR. 1 (Gateway: Ethernet + CAN)
+
+Her opretter vi virtuelle kontakter (template switch). Når du trykker på kontakten i Home Assistant, sender gatewayen en CAN-besked.
+* Vi bruger CAN ID 0x30 til Output 1 og 0x40 til Output 2.
+* Datapakken [0x01] betyder TÆND, og [0x00] betyder SLUK.
+
+```yaml
+esphome:
+  name: esp32-gateway
+
+ethernet:
+  # ... dine ethernet-indstillinger som før ...
+
+api: # Gør enheden synlig i Home Assistant
+
+canbus:
+  - platform: esp32_can
+    tx_pin: GPIO22
+    rx_pin: GPIO23
+    bit_rate: 250kbps
+    id: can_bus
+
+switch:
+  # VIRTUEL KONTAKT 1
+  - platform: template
+    name: "CAN Output 1 (på node 3)"
+    id: can_out_1
+    turn_on_action:
+      - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: [0x01] }
+    turn_off_action:
+      - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: [0x00] }
+
+  # VIRTUEL KONTAKT 2
+  - platform: template
+    name: "CAN Output 2 (på node 3)"
+    id: can_out_2
+    turn_on_action:
+      - canbus.send: { canbus_id: can_bus, can_id: 0x40, data: [0x01] }
+    turn_off_action:
+      - canbus.send: { canbus_id: can_bus, can_id: 0x40, data: [0x00] }
+```
+
+### 2. KODEN TIL ESP32 NR. 3 (Kun CAN + Fysiske Outputs)
+
+Denne enhed har ingen netværksforbindelse. Den lytter på CAN-bussen efter ID 0x30 og 0x40. Når den modtager en pakke, tjekker den indholdet (data) og styrer de fysiske relæer/outputs på f.eks. GPIO12 og GPIO13.
+
+```yaml
+esphome:
+  name: esp32-output-node
+
+canbus:
+  - platform: esp32_can
+    tx_pin: GPIO22  # Forbundet til CTX på SN65HVD230
+    rx_pin: GPIO23  # Forbundet til CRX på SN65HVD230
+    bit_rate: 250kbps
+    id: can_bus
+    # Her lytter vi efter styresignaler fra gatewayen
+    on_frame:
+      # Lyt efter kommandoer til Output 1
+      - can_id: 0x30
+        then:
+          - lambda: |-
+              if (x.size() > 0) {
+                if (x == 0x01) {
+                  id(fysisk_relae_1).turn_on();
+                } else {
+                  id(fysisk_relae_1).turn_off();
+                }
+              }
+      # Lyt efter kommandoer til Output 2
+      - can_id: 0x40
+        then:
+          - lambda: |-
+              if (x.size() > 0) {
+                if (x == 0x01) {
+                  id(fysisk_relae_2).turn_on();
+                } else {
+                  id(fysisk_relae_2).turn_off();
+                }
+              }
+
+# De reelle fysiske udgange på ESP32 nr. 3
+switch:
+  - platform: gpio
+    pin: GPIO12
+    id: fysisk_relae_1
+    # name er udeladt eller sat til internal, da HA ikke skal se den direkte
+    internal: true 
+
+  - platform: gpio
+    pin: GPIO13
+    id: fysisk_relae_2
+    internal: true
+```
+
+### Avanceret tip: Status-feedback (Tovejs-kommunikation)
+
+* I eksemplet ovenfor "gætter" Home Assistant på, at outputtet tænder på ESP32 nr. 3, når du trykker på knappen. Hvis du vil være 100% sikker på status (f.eks. hvis ESP32 nr. 3 genstarter), kan du lade ESP32 nr. 3 sende en bekræftelse tilbage på bussen, når relæet rent faktisk skifter tilstand.
+* Hvis det bliver aktuelt, kan vi udvide koden med on_turn_on og on_turn_off handlinger på ESP32 nr. 3, som gatewayen så lytter efter.
+
+Hvis vi skal finpudse koden, kan du fortælle mig:
+
+* Hvor mange outputs skal du styre på ESP32 nr. 3?
+* Er det vigtigt for dig med status-feedback, så Home Assistant ved med sikkerhed, om relæet er tændt på den anden side af bussen?
+
