@@ -35,11 +35,12 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
     * [Beskrivelse af Sporbesat Detektor Diagram](./Project/Sikring/Sporbesat/Detektor/Beskrivelse.md)
     * KiCad Filer:
       * [Sporbesat-Detektor.kicad_sch](./Project/Sikring/Sporbesat/Detektor/Sporbesat-Detektor/Sporbesat-Detektor.kicad_sch)
-  * Transmitterbus
-    * Canbus
-    * KiCAD
-    * FreeCAD
-    * ESPHome
-    * Home Assistant
+  * Canbus
+    * [CanBus og HomeAssistant](./Project/CANBUS/1_CanBus_og_HomeAssistant.md)
+    * [CanBus med Output og svar](./Project/CANBUS/2_CanBus_med%20_Output_og_svar.md)
+  * KiCAD
+  * FreeCAD
+  * ESPHome
+  * Home Assistant
 * Sporskifte styring
 * Signal styring
