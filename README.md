@@ -44,3 +44,4 @@ Sikrings anlæg for modeltog med DCC system, ESPHome &amp; Home Assistant
   * Home Assistant
 * Sporskifte styring
 * Signal styring
+* test
