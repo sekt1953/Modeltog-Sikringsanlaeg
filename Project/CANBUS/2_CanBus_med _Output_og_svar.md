@@ -1,5 +1,10 @@
 # CanBus_med _Output_og_svar.md
 
+* Indhold:
+  * esp nr.3, har faktisk 2x4output, som udløser svar på 2x4 input binary sensor
+  * Ja det må du gerne
+  * esp nr1 er en Waveshare ESP32-S3-ETH PoE
+
 ## esp nr.3, har faktisk 2x4output, som udløser svar på 2x4 input binary sensor
 
 * Det gør projektet endnu mere spændende! Ved at lade ESP32 nr. 3 sende et svar (feedback) tilbage til gatewayen hver gang et output ændrer tilstand, sikrer vi, at kontakten i Home Assistant altid viser den sande virkelighed – også hvis ESP32 nr. 3 lige er startet op.
