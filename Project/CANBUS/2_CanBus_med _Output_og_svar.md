@@ -370,3 +370,4 @@ Når du har tilføjet denne Gateway-enhed i Home Assistant via din ESPHome-integ
 
 Er der behov for, at vi også kigger på hvordan du fysisk forbinder SN65HVD230-modulerne i en kæde, eller har du helt styr på termineringsmodstande og kabelføringen?
 
+ee
