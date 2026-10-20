@@ -581,3 +581,68 @@ switch:
 
 Dette fuldender hex-arkitekturen! Har du brug for flere eksempler på, hvordan Home Assistant Dashboardet automatisk grupperer disse navne, eller vil du i gang med at oprette filerne lokalt på din server nu?
 
+## Node Type 2 modulerne vil jeg nok vælge at starte med hex 0x16 frem til 0x31
+
+Det er et rigtig fornuftigt valg at rykke din Node Type 2-range til 0x16 til 0x31. Det giver dig plads til hele 28 inputmoduler, hvilket gør dit system ekstremt fremtidssikret.
+
+Du skal blot være opmærksom på en lille ting: Du nævnte tidligere, at Node Type 3 skulle starte ved 50 decimal, hvilket svarer til 0x32. Da dine inputmoduler (Type 2) nu stopper ved 0x31, støder dine to ranges præcis op mod hinanden uden overlap. Det er helt perfekt og udnytter adresserne maksimalt!
+
+🏷️ Den opdaterede hex-plan
+
+|Node Type|Funktion|Range (Hex)|Plads til antal noder|
+|:---|:---|:---|:---|
+|Node Type 1|PoE Master Gateway|Central|1 central enhed|
+|Node Type 2|8x Input Modul|0x16 til 0x31|28 noder (I alt 224 inputs!)|
+|Node Type 3|8x Output (Kommando)|0x32 til 0x44|10 noder (Parret med feedback på ID+1)|
+
+### Sådan tilpasser du dine filer:
+
+### 1. I din fælles pakke for Type 2 (can_type2_base.yaml)
+
+Du ændrer blot standard-ID'et (substitution) i toppen af pakken til din nye startadresse:
+
+```yaml
+substitutions:
+  node_id: "0x16" # Nyt start-ID (Hex 0x16 = 22 decimal)
+```
+
+### 2. Når du opretter den første fysiske Node Type 2 (type2_input_0x16.yaml)
+
+Filen til dit allerførste inputmodul kommer til at se således ud:
+
+```yaml
+esphome:
+  name: type2-input-0x16
+
+packages:
+  type2_base: !include can_type2_base.yaml
+
+substitutions:
+  node_id: "0x16" # Fortæller pakken, at denne specifikke node bruger ID 0x16
+```
+
+Når du skal lave det næste modul, laver du bare en ny fil og ændrer name til type2-input-0x17 og node_id til "0x17".
+
+### 3. I din centrale Gateway (esp32_gateway.yaml)
+
+I gateway-koden skal du blot rette den første modtagerblok under canbus: -> on_frame:, så den lytter efter dit nye start-ID 0x16:
+
+```yaml
+    on_frame:
+      # --- MODTAG SENSORER FRA TYPE 2 (Første node flyttet til ID 0x16) ---
+      - can_id: 0x16
+        then:
+          - lambda: |-
+              if (x.size() > 0) {
+                id(t2_16_s0).publish_state((x >> 0) & 1); id(t2_16_s1).publish_state((x >> 1) & 1);
+                id(t2_16_s2).publish_state((x >> 2) & 1); id(t2_16_s3).publish_state((x >> 3) & 1);
+                id(t2_16_s4).publish_state((x >> 4) & 1); id(t2_16_s5).publish_state((x >> 5) & 1);
+                id(t2_16_s6).publish_state((x >> 6) & 1); id(t2_16_s7).publish_state((x >> 7) & 1);
+              }
+```
+
+(Husk også at rette id og name under binary_sensor: i gateway-filen, så de matcher t2_16_s0 i stedet for t2_14_s0).
+
+Med denne ændring er strukturen helt låst fast, og du er klar til at bygge et massivt CAN-bus netværk i dit hjem.
+
+Har du brug for, at jeg kigger over dine termineringsmodstande eller spændingsniveauer (3.3V vs 5V til transceiverne), inden du begynder at flashe hardwaren, eller føler du dig helt klar til at teste den første kommunikation af?
