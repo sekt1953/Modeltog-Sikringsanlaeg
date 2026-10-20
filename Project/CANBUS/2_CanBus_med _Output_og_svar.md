@@ -370,4 +370,143 @@ Når du har tilføjet denne Gateway-enhed i Home Assistant via din ESPHome-integ
 
 Er der behov for, at vi også kigger på hvordan du fysisk forbinder SN65HVD230-modulerne i en kæde, eller har du helt styr på termineringsmodstande og kabelføringen?
 
-ee
+## esp nr1 er en Waveshare ESP32-S3-ETH PoE
+
+Når du bruger en Waveshare ESP32-S3-ETH PoE, ændrer det et par vigtige ting i konfigurationen:
+
+1. Ethernet-controlleren: Dit board bruger en W5500 via SPI i stedet for den LAN8720, der blev brugt i forrige eksempel.
+2. Optagede GPIO-pinde: W5500-chippen beslaglægger pinde fra GPIO9 til GPIO14. Derudover bruger boardet GPIO21 til en indbygget RGB LED.
+
+For at undgå pin-konflikter, konfigureres CAN-bussens den indbyggede controller her til at bruge tx_pin: GPIO4 og rx_pin: GPIO5, som er helt frie på dit Waveshare-board.
+
+Her er den opdaterede og korrekte kode til din ESP32 nr. 1 (Gateway):
+
+```yaml
+esphome:
+  name: esp32-can-gateway
+  comment: "Waveshare ESP32-S3-ETH PoE Gateway"
+
+esp32:
+  board: esp32-s3-devkitc-1
+  variant: esp32s3
+  framework:
+    type: esp-idf
+
+# --- NETVÆRK (W5500 SPI-konfiguration til Waveshare) ---
+ethernet:
+  type: W5500
+  clk_pin: GPIO13
+  mosi_pin: GPIO11
+  miso_pin: GPIO12
+  cs_pin: GPIO14
+  interrupt_pin: GPIO10
+  reset_pin: GPIO9
+
+api:
+
+ota:
+  - platform: esphome
+
+# --- INDBYGGET CAN-BUS CONTROLLER ---
+canbus:
+  - platform: esp32_can
+    tx_pin: GPIO4   # Forbindes til CTX på SN65HVD230
+    rx_pin: GPIO5   # Forbindes til CRX på SN65HVD230
+    bit_rate: 250kbps
+    id: can_bus
+    
+    on_frame:
+      # --- MODTAGELSE FRA ESP32 NR. 2 ---
+      - can_id: 0x10
+        then:
+          - lambda: |-
+              if (x.size() > 0) id(node2_sensor_1).publish_state(x == 0x01);
+      - can_id: 0x20
+        then:
+          - lambda: |-
+              if (x.size() > 0) id(node2_sensor_2).publish_state(x == 0x01);
+
+      # --- MODTAGELSE AF FEEDBACK FRA ESP32 NR. 3 ---
+      - can_id: 0x31
+        then:
+          - lambda: |-
+              if (x.size() > 0) {
+                id(node3_sw_0).publish_state((x >> 0) & 1);
+                id(node3_sw_1).publish_state((x >> 1) & 1);
+                id(node3_sw_2).publish_state((x >> 2) & 1);
+                id(node3_sw_3).publish_state((x >> 3) & 1);
+                id(node3_sw_4).publish_state((x >> 4) & 1);
+                id(node3_sw_5).publish_state((x >> 5) & 1);
+                id(node3_sw_6).publish_state((x >> 6) & 1);
+                id(node3_sw_7).publish_state((x >> 7) & 1);
+              }
+
+# --- VIRTUELLE SENSORER (Data fra ESP32 nr. 2) ---
+binary_sensor:
+  - platform: template
+    name: "Node 2 - Sensor 1"
+    id: node2_sensor_1
+    device_class: motion
+
+  - platform: template
+    name: "Node 2 - Sensor 2"
+    id: node2_sensor_2
+    device_class: motion
+
+# --- VIRTUELLE KONTAKTER (Data til/fra ESP32 nr. 3) ---
+switch:
+  - platform: template
+    name: "Node 3 - Relæ 1"
+    id: node3_sw_0
+    turn_on_action:  - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+    turn_off_action: - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+
+  - platform: template
+    name: "Node 3 - Relæ 2"
+    id: node3_sw_1
+    turn_on_action:  - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+    turn_off_action: - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+
+  - platform: template
+    name: "Node 3 - Relæ 3"
+    id: node3_sw_2
+    turn_on_action:  - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+    turn_off_action: - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+
+  - platform: template
+    name: "Node 3 - Relæ 4"
+    id: node3_sw_3
+    turn_on_action:  - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+    turn_off_action: - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+
+  - platform: template
+    name: "Node 3 - Relæ 5"
+    id: node3_sw_4
+    turn_on_action:  - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+    turn_off_action: - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+
+  - platform: template
+    name: "Node 3 - Relæ 6"
+    id: node3_sw_5
+    turn_on_action:  - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+    turn_off_action: - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+
+  - platform: template
+    name: "Node 3 - Relæ 7"
+    id: node3_sw_6
+    turn_on_action:  - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+    turn_off_action: - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+
+  - platform: template
+    name: "Node 3 - Relæ 8"
+    id: node3_sw_7
+    turn_on_action:  - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+    turn_off_action: - canbus.send: { canbus_id: can_bus, can_id: 0x30, data: }
+```
+
+Husk ved kabelføring:
+
+Forbind CTX på din SN65HVD230 transceiver til GPIO4 på Waveshare-boardet, og CRX til GPIO5. Da boardet forsynes via PoE, skal du blot sikre dig, at transceiveren får sin 3.3V og GND direkte fra Waveshares tilgængelige strømpinde.
+
+Er der andre detaljer ved dine to andre ESP32-noder, du ønsker at få tilpasset i forhold til denne ændring, eller er du klar til at teste systemet af?
+
