@@ -194,4 +194,3 @@ binary_sensor:
 Med denne ændring holdes datatrafikken på din CAN-bus på et absolut minimum. Hver gang en kontakt trykkes ned på ESP32 nr. 2, skydes der lynhurtigt en byte afsted på ID 0x21, og alle 8 sensorer opdateres øjeblikkeligt i Home Assistant.
 
 Vil du have mig til at samle den fuldstændige, endelige esp32_gateway.yaml-fil for din Waveshare, så du er sikker på, at de nye 8 sensorer fra node 2 og de 8 relæer fra node 3 er flettet helt fejlfrit sammen?
-
