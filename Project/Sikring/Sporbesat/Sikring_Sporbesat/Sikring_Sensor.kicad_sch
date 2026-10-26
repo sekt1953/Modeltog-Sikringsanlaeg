@@ -9,6 +9,310 @@
 		(company "Svenn-Erik K. Thomsen")
 	)
 	(lib_symbols
+		(symbol "Connector:Conn_01x05_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05_Pin"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x05_Pin_1_1"
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:TestPoint_Alt"
 			(pin_numbers
 				(hide yes)
@@ -1377,6 +1681,129 @@
 						)
 					)
 					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2771,6 +3198,12 @@
 		(uuid "63e0b8de-054d-40b8-a604-50a408be0413")
 	)
 	(junction
+		(at 203.2 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a8ba33e-7e5c-4562-b4e2-0eeccc42f857")
+	)
+	(junction
 		(at 83.82 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2799,6 +3232,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "94695f96-9084-45dc-a347-5a7d4cb36bb4")
+	)
+	(junction
+		(at 203.2 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a03627e1-c4cf-4147-8b27-fd89194e3b93")
 	)
 	(junction
 		(at 41.91 100.33)
@@ -2853,6 +3292,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c95dab1f-b4e1-487d-99df-c908bf6d3898")
+	)
+	(junction
+		(at 203.2 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb62e098-7176-4866-a99c-95e878828ed8")
 	)
 	(junction
 		(at 83.82 67.31)
@@ -2951,6 +3396,16 @@
 			(type default)
 		)
 		(uuid "078e8bac-5127-4879-8507-f2536191b468")
+	)
+	(wire
+		(pts
+			(xy 203.2 43.18) (xy 203.2 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "079c6670-7a6d-4f83-aa3b-8b5c02badf98")
 	)
 	(wire
 		(pts
@@ -3124,6 +3579,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 50.8) (xy 203.2 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25383de4-f8dc-45d3-ab5d-22aa547e6c27")
+	)
+	(wire
+		(pts
 			(xy 36.83 143.51) (xy 36.83 144.78)
 		)
 		(stroke
@@ -3214,7 +3679,17 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 127) (xy 134.62 127)
+			(xy 138.43 62.23) (xy 138.43 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32162d55-bc16-4ffb-9da1-0e90aa5119c3")
+	)
+	(wire
+		(pts
+			(xy 130.81 127) (xy 143.51 127)
 		)
 		(stroke
 			(width 0)
@@ -3244,13 +3719,23 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 95.25) (xy 133.35 95.25)
+			(xy 129.54 95.25) (xy 140.97 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "36844d14-3806-4439-aed3-ae3209faf58b")
+	)
+	(wire
+		(pts
+			(xy 138.43 33.02) (xy 163.83 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38409025-43e0-457d-acd2-528ca4d2107e")
 	)
 	(wire
 		(pts
@@ -3341,6 +3826,26 @@
 			(type default)
 		)
 		(uuid "40aa4494-8908-4b9f-9fdb-3a42d73a1c31")
+	)
+	(wire
+		(pts
+			(xy 203.2 58.42) (xy 203.2 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4170f33b-2cff-4543-98fd-463b092d8b7a")
+	)
+	(wire
+		(pts
+			(xy 203.2 66.04) (xy 203.2 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "418109d9-bf7c-4f07-acd5-ae11cfa3628f")
 	)
 	(wire
 		(pts
@@ -3704,6 +4209,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 35.56) (xy 163.83 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b5eb44-8716-4de2-9120-48ee28fb9f3f")
+	)
+	(wire
+		(pts
 			(xy 102.87 44.45) (xy 101.6 44.45)
 		)
 		(stroke
@@ -3724,7 +4239,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 62.23) (xy 133.35 62.23)
+			(xy 129.54 62.23) (xy 138.43 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3814,13 +4329,23 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 30.48) (xy 135.89 30.48)
+			(xy 128.27 30.48) (xy 163.83 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9c2ea304-a5c2-4784-a4ef-4ca12bfcaab9")
+	)
+	(wire
+		(pts
+			(xy 143.51 38.1) (xy 163.83 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e71cd12-222a-4015-af72-8edf6cfa6dae")
 	)
 	(wire
 		(pts
@@ -3851,6 +4376,16 @@
 			(type default)
 		)
 		(uuid "a4e1f484-ccee-436f-bcf8-afaa489de71a")
+	)
+	(wire
+		(pts
+			(xy 163.83 40.64) (xy 161.29 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6a48c01-6381-4483-92ce-76f7ad80935e")
 	)
 	(wire
 		(pts
@@ -3984,6 +4519,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 127) (xy 143.51 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7be2a94-5264-4f64-8a77-0bb77fde8398")
+	)
+	(wire
+		(pts
 			(xy 101.6 109.22) (xy 102.87 109.22)
 		)
 		(stroke
@@ -4011,6 +4556,16 @@
 			(type default)
 		)
 		(uuid "bdac73c6-44ff-4d35-a8f6-84331fa1d955")
+	)
+	(wire
+		(pts
+			(xy 140.97 95.25) (xy 140.97 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdeabcca-1543-49ba-93d1-f8beeacdaf7f")
 	)
 	(wire
 		(pts
@@ -4344,6 +4899,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 40.64) (xy 161.29 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb8aa4c4-8605-490c-99f8-c7f319ebea9b")
+	)
+	(wire
+		(pts
 			(xy 102.87 132.08) (xy 101.6 132.08)
 		)
 		(stroke
@@ -4396,30 +4961,6 @@
 			)
 		)
 	)
-	(global_label "BESAT3"
-		(shape input)
-		(at 133.35 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "036cb721-fb5f-4ef1-91ff-e50d798855c5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.2294 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "VDCC1"
 		(shape input)
 		(at 31.75 46.99 180)
@@ -4465,30 +5006,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "BESAT1"
-		(shape input)
-		(at 134.62 30.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0a218af3-9756-4996-a007-ca3f1a280ece")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.4994 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -4585,54 +5102,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "BESAT4"
-		(shape input)
-		(at 134.62 127 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "51e2cd13-258c-44d1-b4e6-f0f68a0ae69d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.4994 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "BESAT2"
-		(shape input)
-		(at 133.35 62.23 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5dcae1bd-42cd-47d6-b767-72cf23e05be0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.2294 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -4979,6 +5448,176 @@
 				(path "/5ae40f57-df20-44f6-96d8-3adb422459a3"
 					(reference "U1")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x05_Pin")
+		(at 168.91 35.56 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "053b0555-da3d-4964-be55-6ed08aeb14fd")
+		(property "Reference" "J3"
+			(at 166.878 26.924 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x05_Pin"
+			(at 170.18 36.8299 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0005_1x05_P2.54mm_Vertical"
+			(at 168.91 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 168.91 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ca11d499-8f03-4bed-b11a-c39f73b02918")
+		)
+		(pin "1"
+			(uuid "0130aaa9-d372-4158-9bb9-314d9a478cfb")
+		)
+		(pin "5"
+			(uuid "46fca4b0-37fd-44e3-b0be-2e9c846a934a")
+		)
+		(pin "4"
+			(uuid "768c6673-9889-47a9-870c-6cc77e9b166f")
+		)
+		(pin "3"
+			(uuid "7715f31e-f814-4e7a-adab-2acdcbf3ba9e")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 200.66 58.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08d116ea-d5eb-409f-ace1-a2c7a2ac17b9")
+		(property "Reference" "H3"
+			(at 199.39 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 199.39 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+			(at 200.66 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 200.66 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eb8ac7a3-372a-4037-bd73-94b86e1d607e")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "H3")
+					(unit 1)
 				)
 			)
 		)
@@ -6614,6 +7253,162 @@
 			(project "Sikring_Sporbesat2"
 				(path "/5ae40f57-df20-44f6-96d8-3adb422459a3"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 161.29 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "275bbe79-7c00-49a8-a3f8-53f4dd108a0f")
+		(property "Reference" "#PWR06"
+			(at 161.29 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GDIGI"
+			(at 159.258 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 161.29 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 161.29 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "85fe57d9-262e-4699-9d0e-2e0450a776ba")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 200.66 50.8 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "285aa3b9-4ea3-467b-86ad-6961da9386a2")
+		(property "Reference" "H2"
+			(at 199.39 46.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 199.39 46.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+			(at 200.66 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 200.66 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc8801fa-e8cf-48ab-86eb-eeb25fa064ec")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -8998,6 +9793,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 200.66 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c214d77-f174-4133-abb8-4c8f8bc6e18e")
+		(property "Reference" "H4"
+			(at 199.39 62.23 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 199.39 62.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+			(at 200.66 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 200.66 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3aa78831-d3b2-4eed-b37e-e2edc642a5f7")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint_Alt")
 		(at 102.87 76.2 270)
 		(unit 1)
@@ -9282,6 +10155,84 @@
 			(project "Sporbesat-Detektor"
 				(path "/5b52e99c-59e0-433a-ab38-1ee1876dbd93"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 203.2 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7d062674-9b5c-4fd1-8db0-5c2d31684c59")
+		(property "Reference" "#PWR05"
+			(at 203.2 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GDIGI"
+			(at 201.168 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 203.2 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 203.2 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6b611ed4-9254-401a-95e2-6f5d284b3111")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -11414,6 +12365,84 @@
 			(project "Sikring_Sporbesat2"
 				(path "/5ae40f57-df20-44f6-96d8-3adb422459a3"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 200.66 43.18 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afad7d88-7f59-4631-800a-afdf96c9789b")
+		(property "Reference" "H1"
+			(at 199.39 39.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 199.39 39.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+			(at 200.66 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 200.66 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "70e357ec-a295-4d03-bb78-68d38139d390")
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -14970,46 +15999,6 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(group "Sikring_Sporbesat"
-		(uuid "8e7b4f2d-d6a4-4f4a-a0e0-ba7117b11bb7")
-		(lib_id "SEKT_DesignBloks:Sikring_Sporbesat")
-		(members "010a2469-c66e-430f-b45a-a3dbda78b566" "029bc192-8bcb-4648-9c02-ea62daeabd0d"
-			"040811e2-4b80-4297-89f9-ea70fb13708f" "078e8bac-5127-4879-8507-f2536191b468"
-			"0a218af3-9756-4996-a007-ca3f1a280ece" "0c96857a-3a8d-4c96-a11d-55b96d88b9a0"
-			"0ef457dc-dda8-4900-a696-73fd47f0740c" "15774f8b-a2b3-44ed-b788-8043a6f9788c"
-			"1e526d04-c382-4382-80f0-bb4119df36f2" "20e6e3d1-0430-48fb-a087-e799005f98e5"
-			"2e0d4a55-9470-4b9f-81de-96a7576dee29" "33b5c4ff-1f14-4d4b-a9c7-ae9ab6484f1e"
-			"33be495c-29ba-43b1-bb7d-48f3d3194785" "3650f4df-6bcc-4334-b316-0a283d02586b"
-			"376b297e-e1a6-4f73-bde4-044781f76e0f" "390f58bb-50df-485a-97f7-4e0808dd691a"
-			"3d37c8b2-8e5a-4e33-b81f-7b6685efdc16" "3dcf605b-19ba-494c-8552-e0999a12900d"
-			"40aa4494-8908-4b9f-9fdb-3a42d73a1c31" "42ae44c2-6a7b-4ead-ba9b-715b75dc9a3c"
-			"45a7d3a0-05d0-4075-8483-c4de22c2b79a" "45d04021-8faf-45b3-946c-7784e752180a"
-			"4a346ac6-2787-4b74-b8ff-0447e376af46" "5ecd9dd9-1f3b-4f76-84f6-12b800426ea7"
-			"6177a717-a673-4759-bd80-88d1e7ad73af" "65bc107c-778c-4e32-b91f-062f608611dd"
-			"65ff7155-f173-4aad-bea3-5b9fe6b4f19f" "69d98a30-521b-41b3-b70b-59ab3e4ea1ac"
-			"6c3ccd00-26e9-4410-8009-09ffd7cda1e3" "70e81973-7351-4f6a-b7dc-b969cfc2f832"
-			"737da34b-e9a9-4adf-bd06-b6012db25c3f" "74b17f76-52de-42a7-95c7-181235587630"
-			"77242be3-5e6a-4f75-9183-ab316821fffc" "798d50d5-0b84-481a-96e5-0c4120595cbc"
-			"7e96178d-3205-4877-842c-b92ed6ef9ef2" "7f7e8b69-3ffc-44a9-ad78-ba8d3156cac8"
-			"7f85c2e9-3a2d-44d2-94e4-def93fb640b6" "81a76b16-1623-4b0c-bf4d-f2e4bbec45a3"
-			"8c0c0a48-fed7-4731-b3a5-361b3ec7ad9a" "8c1ddc8d-56e5-4e69-b85c-596f31f2fede"
-			"8d2ea22a-662e-48eb-83a8-da770a2eb544" "93d3a56c-f5dc-4547-b2d5-455481645188"
-			"93f24f8d-77fa-40a5-bfbd-3c00c0337412" "94695f96-9084-45dc-a347-5a7d4cb36bb4"
-			"968ab30b-20f9-4772-92a9-02c943d1224a" "9c2ea304-a5c2-4784-a4ef-4ca12bfcaab9"
-			"a4e1f484-ccee-436f-bcf8-afaa489de71a" "ab94f50c-2736-429b-863d-1e43f39dd497"
-			"ab95e6b9-22d9-47c2-9434-23deb36ddffa" "ac7b1883-fba0-4425-950f-2adc3e9e91ea"
-			"af4f9c86-551c-4cd4-ba87-ca16ff0864b3" "b2689ec3-c90c-4ab8-85d4-c0427800f707"
-			"bbb47d2a-53c8-49d7-a636-200b8011c260" "c9ecc53c-4342-4ded-85cb-f2bc33350587"
-			"d1969418-5322-43ce-b624-f3e9e23c0c33" "d762b0bd-c443-4e43-8563-36fe0bab9178"
-			"db148ebe-79fd-47f8-b49e-c9d3cfda4ed9" "dd74fbd1-42fe-42ca-ba4f-b1f746b57b04"
-			"de4126e1-1b0b-418e-9dbd-a411ef0f0ccf" "eb8812ed-de98-4637-9e85-513ee1aeff2a"
-			"ecf0a25a-cb92-478a-a50c-1e59312c54e3" "edda3d42-a915-4cac-80de-694ad3830aa1"
-			"eeeeeca3-ce6a-4617-b637-b2577f622ce7" "ef64cee6-c6b2-4993-8d56-a621a7c28f40"
-			"f35ba643-e684-4336-a3a2-9531866a0a7c" "f4504a1a-86d3-496a-af3c-8d85031a032e"
-			"f9d4652c-3e6d-4078-86bd-61470ee9dd23" "fa935bcb-e16f-43ba-a674-71c775d9d739"
-			"faae5012-cf03-49b3-b562-405e1fcf281f"
 		)
 	)
 	(group ""
