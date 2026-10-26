@@ -6,8 +6,8 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 107.95 73.66)
-		(size 27.94 21.59)
+		(at 39.37 27.94)
+		(size 30.48 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -20,10 +20,10 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "71247117-a2c9-41c0-9aab-4cfeeb3772b0")
-		(property "Sheetname" "MCU_med_CAN_bus"
-			(at 107.95 72.9484 0)
-			(show_name no)
+		(uuid "2cd8e3a2-5d2e-481d-aa23-a5233a49a3a7")
+		(property "Sheetname" "Sporbesat_Interface"
+			(at 39.37 27.2284 0)
+			(show_name yes)
 			(do_not_autoplace no)
 			(effects
 				(font
@@ -32,9 +32,9 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Sikring_MCU_CAN.kicad_sch"
-			(at 107.95 95.8346 0)
-			(show_name no)
+		(property "Sheetfile" "Sikring_Interface.kicad_sch"
+			(at 39.37 55.1946 0)
+			(show_name yes)
 			(do_not_autoplace no)
 			(effects
 				(font
@@ -46,13 +46,13 @@
 		(instances
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a"
-					(page "3")
+					(page "2")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 57.15 69.85)
+		(at 100.33 27.94)
 		(size 31.75 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -67,7 +67,7 @@
 		)
 		(uuid "f78a3db1-d32d-4fcd-b60c-f3d7ab823b79")
 		(property "Sheetname" "Sporbesat_Sensor"
-			(at 56.896 66.802 0)
+			(at 99.822 27.178 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -77,8 +77,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Sikring_Sporbesat2.kicad_sch"
-			(at 56.896 67.818 0)
+		(property "Sheetfile" "Sikring_Sensor.kicad_sch"
+			(at 100.584 55.372 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -89,7 +89,7 @@
 			)
 		)
 		(pin "DGND" bidirectional
-			(at 88.9 85.09 0)
+			(at 132.08 43.18 0)
 			(uuid "a03f4799-22ec-4698-89de-1be0ec47a0e2")
 			(effects
 				(font
@@ -99,7 +99,7 @@
 			)
 		)
 		(pin "Spor1" output
-			(at 88.9 74.93 0)
+			(at 132.08 33.02 0)
 			(uuid "14a1d10b-dc12-4845-b896-5333890b94b7")
 			(effects
 				(font
@@ -109,7 +109,7 @@
 			)
 		)
 		(pin "Spor2" output
-			(at 88.9 77.47 0)
+			(at 132.08 35.56 0)
 			(uuid "cbeedd21-8105-4589-8973-1bbb4eb83180")
 			(effects
 				(font
@@ -119,7 +119,7 @@
 			)
 		)
 		(pin "Spor3" output
-			(at 88.9 80.01 0)
+			(at 132.08 38.1 0)
 			(uuid "16bbecfb-7526-4ccf-97e2-d6fad8f0bf61")
 			(effects
 				(font
@@ -129,7 +129,7 @@
 			)
 		)
 		(pin "Spor4" output
-			(at 88.9 82.55 0)
+			(at 132.08 40.64 0)
 			(uuid "c13ddde1-e4a0-4a67-abd5-67e3d7648f2f")
 			(effects
 				(font
@@ -141,7 +141,7 @@
 		(instances
 			(project "Sikring_Sporbesat"
 				(path "/15e6cd25-56b2-4983-bc16-60cbc7cb2d3a"
-					(page "2")
+					(page "3")
 				)
 			)
 		)

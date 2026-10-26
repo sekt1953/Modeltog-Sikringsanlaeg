@@ -2,14 +2,16 @@
 
 ## KiCad Sporbesat DesignBlock
 
-![Sporbesat-Detektor.png](../Images/Skærmbillede%20fra%202026-10-10%2014-49-14.png)
+![Sporbesat-Detektor.png](../Images/Skærmbillede%20fra%202026-10-26%2016-01-14.png)
 
-## Fritzing Test Board
+![Sporbesat-DCC.png](../Images/Skærmbillede%20fra%202026-10-26%2016-05-45.png)
 
-* Fritzing
-  * ![Stripboard_49x18_schem.png](../../../Fritzing/Stripboard_49x18_schem.png)
-  * ![Stripboard_49x18_bb.png](../../../Fritzing/Stripboard_49x18_bb.png)
-  * [Stripboard_49x18.fzz](../../../Fritzing/Stripboard_49x18.fzz)
+### PCB på vej
+
+![Sporbesat-DCC.png](../Images/Skærmbillede%20fra%202026-10-25%2019-18-46.png)
+
+![Sporbesat-DCC.png](../Images/Skærmbillede%20fra%202026-10-25%2019-18-19.png)
+
 
 ## Diagram beskrivelse
 

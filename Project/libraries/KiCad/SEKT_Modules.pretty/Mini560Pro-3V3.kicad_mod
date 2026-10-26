@@ -7,7 +7,7 @@
 		(at 0 -1.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "60eb5bc5-4966-4a14-92ff-969807e87bda")
+		(uuid "1f47b473-ae3d-4e12-9088-fb92433622e9")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "33583efa-0bf1-4e7c-a429-494085299096")
+		(uuid "34847a71-28ac-446b-8e31-f3978f865a4f")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d843ba95-50c4-4b55-b945-263031523d4b")
+		(uuid "dc175875-3c7a-48c5-b440-558bde5abd93")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1f53ccc5-e346-41e2-9205-f6a26355174b")
+		(uuid "ad70abbc-cf8e-4481-8598-1c4caaee6fe9")
 		(effects
 			(font
 				(size 1 1)
@@ -64,7 +64,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "42e30d23-9a06-4baa-b8a2-9af4b5a71964")
+		(uuid "b94de5e6-788e-4527-bb60-6fc9fb66029e")
 	)
 	(fp_rect
 		(start -18.5 -10)
@@ -75,13 +75,26 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "994fd223-d58e-4caa-8551-735ccecf781d")
+		(uuid "861bc35a-bfa2-47aa-9cd6-3af7b691caeb")
 	)
-	(fp_text user "In"
-		(at -16.2306 0.635 90)
+	(fp_text user "+5-20V"
+		(at -17.8562 -9.3726 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "43a54ca3-b358-4b2b-9390-9634b7767ad4")
+		(uuid "8c274c8e-3105-4a06-aa69-5d36a5535b82")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "In"
+		(at -17.1196 0.635 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "fd975a8a-fbc6-4431-af27-83390e13a3fb")
 		(effects
 			(font
 				(size 1 1)
@@ -95,20 +108,7 @@
 		(at -12 6.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "fc2df7f7-1aa1-49c2-8013-a4707fd75035")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
-	(fp_text user "5-20V"
-		(at -10.8458 -5.1308 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "b938ce57-e105-4792-bd4a-00a901ce998e")
+		(uuid "d394faec-88fe-4402-a8bb-5fadab33371b")
 		(effects
 			(font
 				(size 1 1)
@@ -121,7 +121,7 @@
 		(at 8.5 6.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "6836e87e-bd56-4c36-afcb-bcb389d86f7e")
+		(uuid "cfbe2d91-d8c7-4c18-ab0a-a3cb235c54f0")
 		(effects
 			(font
 				(size 1 1)
@@ -130,11 +130,11 @@
 			(justify left bottom)
 		)
 	)
-	(fp_text user "3v3"
-		(at 9.0932 -5.73 0)
+	(fp_text user "+3v3"
+		(at 13.2842 -9.4996 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "390b613e-e7d8-4828-b0bf-da4523af26ce")
+		(uuid "2535035b-cce1-4d43-ad20-a0feb95ec2ea")
 		(effects
 			(font
 				(size 1 1)
@@ -144,10 +144,10 @@
 		)
 	)
 	(fp_text user "OUT"
-		(at 17.8054 1.524 90)
+		(at 18.542 1.524 90)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "e2c29c30-4715-47f7-bcbd-392fbe1b570f")
+		(uuid "63460d3a-5218-4f1d-aa95-3962979fd6b4")
 		(effects
 			(font
 				(size 1 1)
@@ -161,7 +161,7 @@
 		(at 0 1.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "13972c75-e8f8-4b5d-b6de-b9cbd9ed2ed5")
+		(uuid "100c0c61-abe9-4138-adf3-314f8dd6414e")
 		(effects
 			(font
 				(size 1 1)
@@ -174,28 +174,40 @@
 		(size 5.08 5.08)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
-		(uuid "c5e72a5f-45c1-4e27-8fda-5747b513a607")
+		(uuid "8d652475-05fc-4430-a7d7-793658a617fd")
 	)
 	(pad "2" smd roundrect
 		(at 15 5.73)
 		(size 5.08 5.08)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
-		(uuid "50959666-ba71-41ec-ae5b-8829a9e9a9dd")
+		(uuid "38684e81-2465-4efc-9b2d-040c01e01329")
 	)
 	(pad "3" smd roundrect
 		(at -15 -5.73)
 		(size 5.08 5.08)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
-		(uuid "efd7c48a-ccd8-4662-b23c-42a47f1ed41f")
+		(uuid "97221ceb-dfb1-4d73-987e-0149024804f8")
 	)
 	(pad "4" smd roundrect
 		(at -15 5.73)
 		(size 5.08 5.08)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
-		(uuid "6ac6e8d0-a1d2-40b5-85e0-58248dd003dc")
+		(uuid "4f4e0114-3c7b-4985-94bb-109f7024f3f9")
 	)
 	(embedded_fonts no)
+	(model "${KICAD10_USER_3DMODEL_DIR}/Opgave_2026-2_5.step"
+		(opacity 0.5800)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -180)
+		)
+	)
 )
