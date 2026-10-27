@@ -8,10 +8,10 @@
 
 ### PCB på vej
 
-![Sporbesat-DCC.png](../Images/Skærmbillede%20fra%202026-10-26%2020-25-52.png)
-
-![Sporbesat-DCC.png](../Images/Skærmbillede%20fra%202026-10-26%2020-25-20.png)
-
+|Top|Bund|
+|:---:|:---:|
+|![Sporbesat-DCC.png](../Images/Skærmbillede%20fra%202026-10-27%2016-04-08.png)|![Sporbesat-DCC.png](../Images/Skærmbillede%20fra%202026-10-27%2016-03-39.png)|
+|![](../Images/Skærmbillede%20fra%202026-10-27%2016-04-45.png)||
 
 ## Diagram beskrivelse
 
