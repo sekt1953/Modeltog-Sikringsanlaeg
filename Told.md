@@ -20,19 +20,17 @@ Hvis du vil vide mere, kan du fortælle mig:
 Så kan jeg hjælpe dig med at vurdere, hvordan det påvirker prisen.
 
 AI-svar kan indeholde fejl. Få flere oplysninger
-* 
-Postnord.dk
+
+* Postnord.dk
 Nye EU-regler for told og håndtering af pakker fra lande uden ...
 Fra den 1. november 2026 træder nye EU-regler i kraft for e-handelsvarer, der sendes fra lande uden for EU. Som noget nyt indføres...
-* 
-toldberegner.dk
+* toldberegner.dk
 Nyt EU-håndteringsgebyr fra 1. november 2026: 2 € pr. vare
 Fra 1. november 2026 kommer et EU-håndteringsgebyr på 2 € (ca. 15 kr.) pr. varetype oveni tolden på 3 €. Se hvem der betaler, ...
-* 
-toldst.dk
+* toldst.dk
 Få svar på dine spørgsmål om det nye EU-håndteringsgebyr
 Hvad er EU-håndteringsgebyret? EU indfører omkring 1. november 2026 et håndteringsgebyr på e-handelsvarer fra lande uden for EU. E...
-Vis alle
+
 
 ## aliexpress , elektronik komponenter
 
@@ -42,28 +40,32 @@ Fordi elektronikkomponenter (som modstande, printkort, sensorer og LED'er) ofte 
 ### Hvordan beregnes de nye gebyrer på AliExpress?
 
 De to afgifter afregnes pr. varepost/varelinje (og ikke pr. samlet pakke). Det betyder følgende for din ordre:
+
 * Told (3 euro / ca. 22 kr.): Opkræves pr. unik varelinje under 150 euro.
 * Håndteringsgebyr (2 euro / ca. 15 kr.): Opkræves pr. unik varepost fra 1. november.
 * Samlet ekstrapris: Du skal betale 5 euro (ca. 37 kr.) ekstra pr. unik varetype, du lægger i kurven.
 
 ### Eksempel på en AliExpress-ordre
 
-##### Hvis du køber komponenter, ser regnestykket således ud:
+#### Hvis du køber komponenter, ser regnestykket således ud:
 
-Din kurv (Eksempel)	Gammel regel (før juli 2026)	Ny regel (Told + Gebyr fra 1. nov)
-10 stk. 10k Modstande (Varelinje 1)	Kun moms (25%)	+ 5 euro (ca. 37 kr.)
-5 stk. Kondensatorer (Varelinje 2)	Kun moms (25%)	+ 5 euro (ca. 37 kr.)
-1 stk. Arduino Uno R3 (Varelinje 3)	Kun moms (25%)	+ 5 euro (ca. 37 kr.)
-Ekstra afgifter i alt	0 kr.	15 euro (ca. 111 kr.)
+|Din kurv (Eksempel)|Gammel regel (før juli 2026)|Ny regel (Told + Gebyr fra 1. nov)|
+|:---|:---|:---|
+|10 stk. 10k Modstande (Varelinje 1)|Kun moms (25%)|+ 5 euro (ca. 37 kr.)|
+|5 stk. Kondensatorer (Varelinje 2)|Kun moms (25%)|+ 5 euro (ca. 37 kr.)|
+|1 stk. Arduino Uno R3 (Varelinje 3)|Kun moms (25%)|+ 5 euro (ca. 37 kr.)|
+|Ekstra afgifter i alt|0 kr.|15 euro (ca. 111 kr.)|
 
-Bemærk: Hvis du køber 50 stk. af den nøjagtigt samme modstand, tæller det kun som én varelinje (5 euro i alt). Men splitter du det op i forskellige værdier, koster hver værdi 5 euro ekstra.
+***Bemærk: Hvis du køber 50 stk. af den nøjagtigt samme modstand, tæller det kun som én varelinje (5 euro i alt). Men splitter du det op i forskellige værdier, koster hver værdi 5 euro ekstra.***
 
-Tre gode råd til dine køb på AliExpress nu
+#### Tre gode råd til dine køb på AliExpress nu
 
 1. Køb sortimenter og "kits": I stedet for at købe 5 forskellige poser med specifikke modstande eller sensorer, så gå efter færdige sortimentsbokse (f.eks. "300 pcs resistor kit"). Så længe det har ét samlet varenummer på AliExpress, slipper du med 5 euro i alt for hele boksen i stedet for 5 euro pr. variant.
 2. Tjek AliExpress "Choice"-lagre i EU: AliExpress sender i stigende grad varer fra lagre i f.eks. Tyskland, Polen eller Spanien. Hvis varen sendes fra et EU-lager, er den allerede importeret, og så bliver du ikke ramt af de nye told- og håndteringsgebyrer. Tjek leveringslandet under forsendelsesoplysningerne.
 3. Overvej EU-alternativer: For helt basale komponenter kan mindre specialbutikker i Danmark eller EU (f.eks. i Tyskland) nu ofte være billigere, når man indregner de 37 kr. ekstra pr. komponenttype fra Kina.
-Hvis du vil, kan jeg hjælpe dig med at undersøge:
+
+#### Hvis du vil, kan jeg hjælpe dig med at undersøge:
+
 * Om de specifikke komponenter, du søger, findes i samlede kits på AliExpress?
 * Om der findes Alternative EU-webshops, der har de samme komponenter uden tolden?
 Fortæl mig blot, hvad du leder efter (f.eks. modstande, mikrocontrollere, sensorer).
