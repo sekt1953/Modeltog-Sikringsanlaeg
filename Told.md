@@ -101,3 +101,74 @@ Hvis du vil, kan jeg hjælpe dig med at undersøge:
 
 Lad mig høre, om du har fundet de komponenter, du skal bruge.
 AI-svar kan indeholde fejl. Få flere oplysninger
+
+## Ja, Hvordan du tjekker, om den samlede kurv overstiger grænsen, så du undgår PostNord?
+
+For at undgå at din pakke lander til manuel fortoldning og udløser PostNords eget gebyr, skal du holde øje med en specifik beløbsgrænse og en vigtig detalje i din kurv på AliExpress.
+Her er de tre ting, du skal tjekke, inden du trykker på "Køb":
+
+### 1. Hold øje med 150 euro-grænsen (ca. 1.120 kr.)
+
+Grænsen for, hvornår AliExpress må opkræve alt på forhånd (IOSS), går ved 150 euro i ren vareværdi (før moms og forsendelse).
+
+* Under 150 euro: AliExpress opkræver moms, told og det nye gebyr. Pakken glider lige igennem PostNord.
+* Over 150 euro: AliExpress må ikke bruge IOSS-systemet. De trækker ikke importafgifterne, og din pakke bliver stoppet af PostNord, som opkræver deres eget gebyr plus fuld told og moms.
+
+### 2. Tjek efter "Moms inkluderet" (VAT included) ved checkout
+
+Når du går til betalingssiden (checkout) på AliExpress, skal du kigge på prisoversigten i højre side:
+
+* Hvis der står "VAT included" eller "Moms inkluderet", har AliExpress overtaget opkrævningen. Så er du på den sikre side, og PostNord blander sig ikke.
+* Hvis teksten ændrer sig til "VAT extended" eller "Price excl. VAT", betyder det, at din kurv er blevet for dyr. AliExpress trækker fingrene til sig, og PostNord vil opkræve dig ved ankomst.
+
+### 3. Hold øje med "Split Orders" (Opdelte ordrer)
+
+Hvis du køber mange forskellige elektronikkomponenter fra forskellige sælgere, kan AliExpress finde på at dele din ordre op i flere pakker.
+
+* Hvis den samlede kurv er over 150 euro, men AliExpress splitter det op i 3 mindre pakker på f.eks. 60 euro hver, kan du risikere, at det elektroniske IOSS-system fejler, fordi systemet ser den samlede betaling.
+* Løsning: Hvis du skal købe stort ind, er det sikreste faktisk at gennemføre og betale to eller tre separate ordrer med et par dages mellemrum, så hver enkelt betaling holder sig trygt under 150 euro.
+
+### Den nemme huskeregel i kurven:
+
+Kig altid på den endelige betalingsside. Hvis AliExpress viser dig en linje med moms og told, slipper du for PostNord. Hvis AliExpress pludselig trækker momsen fra det beløb, du skal betale, er det fordi ordren er for stor, og så klapper PostNords fælde i Danmark.
+
+Hvis du har mod på det, kan jeg hjælpe dig med at regne ud, om din nuværende kurv rammer grænsen, eller vi kan kigge på, om dine varer er markeret som "Choice" (hvilket gør IOSS-håndteringen endnu mere sikker).
+
+Hvor stort et beløb regner du med at købe komponenter for i denne omgang?
+
+AI-svar kan indeholde fejl. Få flere oplysninger
+
+## hvad er Choice
+
+AliExpress Choice er en særlig fordelsservice, hvor AliExpress selv står for logistikken, fragten og kvalitetskontrollen – i stedet for at overlade det til de tusindvis af uafhængige, private sælgere på platformen.
+Når du køber elektronikkomponenter, er det en kæmpe fordel at gå efter "Choice"-varer, især med de nye toldregler.
+Her er de vigtigste fordele ved Choice:
+
+### 1. Langt sikrere fortoldning (Du undgår PostNord-fejl)
+
+Når du køber almindelige varer på AliExpress, skal den enkelte kinesiske fabrik selv taste IOSS-toldnumre ind manuelt. Det sker der ofte fejl i.
+
+* Med Choice pakkes og sendes varerne direkte fra AliExpress' egne store centrallagre.
+* De har fuldstændig styr på IT-systemerne, så told- og momsdata overføres 100 % korrekt digitalt til PostNord. Risikoen for, at din pakke bliver stoppet ved en fejl, er næsten nul.
+
+### 2. "Combined Delivery" (Spar på de nye gebyrer)
+
+Dette er den største økonomiske fordel for dig, der køber komponenter:
+
+* Hvis du køber modstande fra én sælger, sensorer fra en anden og printkort fra en tredje, risikerer du at få tre separate pakker. Med de nye regler betyder det 3 separate håndteringsgebyrer.
+* Hvis alle varerne er Choice, bliver de samlet i ét stort AliExpress-varehus og lagt i én og samme pakke. Du betaler derfor kun told og håndteringsgebyr for varelinjerne i den ene pakke, og de ankommer samtidigt.
+
+### 3. Hurtigere og gratis fragt
+
+* Choice-varer sendes med AliExpress' hurtige fragtruter (ofte levering på 9-15 dage til Danmark).
+* Der er næsten altid gratis fragt, hvis du samlet køber for over et mindre beløb (typisk omkring 75 kr. eller 10 euro).
+
+### Hvordan kender du dem?
+
+Du kan kigge efter det gule "Choice"-logo på produktbillederne, eller du kan bruge søgefilteret på AliExpress og vinge "Choice" af.
+
+Hvis du har en liste over de komponenter, du leder efter, kan jeg hjælpe dig med at undersøge, om de typisk findes som Choice-varer, eller om vi skal pakke din kurv på en speciel måde for at minimere gebyrerne.
+
+Hvilke komponenter har du kig på lige nu?
+
+AI-svar kan indeholde fejl. Få flere oplysninger
