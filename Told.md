@@ -1,4 +1,6 @@
-# Told
+# Told regler ved køb hos Aliexpress 2026/11/02 ifølge AI
+
+***AI-svar kan indeholde fejl. Få flere oplysninger***
 
 ## hvad ske der med nye told regler fra 1 nov
 
@@ -30,7 +32,6 @@ Fra 1. november 2026 kommer et EU-håndteringsgebyr på 2 € (ca. 15 kr.) pr. v
 * toldst.dk
 Få svar på dine spørgsmål om det nye EU-håndteringsgebyr
 Hvad er EU-håndteringsgebyret? EU indfører omkring 1. november 2026 et håndteringsgebyr på e-handelsvarer fra lande uden for EU. E...
-
 
 ## aliexpress , elektronik komponenter
 
@@ -68,7 +69,9 @@ De to afgifter afregnes pr. varepost/varelinje (og ikke pr. samlet pakke). Det b
 
 * Om de specifikke komponenter, du søger, findes i samlede kits på AliExpress?
 * Om der findes Alternative EU-webshops, der har de samme komponenter uden tolden?
+
 Fortæl mig blot, hvad du leder efter (f.eks. modstande, mikrocontrollere, sensorer).
+
 AI-svar kan indeholde fejl. Få flere oplysninger
 
 ## vil aliexpress opkræve den nye afgift eller skal vi betale post nord 250Kr pr opkrævning
