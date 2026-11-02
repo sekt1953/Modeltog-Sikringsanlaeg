@@ -70,3 +70,34 @@ De to afgifter afregnes pr. varepost/varelinje (og ikke pr. samlet pakke). Det b
 * Om der findes Alternative EU-webshops, der har de samme komponenter uden tolden?
 Fortæl mig blot, hvad du leder efter (f.eks. modstande, mikrocontrollere, sensorer).
 AI-svar kan indeholde fejl. Få flere oplysninger
+
+## vil aliexpress opkræve den nye afgift eller skal vi betale post nord 250Kr pr opkrævning
+
+Kort svar: AliExpress opkræver afgiften direkte ved kassen (checkout), så du slipper for PostNords store importgebyr.
+Fordi AliExpress er tilmeldt EU's IOSS-ordning (Import One-Stop Shop), trækker de automatisk både moms, den faste told (3 euro) og det nye EU-håndteringsgebyr (2 euro) direkte, når du betaler for dine varer.
+
+Når AliExpress har opkrævet pengene på forhånd, går pakken direkte igennem tolden, og PostNord opkræver ikke deres eget importgebyr (som i Danmark typisk er 160 kr.).
+
+### Det skal du holde øje med ved checkout på AliExpress:
+
+Når du lægger dine elektronikkomponenter i kurven og går til betaling, vil du se en ekstra linje under prisen (ofte kaldet "Estimated import charges" eller "Told/moms").
+
+#### Her vil AliExpress have indregnet:
+
+1. Dansk moms (25%) af varens værdi.
+2. 3 euro (plus moms = ca. 28 kr.) i fast told pr. unik varelinje.
+3. 2 euro (plus moms = ca. 19 kr.) i det nye EU-håndteringsgebyr pr. unik varelinje.
+
+### Hvornår risikerer du alligevel at ramme PostNords gebyr?
+
+Du skal kun betale PostNords eget importgebyr, hvis noget går galt i kommunikationen:
+
+* Hvis sælgeren sender uden om IOSS: Det sker sjældent på AliExpress i dag, men hvis en uafhængig sælger glemmer at registrere AliExpress' IOSS-nummer digitalt på forsendelsen, kan PostNord ikke se, at afgifterne er betalt. Sker det, vil PostNord tilbageholde pakken og opkræve deres eget importgebyr + tolden forfra. (Skulle det ske, kan du søge pengene tilbage hos AliExpress' kundeservice).
+* Køb over 150 euro: Hvis din samlede ordre overstiger 150 euro (ca. 1.120 kr.), gælder IOSS-reglerne ikke på samme måde, og så vil pakken typisk lande til manuel fortoldning hos PostNord.
+Konklusion: Du betaler direkte hos AliExpress ved købet. Det bliver dyrere pr. komponenttype, du lægger i kurven, men du bliver fri for PostNords opkrævningsgebyr i postkassen.
+Hvis du vil, kan jeg hjælpe dig med at undersøge:
+* Hvordan du kan se, om dine specifikke varer bliver sendt med "Choice"-levering, som sikrer en mere sikker IOSS-håndtering?
+* Hvordan du tjekker, om den samlede kurv overstiger grænsen, så du undgår PostNord?
+
+Lad mig høre, om du har fundet de komponenter, du skal bruge.
+AI-svar kan indeholde fejl. Få flere oplysninger
