@@ -103,6 +103,7 @@ Hvis du vil, kan jeg hjælpe dig med at undersøge:
 * Hvordan du tjekker, om den samlede kurv overstiger grænsen, så du undgår PostNord?
 
 Lad mig høre, om du har fundet de komponenter, du skal bruge.
+
 AI-svar kan indeholde fejl. Få flere oplysninger
 
 ## Ja, Hvordan du tjekker, om den samlede kurv overstiger grænsen, så du undgår PostNord?
@@ -144,7 +145,9 @@ AI-svar kan indeholde fejl. Få flere oplysninger
 ## hvad er Choice
 
 AliExpress Choice er en særlig fordelsservice, hvor AliExpress selv står for logistikken, fragten og kvalitetskontrollen – i stedet for at overlade det til de tusindvis af uafhængige, private sælgere på platformen.
+
 Når du køber elektronikkomponenter, er det en kæmpe fordel at gå efter "Choice"-varer, især med de nye toldregler.
+
 Her er de vigtigste fordele ved Choice:
 
 ### 1. Langt sikrere fortoldning (Du undgår PostNord-fejl)
