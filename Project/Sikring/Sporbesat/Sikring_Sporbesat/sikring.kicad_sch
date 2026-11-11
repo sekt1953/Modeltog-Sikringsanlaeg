@@ -1,0 +1,151 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "54af3703-4992-4f7a-8edc-209a6009aacf")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 104.14 46.99)
+		(size 21.59 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "12034abe-6874-464a-b0a0-697040af6210")
+		(property "Sheetname" "CanBus"
+			(at 104.14 46.2784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CanBus.kicad_sch"
+			(at 104.14 61.5446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/dec11cf7-2ac3-4efe-90e0-405e9d00ec47"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 160.02 52.07)
+		(size 30.48 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6889ff96-fdb4-4c70-bc9b-495c816e3751")
+		(property "Sheetname" "Sporskifte"
+			(at 160.02 51.3584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sporskifte.kicad_sch"
+			(at 160.02 67.8946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/dec11cf7-2ac3-4efe-90e0-405e9d00ec47"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 44.45 40.64)
+		(size 20.32 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "edbfe107-1e6a-48f5-a41a-e5dfb4505c10")
+		(property "Sheetname" "ESP32_S3"
+			(at 44.45 39.9284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32_S3.kicad_sch"
+			(at 44.45 55.1946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Sikring_Sporbesat"
+				(path "/dec11cf7-2ac3-4efe-90e0-405e9d00ec47"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "5")
+		)
+	)
+)

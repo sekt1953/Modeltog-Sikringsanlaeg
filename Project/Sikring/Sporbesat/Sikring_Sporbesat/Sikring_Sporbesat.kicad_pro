@@ -668,12 +668,162 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Class",
+          "name": "Class",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Minimum Qty",
+          "name": "Minimum Qty",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser No:",
+          "name": "Mouser No:",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part No",
+          "name": "Mouser Part No",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Operating Temperature Range",
+          "name": "Operating Temperature Range",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Overload Voltage (Max)",
+          "name": "Overload Voltage (Max)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part",
+          "name": "Part",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Power(Watts)",
+          "name": "Power(Watts)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Process",
+          "name": "Process",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Resistance",
+          "name": "Resistance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Stock",
+          "name": "Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Temperature Coefficient",
+          "name": "Temperature Coefficient",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Type",
+          "name": "Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage Rated",
+          "name": "Voltage Rated",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Category",
+          "name": "Category",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Capacitance",
+          "name": "Capacitance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Attrition Qty",
+          "name": "Attrition Qty",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -716,9 +866,14 @@
         "filename": "Sikring_Sporbesat.kicad_sch",
         "name": "Sikring_Sporbesat",
         "uuid": "15e6cd25-56b2-4983-bc16-60cbc7cb2d3a"
+      },
+      {
+        "filename": "sikring.kicad_sch",
+        "name": "Sikring_CPU",
+        "uuid": "dec11cf7-2ac3-4efe-90e0-405e9d00ec47"
       }
     ],
-    "used_designators": "H1-4,RV1,J1-9,#PWR1-31,C1-10,D1-18,Q1-8,U1-4,R1-17,TP1-16",
+    "used_designators": "SW1-2,M1,H1-4,RV1,J1-15,#PWR1-46,C1-11,D1-19,Q1-8,U1-18,R1-22,TP1-16",
     "variants": []
   },
   "sheets": [
@@ -733,6 +888,26 @@
     [
       "f78a3db1-d32d-4fcd-b60c-f3d7ab823b79",
       "Sporbesat_Sensor"
+    ],
+    [
+      "8ce71d11-65c6-415e-aae5-5ffd26b6bbaa",
+      "ESP32-S3"
+    ],
+    [
+      "dec11cf7-2ac3-4efe-90e0-405e9d00ec47",
+      "Sikring_CPU"
+    ],
+    [
+      "edbfe107-1e6a-48f5-a41a-e5dfb4505c10",
+      "ESP32_S3"
+    ],
+    [
+      "12034abe-6874-464a-b0a0-697040af6210",
+      "CanBus"
+    ],
+    [
+      "6889ff96-fdb4-4c70-bc9b-495c816e3751",
+      "Sporskifte"
     ]
   ],
   "text_variables": {},
