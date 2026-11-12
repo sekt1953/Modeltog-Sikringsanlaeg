@@ -51,9 +51,40 @@
 
 ### Sporbesat sensor pcb
 
+* Kabel
+  * Varenummer:	339005025
+  * Varenavn:	LIYCY 5x2,5 mm gray
+  * Link: https://jmvcables.dk/shop/pvc-styre-og-signalkabler/liycy/liycy-5x25/
+  * Anvendelse: LIYCY er et skærmet signalkabel, der anvendes hvor der kræves en fleksibel kabelforbindelse til fx kontroludstyr.
+  * Kontakt
+    * JMV Cables A/S
+    * Skalstrupgaard 1, 4621 Gadstrup
+    * Telefon: +45 46 76 14 14
+    * E-mail: info@jmvcables.dk
 * S5AC-13-F Description: Rectifiers 50V 5A
   * Mouser No: 621-S5AC-F
   * [S5AC-13-F Datasheet (PDF)](https://www.mouser.dk/datasheet/3/175/1/ds16007.pdf)
+* SK13
+  * Mouser No: 637-SK13
+  * [SK13 Datasheet (PDF)](https://diotec.com/request/datasheet/sk12.pdf)
+  * Description: Schottky Diodes & Rectifiers Schottky, SMA, 30V, 1A
+* BC857
+  * Mouser No: 583-C857
+  * Datasheet:  [BC857 Datasheet (PDF)](https://www.mouser.dk/datasheet/3/287/1/bc856-bc858.pdf)
+  * Description: Bipolar Transistors - BJT SOT23,PNP,0.1A,45V,L owNoise
+* BC847B
+  * Mouser No: 637-BC847B
+  * Datasheet:  [BC847B Datasheet (PDF)](https://diotec.com/request/datasheet/bc846.pdf)
+  * Description: Bipolar Transistors - BJT BJT, SOT-23, 45V, 100mA, NPN
+* ILQ621
+  * Mouser No: 782-ILQ621
+  * Datasheet: [ILQ621 Datasheet](https://www.vishay.com/doc?83654)
+  * Description: Transistor Output Optocouplers Phototransistor Out Quad CTR >50%
+* C1206C223KMRECTU
+  * Mouser No: 80-C1206C223KMRECTU
+  * Datasheet: [C1206C223KMRECTU Datasheet (PDF)](https://www.mouser.dk/datasheet/3/72/1/KEM_C1090_X7R_ESD.pdf)
+  * Description: Multilayer Ceramic Capacitors MLCC - SMD/SMT 63V 0.022uF X7R 1206 10%
+
 
 ## Modeltid ur er flyttet til her
 
