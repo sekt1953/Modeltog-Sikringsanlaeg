@@ -85,7 +85,6 @@
   * Datasheet: [C1206C223KMRECTU Datasheet (PDF)](https://www.mouser.dk/datasheet/3/72/1/KEM_C1090_X7R_ESD.pdf)
   * Description: Multilayer Ceramic Capacitors MLCC - SMD/SMT 63V 0.022uF X7R 1206 10%
 
-
 ## Modeltid ur er flyttet til her
 
 * [Modeltidsur](https://github.com/sekt1953/Modeltog-Ursystem)
