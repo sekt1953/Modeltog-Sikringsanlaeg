@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TBD62083AFNG_EL'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Toshiba", "TBD62083AFNG,EL" (!) = "", "SOIC127P1030X245-18N", "Small Outline Packages", "757-TBD62083AFNGEL", "https://www.mouser.co.uk/ProductDetail/Toshiba/TBD62083AFNGEL?qs=fSnNYG2PaKLeeuoLxGSskQ%3D%3D", "BiCD Integrated Circuit Silicon Monolithic", "https://toshiba.semicon-storage.com/info/docget.jsp?did=29893&prodName=TBD62083AFG", "2.45 mm"
+END_PART
+
+END.

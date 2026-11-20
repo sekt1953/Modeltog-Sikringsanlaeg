@@ -1,0 +1,9 @@
+Manufacturer=Toshiba
+PartNumber=TBD62083AFNG,EL
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=18
+Version=3.1
+Released=2017-03-21 10:28:23
+Downloaded=2026-11-10 12:51:03
+3D=Y
