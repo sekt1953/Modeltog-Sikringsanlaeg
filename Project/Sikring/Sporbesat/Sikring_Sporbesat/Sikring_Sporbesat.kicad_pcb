@@ -182,7 +182,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/f9b0ec3e-a8aa-4e4c-80f8-27e9d4088393")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -546,7 +546,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/41456787-fd49-4b95-8f01-8dbf400f04f7")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -695,7 +695,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/237f7c38-1e13-48c4-a252-ac79010feb27")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -914,7 +914,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/223d6a82-fd2d-4898-b2bd-0164294a09df")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -1160,7 +1160,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/19034145-2576-4e31-98f9-43015d6b5945")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -1602,7 +1602,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/94fc557e-a3d1-4f4b-b3f8-458d8a0d0b78")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -1812,7 +1812,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/0ed1c8e4-39e1-4a77-9fc2-0b713f2d3c58")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -2203,7 +2203,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/15eac0a5-2751-4c37-a116-5d0dbda77550")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -2575,7 +2575,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/ceb575dc-07ee-408c-8a66-8ccc90d0c45d")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -2714,7 +2714,7 @@
 		(at 78.105 104.775)
 		(descr "wire loop with bead as test point, loop diameter2.6mm, hole diameter 1.4mm")
 		(tags "test point wire loop bead")
-		(property "Reference" "DCC4"
+		(property "Reference" "TP15"
 			(at 3.81 0 0)
 			(layer "F.SilkS")
 			(uuid "d0125577-7ed6-4b5b-b28b-9c3a00042f69")
@@ -2764,7 +2764,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/ea5b7a64-3752-4f54-a2e1-bf2f7284b5d0")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -2946,7 +2946,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/65bc107c-778c-4e32-b91f-062f608611dd")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -3318,7 +3318,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/ce2e3865-310e-4555-8ca7-bb4f4427750d")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -3507,7 +3507,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/716f0dad-c9fa-40e4-9045-85989ed054a4")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -3707,7 +3707,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/a022e80c-9b19-4171-a1a0-bc600b1a8a00")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -3961,7 +3961,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/67ac632c-4c2d-4023-8ab8-672ed0dfc7db")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -4285,7 +4285,7 @@
 		(at 78.74 66.04)
 		(descr "wire loop with bead as test point, loop diameter2.6mm, hole diameter 1.4mm")
 		(tags "test point wire loop bead")
-		(property "Reference" "DCC1"
+		(property "Reference" "TP6"
 			(at 3.81 0 0)
 			(layer "F.SilkS")
 			(uuid "771df683-5e5e-4c52-b6e2-0f22f68e083d")
@@ -4335,7 +4335,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/4a346ac6-2787-4b74-b8ff-0447e376af46")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -4731,7 +4731,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/ea669cdb-65c3-45aa-9c86-238c870ef236")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -4952,9 +4952,22 @@
 				)
 			)
 		)
+		(property "Mouser No:" "Mouser No: 637-BC847A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "268bb2ea-afa8-429a-a96a-a2c771f27fa7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/f35ba643-e684-4336-a3a2-9531866a0a7c")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -5550,7 +5563,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/0b00b028-d3e4-4a25-9fbf-a3c73e9ec323")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -5765,7 +5778,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/b745fa96-9949-4655-95e9-744cfe6f0ae2")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -5935,7 +5948,7 @@
 		(at 78.105 84.455)
 		(descr "wire loop with bead as test point, loop diameter2.6mm, hole diameter 1.4mm")
 		(tags "test point wire loop bead")
-		(property "Reference" "DCC2"
+		(property "Reference" "TP9"
 			(at 3.81 0 0)
 			(layer "F.SilkS")
 			(uuid "e09ba427-949b-4f3c-a0cc-e797c138d971")
@@ -5985,7 +5998,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/992f53f9-f411-412f-b2a1-efd99829fd12")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -6349,7 +6362,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/0be404a8-8da3-4b46-a960-59232bd1b084")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -6721,7 +6734,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/7f85c2e9-3a2d-44d2-94e4-def93fb640b6")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -6944,7 +6957,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/c53365bd-23c4-4089-857d-cc48a2dc63ab")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -7540,7 +7553,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/c5b35363-6d93-4d59-9902-e9cd36f0d136")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -7738,7 +7751,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/053b0555-da3d-4964-be55-6ed08aeb14fd")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -8467,7 +8480,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/9a8f6f83-f2a3-43c4-8e38-6c0f54fe4ca6")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -8655,7 +8668,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/2cd8e3a2-5d2e-481d-aa23-a5233a49a3a7/97cd27e6-a171-4e9a-8920-706ac58280b3")
-		(sheetname "/Sporbesat_Interface/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Interface/")
 		(sheetfile "Sikring_Interface.kicad_sch")
 		(units
 			(unit
@@ -8909,7 +8922,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/5dee741d-f78d-43ad-845d-6c653f2df284")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -9283,7 +9296,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/2cd8e3a2-5d2e-481d-aa23-a5233a49a3a7/7c481aa4-aa20-4ab6-9a7b-4eafb5e9a864")
-		(sheetname "/Sporbesat_Interface/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Interface/")
 		(sheetfile "Sikring_Interface.kicad_sch")
 		(units
 			(unit
@@ -9483,7 +9496,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/ea7485b9-4105-4c6f-93a1-73a1a12708a0")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -9724,7 +9737,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/15774f8b-a2b3-44ed-b788-8043a6f9788c")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -9925,7 +9938,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/74b17f76-52de-42a7-95c7-181235587630")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -10125,7 +10138,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/376b297e-e1a6-4f73-bde4-044781f76e0f")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -10351,9 +10364,22 @@
 				)
 			)
 		)
+		(property "Mouser No:" "782-ILQ621GB-X017T"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e2a0b4f4-5a55-4cbb-acf2-3dd4741e76e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/390f58bb-50df-485a-97f7-4e0808dd691a")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -10966,7 +10992,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/90a153fd-3df5-439b-bbae-dedf2ee04a14")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -11377,7 +11403,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/fa935bcb-e16f-43ba-a674-71c775d9d739")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -11565,7 +11591,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/596d7c76-2f88-4421-8455-2ec3aea27862")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -11785,7 +11811,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/6177a717-a673-4759-bd80-88d1e7ad73af")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -12031,7 +12057,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/77242be3-5e6a-4f75-9183-ab316821fffc")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -12259,7 +12285,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/22b60de2-16df-4410-a033-9f9a91be8391")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -12430,7 +12456,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/fecc83b1-7a4d-4959-baea-55cf48afefcc")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -12853,7 +12879,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/c3b1c29c-b806-4114-a067-65d523f5e31a")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -13068,7 +13094,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/43fa20c9-9c3f-4c82-8ed7-e2c0c0f53aa2")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -13510,7 +13536,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/d1969418-5322-43ce-b624-f3e9e23c0c33")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -13709,7 +13735,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/afad7d88-7f59-4631-800a-afdf96c9789b")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -13792,7 +13818,7 @@
 		(at 78.105 89.535)
 		(descr "wire loop with bead as test point, loop diameter2.6mm, hole diameter 1.4mm")
 		(tags "test point wire loop bead")
-		(property "Reference" "DCC3"
+		(property "Reference" "TP12"
 			(at 3.81 0 0)
 			(layer "F.SilkS")
 			(uuid "7d4f5c9f-cdaf-4b39-9bca-a9048e1c617b")
@@ -13842,7 +13868,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/bf84014f-6af0-4405-a0b4-d6b5efb01ffb")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -14016,7 +14042,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/62b7e342-4570-4f8d-9026-28ef16206305")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -14412,7 +14438,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/d762b0bd-c443-4e43-8563-36fe0bab9178")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -14551,7 +14577,7 @@
 		(at 55.88 58.42)
 		(descr "wire loop with bead as test point, loop diameter2.6mm, hole diameter 1.4mm")
 		(tags "test point wire loop bead")
-		(property "Reference" "GDCC"
+		(property "Reference" "TP3"
 			(at 0.7 2.5 0)
 			(layer "F.SilkS")
 			(uuid "d289f4be-0600-482e-93ad-fb2615114403")
@@ -14602,7 +14628,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/2cd8e3a2-5d2e-481d-aa23-a5233a49a3a7/69d97a0b-5235-4556-9623-079d1f388f61")
-		(sheetname "/Sporbesat_Interface/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Interface/")
 		(sheetfile "Sikring_Interface.kicad_sch")
 		(units
 			(unit
@@ -14784,7 +14810,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/66efc90b-1ceb-444b-b575-047b765f8620")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -15124,7 +15150,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/968ab30b-20f9-4772-92a9-02c943d1224a")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -15496,7 +15522,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/37cf9e23-8527-4a88-b46b-45bd7fc8a513")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -15635,7 +15661,7 @@
 		(at 67.945 53.34)
 		(descr "wire loop with bead as test point, loop diameter2.6mm, hole diameter 1.4mm")
 		(tags "test point wire loop bead")
-		(property "Reference" "OPT"
+		(property "Reference" "TP2"
 			(at 3.81 0 0)
 			(layer "F.SilkS")
 			(uuid "97c6d624-76c8-46c3-81b3-2b98eb281cdb")
@@ -15685,7 +15711,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/2cd8e3a2-5d2e-481d-aa23-a5233a49a3a7/6696d8b1-896b-4164-8fbb-73152bb4ef0c")
-		(sheetname "/Sporbesat_Interface/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Interface/")
 		(sheetfile "Sikring_Interface.kicad_sch")
 		(units
 			(unit
@@ -15859,7 +15885,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/f4504a1a-86d3-496a-af3c-8d85031a032e")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -16033,7 +16059,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/fc5fa44f-508c-43c5-9b24-17264cffd911")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -16241,7 +16267,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/8ec3b067-d9f4-40c5-a2e5-74a21d734ba7")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -16837,7 +16863,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/acf0d413-28a9-432c-9969-e745754329ea")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -17036,7 +17062,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/285aa3b9-4ea3-467b-86ad-6961da9386a2")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -17203,7 +17229,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/23e56915-5e07-4818-900a-836125c5f1a2")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -17598,7 +17624,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/c7bacdcf-8d4f-48f0-8aa3-9c93f40540ca")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -17807,7 +17833,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/3683c940-fb85-4293-93a6-c694e9f1fd02")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -17967,7 +17993,7 @@
 		)
 		(property ki_fp_filters "TerminalBlock*:*")
 		(path "/2cd8e3a2-5d2e-481d-aa23-a5233a49a3a7/ff62c19c-fbbd-4703-a116-07aeb24c8f1e")
-		(sheetname "/Sporbesat_Interface/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Interface/")
 		(sheetfile "Sikring_Interface.kicad_sch")
 		(units
 			(unit
@@ -18547,7 +18573,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/55d640d3-1241-49de-9f76-ff6ad9e9419a")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -18745,7 +18771,7 @@
 		)
 		(property ki_fp_filters "TerminalBlock*:*")
 		(path "/2cd8e3a2-5d2e-481d-aa23-a5233a49a3a7/6640d8c7-9546-4501-9432-5e25776f0b21")
-		(sheetname "/Sporbesat_Interface/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Interface/")
 		(sheetfile "Sikring_Interface.kicad_sch")
 		(units
 			(unit
@@ -19363,7 +19389,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/2cd8e3a2-5d2e-481d-aa23-a5233a49a3a7/513709cd-7864-4981-98bf-b5bdcfd24b3f")
-		(sheetname "/Sporbesat_Interface/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Interface/")
 		(sheetfile "Sikring_Interface.kicad_sch")
 		(units
 			(unit
@@ -19596,7 +19622,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/64ad5de4-d0df-4040-9b53-b58607ad464f")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -19970,7 +19996,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/5db05564-581d-40c0-8888-a1259c62b8a2")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -20176,9 +20202,22 @@
 				)
 			)
 		)
+		(property "Mouser No:" "621-BC857CQ-7-F"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f30b868-e73f-4f1f-b908-591158e55bfa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/33be495c-29ba-43b1-bb7d-48f3d3194785")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -20578,7 +20617,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/253fcf40-1b22-4517-8b7d-17679b76b5b6")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -20807,7 +20846,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/08d116ea-d5eb-409f-ace1-a2c7a2ac17b9")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -20949,7 +20988,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/6c214d77-f174-4133-abb8-4c8f8bc6e18e")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit
@@ -21082,7 +21121,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f78a3db1-d32d-4fcd-b60c-f3d7ab823b79/fd7cf56f-f97f-4eb9-8610-a04e9b2c7089")
-		(sheetname "/Sporbesat_Sensor/")
+		(sheetname "/Sikring_Sporbesat/Sporbesat_Sensor/")
 		(sheetfile "Sikring_Sensor.kicad_sch")
 		(units
 			(unit

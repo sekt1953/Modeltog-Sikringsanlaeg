@@ -5389,6 +5389,17 @@
 				)
 			)
 		)
+		(property "Mouser No:" "782-ILQ621GB-X017T"
+			(at 121.92 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5fa4e7f4-4fad-4517-9e56-acde2654d865")
 		)
@@ -7504,6 +7515,17 @@
 				)
 			)
 		)
+		(property "Mouser No:" "621-BC857CQ-7-F"
+			(at 60.96 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "8dc4c06f-4868-4880-839e-1bc7fbb6a037")
 		)
@@ -8062,6 +8084,17 @@
 			)
 		)
 		(property "Description" "DC Quad Optocoupler, Vce 35V, CTR 50-300%, DIP16"
+			(at 120.65 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser No:" "782-ILQ621GB-X017T"
 			(at 120.65 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -11311,6 +11344,17 @@
 			)
 		)
 		(property "Description" "DC Quad Optocoupler, Vce 35V, CTR 50-300%, DIP16"
+			(at 123.19 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser No:" "782-ILQ621GB-X017T"
 			(at 123.19 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -15111,6 +15155,17 @@
 				)
 			)
 		)
+		(property "Mouser No:" "782-ILQ621GB-X017T"
+			(at 121.92 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cb5fa29b-3f4b-4166-9b73-bb78c0ee8070")
 		)
@@ -15255,6 +15310,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 99.06 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser No:" "Mouser No: 637-BC847A"
 			(at 99.06 50.8 0)
 			(hide yes)
 			(show_name no)

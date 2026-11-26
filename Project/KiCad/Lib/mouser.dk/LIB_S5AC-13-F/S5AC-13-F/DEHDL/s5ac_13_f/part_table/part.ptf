@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'S5AC_13_F'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Diodes Incorporated", "S5AC-13-F" (!) = "", "DIOM7959X250N", "Diodes Moulded", "621-S5AC-F", "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/S5AC-13-F?qs=O8dk3f7hbgu4ZnJ2CunXCw%3D%3D", "Diodes Inc S5AC-13-F, SMT Diode, 50V 5A, 2-Pin DO-214AB", "https://www.diodes.com/assets/Datasheets/ds16007.pdf", "2.5 mm"
+END_PART
+
+END.

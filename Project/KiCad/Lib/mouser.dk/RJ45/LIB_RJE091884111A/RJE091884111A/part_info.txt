@@ -1,0 +1,9 @@
+Manufacturer=Amphenol Communications Solutions
+PartNumber=RJE091884111A
+PartCategory=Connector
+PackageCategory=Other
+PinCount=10
+Version=3.5
+Released=2024-03-28 10:14:02
+Downloaded=2026-11-22 10:18:12
+3D=Y

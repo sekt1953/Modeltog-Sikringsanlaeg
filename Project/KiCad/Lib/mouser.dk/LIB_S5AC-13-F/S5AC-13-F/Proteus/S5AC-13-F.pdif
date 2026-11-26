@@ -1,0 +1,117 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "S5AC-13-F"
+   (description "Diodes Inc S5AC-13-F, SMT Diode, 50V 5A, 2-Pin DO-214AB")
+   (family "DIO")
+   (package "DIOM7959X250N")
+   (attribute "Datasheet Link" "https://www.diodes.com/assets/Datasheets/ds16007.pdf")
+   (attribute "Geometry.Height" "2.5mm")
+   (attribute "Mouser Part Number" "621-S5AC-F")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/S5AC-13-F?qs=O8dk3f7hbgu4ZnJ2CunXCw%3D%3D")
+   (attribute "Manufacturer_Name" "Diodes Incorporated")
+   (attribute "Manufacturer_Part_Number" "S5AC-13-F")
+   (gate
+    (symbol "S5AC-13-F")
+    (pin "K" 1 PS)
+    (pin "A" 2 PS)
+   )
+  )
+  (symbol "S5AC-13-F"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 200 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 100 0) (pt 200 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 0) (pt 500 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt 200 0) (pt 400 100) (pt 400 -100) (pt 200 0))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 140 10) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 60 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 600 0) (rot 0) (mir X) (visible true))
+    (name (pt 140 10) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 60 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "DIOM7959X250N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -4.85 3.36)
+      (pt 4.85 3.36)
+      (pt 4.85 -3.36)
+      (pt -4.85 -3.36)
+      (pt -4.85 3.36))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.97 2.952)
+      (pt 3.97 2.952)
+      (pt 3.97 -2.952)
+      (pt -3.97 -2.952)
+      (pt -3.97 2.952))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.97 1.852)
+      (pt -2.87 2.952))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 3.97 2.952)
+      (pt -4.6 2.952))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3.97 -2.952)
+      (pt 3.97 -2.952))))
+   (leg 1 (pt -3.5 0) (padstack 0))
+   (leg 2 (pt 3.5 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 2.2 3.1 0 0 90))
+   )
+   (model "S5AC-13-F.stp"
+    (euler -90 180 180)
+    (offset 1.25 0 0)
+   )
+  )
+ )
+)

@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_441495"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-06-05-12:23:53)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "S5AC-13-F")
+)
+
+
+(pinAssign "ECS_441495"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-06-05-12:23:53)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_441495")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "S5AC-13-F")
+)
+
+
+(part "S5AC-13-F"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-06-05-12:23:53)
+    (utime 2023-03-07-16:10:32)
+    (packageRef "S5AC-13-F")
+    (pinAssignRef "ECS_441495")
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "D")
+    (property "description" "Diodes Inc S5AC-13-F, SMT Diode, 50V 5A, 2-Pin DO-214AB")
+    (property "Mouser_Part_Number" "621-S5AC-F")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/S5AC-13-F?qs=O8dk3f7hbgu4ZnJ2CunXCw%3D%3D")
+    (property "Manufacturer_Name" "Diodes Incorporated")
+    (property "Manufacturer_Part_Number" "S5AC-13-F")
+    (property "Datasheet_Link" "https://www.diodes.com/assets/Datasheets/ds16007.pdf")
+    (property "compAreaTopHeight" 2.5)
+)
+
+
